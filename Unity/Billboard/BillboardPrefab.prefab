@@ -47,7 +47,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d89860490c6467645bee1a2608add055, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VisualEffect: {fileID: 8438921472170328165}
 --- !u!2083052967 &8438921472170328165
 VisualEffect:
   m_ObjectHideFlags: 0
@@ -157,8 +156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e025e1dcd73794d4b8a3d04fecedc08f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxTextureSize: 8192
-  JobBatchSize: 2048
+  MaxTextureSize: 4096
+  JobBatchSize: 4096
   PositionsProperty:
     m_Name: Positions
   ColorsProperty:

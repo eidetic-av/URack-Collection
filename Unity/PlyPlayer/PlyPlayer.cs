@@ -10,19 +10,34 @@ namespace Eidetic.URack.Collection
 {
     public class PlyPlayer : UModule
     {
-        public string FolderName = "sample_50000";
+        public string FolderName = "Melbourne";
 
         [Input] public float Run { get; set; }
 
         [Input] public float Reset { get; set; }
 
-        [Input(1)] public float Speed { get; set; }
+        bool ScrubChanged = true;
+        bool TransformChanged = true;
+
+        public float scrubPosition = -1;
+        [Input(1)]
+        public float Speed
+        {
+            get => scrubPosition;
+            set
+            {
+                if (scrubPosition == value) return;
+                scrubPosition = value;
+                ScrubChanged = true;
+            }
+        }
 
         [Input(-5, 5, -180, 180)] public float RotationX { get; set; }
 
         [Input(-5, 5, -180, 180)] public float RotationY { get; set; }
 
         [Input(-5, 5, -180, 180)] public float RotationZ { get; set; }
+        Vector3 LastRotation;
         Vector3 Rotation => new Vector3(RotationX, RotationY, RotationZ);
 
         [Input] public float PositionX { get; set; }
@@ -30,8 +45,10 @@ namespace Eidetic.URack.Collection
         [Input] public float PositionY { get; set; }
 
         [Input] public float PositionZ { get; set; }
+        Vector3 LastPosition;
         Vector3 Position => new Vector3(PositionX, PositionY, PositionZ);
 
+        float LastScale;
         [Input] public float Scale { get; set; } = 1;
 
         public float RGBGain = 0;
@@ -43,8 +60,8 @@ namespace Eidetic.URack.Collection
         List<PointCloud> Frames;
 
         float lastFrameTime;
-        int currentFrameNumber => Mathf.FloorToInt(Speed.Map(0, 10, 0, frameCount - 1));
-        PointCloud CurrentFrame => Frames[Mathf.Clamp(currentFrameNumber, 0, frameCount - 1)];
+        int CurrentFrameNumber => Mathf.FloorToInt(Speed.Map(0, 10, 0, frameCount - 1));
+        PointCloud CurrentFrame => Frames[Mathf.Clamp(CurrentFrameNumber, 0, frameCount - 1)];
 
         public void Start()
         {
@@ -53,18 +70,23 @@ namespace Eidetic.URack.Collection
             {
                 var frame = ScriptableObject.CreateInstance<PointCloud>();
                 frame.Points = new PointCloud.Point[ply.PointCount];
-                Debug.Log(frame.PointCount);
                 ply.Points.CopyTo(frame.Points, 0);
                 Frames.Add(frame);
                 frameCount++;
             }
-            Debug.Log($"Loaded {frameCount} frames into PlyPlayer instance");
+            Debug.Log($"Loaded {frameCount} frames into PlyPlayer instance from Resources/{FolderName}");
         }
 
         public void Update()
         {
             if (Frames == null) return;
+
+            if (Position != LastPosition || Rotation != LastRotation || Scale != LastScale)
+                TransformChanged = true;
+
+            if (Time.frameCount > 5 && !ScrubChanged && !TransformChanged) return;
             var framePoints = CurrentFrame.Points;
+            Debug.Log(framePoints.Length);
 
             var transformJob = new TransformPointsJob()
             {
@@ -75,7 +97,7 @@ namespace Eidetic.URack.Collection
                 points = new NativeArray<PointCloud.Point>(framePoints, Allocator.TempJob)
             };
 
-            var jobBatchSize = 64;
+            var jobBatchSize = 4096;
 
             transformJob.Schedule(framePoints.Length, jobBatchSize).Complete();
 
@@ -83,6 +105,13 @@ namespace Eidetic.URack.Collection
             transformJob.points.CopyTo(PointCloudOutput.Points);
 
             transformJob.points.Dispose();
+
+            LastPosition = Position;
+            LastRotation = Rotation;
+            LastScale = Scale;
+
+            ScrubChanged = false;
+            TransformChanged = false;
         }
 
         [BurstCompile]

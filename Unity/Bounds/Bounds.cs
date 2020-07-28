@@ -12,71 +12,67 @@ namespace Eidetic.URack.Collection
     {
         const int JobBatchSize = 1000;
 
-        [Input]
-        public override PointCloud PointCloudInput
+        public override void OnSetPointCloud(PointCloud value)
         {
-            set
+            if (!Active) return;
+
+            var pointCount = value.PointCount;
+
+            var pointArray = new NativeArray<PointCloud.Point>(value.Points, Allocator.TempJob);
+
+            var insideIndices = new NativeList<int>(Allocator.TempJob);
+            var insideJob = new InsideFilter()
             {
-                if (!Active) return;
+                points = pointArray,
+                minX = MinX,
+                minY = MinY,
+                minZ = MinZ,
+                maxX = MaxX,
+                maxY = MaxY,
+                maxZ = MaxZ
+            };
+            insideJob.ScheduleAppend(insideIndices, pointCount, JobBatchSize).Complete();
 
-                var pointCount = value.PointCount;
+            var outsideIndices = new NativeList<int>(Allocator.TempJob);
+            var outsideJob = new OutsideFilter()
+            {
+                points = pointArray,
+                minX = MinX,
+                minY = MinY,
+                minZ = MinZ,
+                maxX = MaxX,
+                maxY = MaxY,
+                maxZ = MaxZ
+            };
+            outsideJob.ScheduleAppend(outsideIndices, pointCount, JobBatchSize).Complete();
 
-                var pointArray = new NativeArray<PointCloud.Point>(value.Points, Allocator.TempJob);
+            var buildInsideArrayJob = new LiveScanReceiver.BuildFilteredArrayJob()
+            {
+                unfilteredPoints = pointArray,
+                pointFilter = insideIndices,
+                filteredPoints = new NativeArray<PointCloud.Point>(insideIndices.Length, Allocator.TempJob)
+            };
+            buildInsideArrayJob.Schedule(insideIndices.Length, JobBatchSize).Complete();
 
-                var insideIndices = new NativeList<int>(Allocator.TempJob);
-                var insideJob = new InsideFilter()
-                {
-                    points = pointArray,
-                    minX = MinX,
-                    minY = MinY,
-                    minZ = MinZ,
-                    maxX = MaxX,
-                    maxY = MaxY,
-                    maxZ = MaxZ
-                };
-                insideJob.ScheduleAppend(insideIndices, pointCount, JobBatchSize).Complete();
+            var buildOutsideArrayJob = new LiveScanReceiver.BuildFilteredArrayJob()
+            {
+                unfilteredPoints = pointArray,
+                pointFilter = outsideIndices,
+                filteredPoints = new NativeArray<PointCloud.Point>(outsideIndices.Length, Allocator.TempJob)
+            };
+            buildOutsideArrayJob.Schedule(outsideIndices.Length, JobBatchSize).Complete();
 
-                var outsideIndices = new NativeList<int>(Allocator.TempJob);
-                var outsideJob = new OutsideFilter()
-                {
-                    points = pointArray,
-                    minX = MinX,
-                    minY = MinY,
-                    minZ = MinZ,
-                    maxX = MaxX,
-                    maxY = MaxY,
-                    maxZ = MaxZ
-                };
-                outsideJob.ScheduleAppend(outsideIndices, pointCount, JobBatchSize).Complete();
+            Inside.Points = new PointCloud.Point[insideIndices.Length];
+            buildInsideArrayJob.filteredPoints.CopyTo(Inside.Points);
 
-                var buildInsideArrayJob = new LiveScanReceiver.BuildFilteredArrayJob()
-                {
-                    unfilteredPoints = pointArray,
-                    pointFilter = insideIndices,
-                    filteredPoints = new NativeArray<PointCloud.Point>(insideIndices.Length, Allocator.TempJob)
-                };
-                buildInsideArrayJob.Schedule(insideIndices.Length, JobBatchSize).Complete();
+            Outside.Points = new PointCloud.Point[outsideIndices.Length];
+            buildOutsideArrayJob.filteredPoints.CopyTo(Outside.Points);
 
-                var buildOutsideArrayJob = new LiveScanReceiver.BuildFilteredArrayJob()
-                {
-                    unfilteredPoints = pointArray,
-                    pointFilter = outsideIndices,
-                    filteredPoints = new NativeArray<PointCloud.Point>(outsideIndices.Length, Allocator.TempJob)
-                };
-                buildOutsideArrayJob.Schedule(outsideIndices.Length, JobBatchSize).Complete();
-
-                Inside.Points = new PointCloud.Point[insideIndices.Length];
-                buildInsideArrayJob.filteredPoints.CopyTo(Inside.Points);
-
-                Outside.Points = new PointCloud.Point[outsideIndices.Length];
-                buildOutsideArrayJob.filteredPoints.CopyTo(Outside.Points);
-
-                pointArray.Dispose();
-                insideIndices.Dispose();
-                outsideIndices.Dispose();
-                buildInsideArrayJob.filteredPoints.Dispose();
-                buildOutsideArrayJob.filteredPoints.Dispose();
-            }
+            pointArray.Dispose();
+            insideIndices.Dispose();
+            outsideIndices.Dispose();
+            buildInsideArrayJob.filteredPoints.Dispose();
+            buildOutsideArrayJob.filteredPoints.Dispose();
         }
 
         [Input] public float MinX { get; set; }
