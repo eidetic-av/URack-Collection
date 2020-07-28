@@ -10,6 +10,8 @@ namespace Eidetic.URack.Collection
 {
     public class PlyPlayer : UModule
     {
+        const int JobBatchSize = 4096;
+
         public string FolderName = "Melbourne";
 
         [Input] public float Run { get; set; }
@@ -51,6 +53,7 @@ namespace Eidetic.URack.Collection
         float LastScale;
         [Input] public float Scale { get; set; } = 1;
 
+        float LastRGBGain;
         public float RGBGain = 0;
 
         PointCloud pointCloudOutput;
@@ -69,8 +72,19 @@ namespace Eidetic.URack.Collection
             foreach (var ply in Resources.LoadAll<PointCloud>(FolderName))
             {
                 var frame = ScriptableObject.CreateInstance<PointCloud>();
-                frame.Points = new PointCloud.Point[ply.PointCount];
-                ply.Points.CopyTo(frame.Points, 0);
+                frame.UsingTextureMaps = ply.UsingTextureMaps;
+
+                if (!frame.UsingTextureMaps)
+                {
+                    frame.Points = new PointCloud.Point[ply.PointCount];
+                    ply.Points.CopyTo(frame.Points, 0);
+                }
+                else
+                {
+                    frame.SetPositionMap(ply.PositionMap);
+                    frame.SetColorMap(ply.ColorMap);
+                }
+
                 Frames.Add(frame);
                 frameCount++;
             }
@@ -81,34 +95,72 @@ namespace Eidetic.URack.Collection
         {
             if (Frames == null) return;
 
-            if (Position != LastPosition || Rotation != LastRotation || Scale != LastScale)
+            if (Position != LastPosition || Rotation != LastRotation || Scale != LastScale || RGBGain != LastRGBGain)
                 TransformChanged = true;
 
-            if (Time.frameCount > 5 && !ScrubChanged && !TransformChanged) return;
-            var framePoints = CurrentFrame.Points;
-            Debug.Log(framePoints.Length);
+            if (!ScrubChanged && !TransformChanged) return;
 
-            var transformJob = new TransformPointsJob()
+            PointCloudOutput.UsingTextureMaps = CurrentFrame.UsingTextureMaps;
+
+            if (!CurrentFrame.UsingTextureMaps)
             {
-                rotation = Rotation,
-                translation = Position,
-                scale = Vector3.one * Scale,
-                rgbGain = RGBGain,
-                points = new NativeArray<PointCloud.Point>(framePoints, Allocator.TempJob)
-            };
+                var framePoints = CurrentFrame.Points;
 
-            var jobBatchSize = 4096;
+                var transformJob = new TransformPointsJob()
+                {
+                    rotation = Rotation,
+                    translation = Position,
+                    scale = Vector3.one * Scale,
+                    rgbGain = RGBGain,
+                    points = new NativeArray<PointCloud.Point>(framePoints, Allocator.TempJob)
+                };
 
-            transformJob.Schedule(framePoints.Length, jobBatchSize).Complete();
+                transformJob.Schedule(framePoints.Length, JobBatchSize).Complete();
 
-            PointCloudOutput.Points = new PointCloud.Point[transformJob.points.Length];
-            transformJob.points.CopyTo(PointCloudOutput.Points);
+                PointCloudOutput.Points = new PointCloud.Point[transformJob.points.Length];
+                transformJob.points.CopyTo(PointCloudOutput.Points);
 
-            transformJob.points.Dispose();
+                transformJob.points.Dispose();
+            }
+            else
+            {
+                var framePositions = CurrentFrame.PositionMap;
+                var frameColors = CurrentFrame.ColorMap;
+
+                var width = framePositions.width;
+                var height = framePositions.height;
+                var pixelCount = width * height;
+
+                var transformTexturesJob = new TransformTexturesJob()
+                {
+                    rotation = Rotation,
+                    translation = Position,
+                    scale = Vector3.one * Scale,
+                    rgbGain = RGBGain,
+                    positionMap = new NativeArray<Color>(framePositions.GetRawTextureData<Color>(), Allocator.TempJob),
+                    colorMap = new NativeArray<Color>(frameColors.GetRawTextureData<Color>(), Allocator.TempJob)
+                };
+
+                transformTexturesJob.Schedule(pixelCount, JobBatchSize).Complete();
+
+                var transformedPositions = new Texture2D(framePositions.width, framePositions.height, framePositions.format, false);
+                transformedPositions.LoadRawTextureData(transformTexturesJob.positionMap);
+                transformedPositions.Apply();
+                PointCloudOutput.SetPositionMap(transformedPositions);
+
+                var transformedColors = new Texture2D(framePositions.width, framePositions.height, framePositions.format, false);
+                transformedColors.LoadRawTextureData(transformTexturesJob.colorMap);
+                transformedColors.Apply();
+                PointCloudOutput.SetColorMap(transformedColors);
+
+                transformTexturesJob.positionMap.Dispose();
+                transformTexturesJob.colorMap.Dispose();
+            }
 
             LastPosition = Position;
             LastRotation = Rotation;
             LastScale = Scale;
+            LastRGBGain = RGBGain;
 
             ScrubChanged = false;
             TransformChanged = false;
@@ -131,6 +183,29 @@ namespace Eidetic.URack.Collection
                     .ScaleBy(scale);
                 point.Color = new Color(point.Color.r + rgbGain, point.Color.g + rgbGain, point.Color.b + rgbGain);
                 points[i] = point;
+            }
+        }
+
+        [BurstCompile]
+        struct TransformTexturesJob : IJobParallelFor
+        {
+            public Vector3 rotation;
+            public Vector3 translation;
+            public Vector3 scale;
+            public float rgbGain;
+            public NativeArray<Color> positionMap;
+            public NativeArray<Color> colorMap;
+
+            public void Execute(int i)
+            {
+                var positionData = positionMap[i];
+                var position = new Vector3(positionData.r, positionData.g, positionData.b)
+                    .RotateBy(rotation)
+                    .TranslateBy(translation)
+                    .ScaleBy(scale);
+                positionMap[i] = new Color(position.x, position.y, position.z);
+                var colorData = colorMap[i];
+                colorMap[i] = new Color(colorData.r + rgbGain, colorData.g + rgbGain, colorData.b + rgbGain);
             }
         }
 
