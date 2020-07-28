@@ -1,0 +1,16 @@
+#!/bin/sh
+
+export CC=x86_64-w64-mingw32-gcc
+export CXX=x86_64-w64-mingw32-g++
+export STRIP=x86_64-w64-mingw32-strip
+
+# export RACK_DIR="/path/to/vcv/rack/sdk"
+
+if [ -z "$RACK_DIR" ]
+then
+    echo "You need to either set the RACK_DIR environment variable to the path of your VCV Rack SDK."
+    exit 1
+fi
+
+make clean
+make -j$(nproc) dist

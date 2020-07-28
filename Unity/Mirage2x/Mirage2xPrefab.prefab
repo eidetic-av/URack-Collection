@@ -131,4 +131,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextTextureDirectory: 0
   previousTextureDirectory: 0
-  ImageSequence: DefaultSequence
+  ImageSequence: shifting_pains
