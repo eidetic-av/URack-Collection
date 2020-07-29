@@ -1,0 +1,41 @@
+#pragma kernel Transform
+
+Texture2D<float4> Input;
+RWTexture2D<float4> Result;
+
+float3 Rotation;
+float3 Position;
+float Scale;
+
+[numthreads(8,8,1)]
+void Transform (uint3 id : SV_DispatchThreadID)
+{
+    // Scale particle position
+    float3 scaledPos = mul(Scale, Input[id.xy]);
+
+    // X Rotation by Matrix
+    float xSin = sin(Rotation.x);
+    float xCos = cos(Rotation.x);
+    float3x3 xMatrix = float3x3(1, 0, 0, 0, xCos, xSin, 0, -xSin, xCos);
+    float3 xRotatedPos = mul(xMatrix, scaledPos);
+
+    // Y Rotation by Matrix
+    float ySin = sin(Rotation.y);
+    float yCos = cos(Rotation.y);
+    float3x3 yMatrix = float3x3(yCos, 0, -ySin, 0, 1, 0, ySin, 0, yCos);
+    float3 yRotatedPos = mul(yMatrix, xRotatedPos);
+
+    // Z Rotation by Matrix
+    float zSin = sin(Rotation.z);
+    float zCos = cos(Rotation.z);
+    float3x3 zMatrix = float3x3(zCos, zSin, 0, -zSin, zCos, 0, 0, 0, 1);
+    float3 fullyRotatedPos = mul(zMatrix, yRotatedPos);
+
+    // Add position bias
+    float x = fullyRotatedPos.x + Position.x;
+    float y = fullyRotatedPos.y + Position.y;
+    float z = fullyRotatedPos.z + Position.z;
+
+    // Set output
+    Result[id.xy] = float4(x, y, z, 1.0);
+}

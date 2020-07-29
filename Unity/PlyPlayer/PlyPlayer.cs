@@ -5,6 +5,7 @@ using Unity.Collections;
 using Unity.Jobs;
 using UnityEngine;
 using UnityEngine.Jobs;
+using static UnityEngine.Experimental.Rendering.GraphicsFormat;
 
 namespace Eidetic.URack.Collection
 {
@@ -66,24 +67,21 @@ namespace Eidetic.URack.Collection
         int CurrentFrameNumber => Mathf.FloorToInt(Speed.Map(0, 10, 0, frameCount - 1));
         PointCloud CurrentFrame => Frames[Mathf.Clamp(CurrentFrameNumber, 0, frameCount - 1)];
 
+        ComputeShader transformShader;
+        ComputeShader TransformShader => transformShader ??
+            (transformShader = Instantiate(Resources.Load("PlyPlayerTransform") as ComputeShader));
+        int TransformHandle => TransformShader.FindKernel("Transform");
+        RenderTexture TransformedPositions;
+        RenderTexture TransformedColors;
+
         public void Start()
         {
             Frames = new List<PointCloud>();
             foreach (var ply in Resources.LoadAll<PointCloud>(FolderName))
             {
                 var frame = ScriptableObject.CreateInstance<PointCloud>();
-                frame.UsingTextureMaps = ply.UsingTextureMaps;
-
-                if (!frame.UsingTextureMaps)
-                {
-                    frame.Points = new PointCloud.Point[ply.PointCount];
-                    ply.Points.CopyTo(frame.Points, 0);
-                }
-                else
-                {
-                    frame.SetPositionMap(ply.PositionMap);
-                    frame.SetColorMap(ply.ColorMap);
-                }
+                frame.SetPositionMap(ply.PositionMap);
+                frame.SetColorMap(ply.ColorMap);
 
                 Frames.Add(frame);
                 frameCount++;
@@ -100,62 +98,43 @@ namespace Eidetic.URack.Collection
 
             if (!ScrubChanged && !TransformChanged) return;
 
-            PointCloudOutput.UsingTextureMaps = CurrentFrame.UsingTextureMaps;
+            var framePositions = CurrentFrame.PositionMap;
+            var frameColors = CurrentFrame.ColorMap;
 
-            if (!CurrentFrame.UsingTextureMaps)
+            var width = framePositions.width;
+            var height = framePositions.height;
+
+            bool newTexture = false;
+            if (TransformedPositions == null || TransformedPositions.height != height)
             {
-                var framePoints = CurrentFrame.Points;
-
-                var transformJob = new TransformPointsJob()
-                {
-                    rotation = Rotation,
-                    translation = Position,
-                    scale = Vector3.one * Scale,
-                    rgbGain = RGBGain,
-                    points = new NativeArray<PointCloud.Point>(framePoints, Allocator.TempJob)
-                };
-
-                transformJob.Schedule(framePoints.Length, JobBatchSize).Complete();
-
-                PointCloudOutput.Points = new PointCloud.Point[transformJob.points.Length];
-                transformJob.points.CopyTo(PointCloudOutput.Points);
-
-                transformJob.points.Dispose();
+                Destroy(TransformedPositions);
+                Destroy(TransformedColors);
+                TransformedPositions = new RenderTexture(width, height, 24, R32G32B32A32_SFloat);
+                TransformedPositions.enableRandomWrite = true;
+                TransformedPositions.Create();
+                TransformedColors = new RenderTexture(width, height, 24, R32G32B32A32_SFloat);
+                TransformedColors.enableRandomWrite = true;
+                TransformedColors.Create();
+                TransformShader.SetTexture(TransformHandle, "Result", TransformedPositions);
+                newTexture = true;
             }
-            else
+
+            if (ScrubChanged || newTexture)
             {
-                var framePositions = CurrentFrame.PositionMap;
-                var frameColors = CurrentFrame.ColorMap;
-
-                var width = framePositions.width;
-                var height = framePositions.height;
-                var pixelCount = width * height;
-
-                var transformTexturesJob = new TransformTexturesJob()
-                {
-                    rotation = Rotation,
-                    translation = Position,
-                    scale = Vector3.one * Scale,
-                    rgbGain = RGBGain,
-                    positionMap = new NativeArray<Color>(framePositions.GetRawTextureData<Color>(), Allocator.TempJob),
-                    colorMap = new NativeArray<Color>(frameColors.GetRawTextureData<Color>(), Allocator.TempJob)
-                };
-
-                transformTexturesJob.Schedule(pixelCount, JobBatchSize).Complete();
-
-                var transformedPositions = new Texture2D(framePositions.width, framePositions.height, framePositions.format, false);
-                transformedPositions.LoadRawTextureData(transformTexturesJob.positionMap);
-                transformedPositions.Apply();
-                PointCloudOutput.SetPositionMap(transformedPositions);
-
-                var transformedColors = new Texture2D(framePositions.width, framePositions.height, framePositions.format, false);
-                transformedColors.LoadRawTextureData(transformTexturesJob.colorMap);
-                transformedColors.Apply();
-                PointCloudOutput.SetColorMap(transformedColors);
-
-                transformTexturesJob.positionMap.Dispose();
-                transformTexturesJob.colorMap.Dispose();
+                TransformShader.SetTexture(TransformHandle, "Input", framePositions);
             }
+
+            if (TransformChanged || newTexture)
+            {
+                TransformShader.SetVector("Rotation", Rotation.ToRadians());
+                TransformShader.SetVector("Position", Position);
+                TransformShader.SetFloat("Scale", Scale);
+            }
+
+            TransformShader.Dispatch(TransformHandle, width / 8, height / 8, 1);
+
+            PointCloudOutput.SetPositionMap(TransformedPositions);
+            PointCloudOutput.SetColorMap(frameColors);
 
             LastPosition = Position;
             LastRotation = Rotation;
@@ -164,49 +143,6 @@ namespace Eidetic.URack.Collection
 
             ScrubChanged = false;
             TransformChanged = false;
-        }
-
-        [BurstCompile]
-        struct TransformPointsJob : IJobParallelFor
-        {
-            public Vector3 rotation;
-            public Vector3 translation;
-            public Vector3 scale;
-            public float rgbGain;
-            public NativeArray<PointCloud.Point> points;
-            public void Execute(int i)
-            {
-                var point = points[i];
-                point.Position = point.Position
-                    .RotateBy(rotation)
-                    .TranslateBy(translation)
-                    .ScaleBy(scale);
-                point.Color = new Color(point.Color.r + rgbGain, point.Color.g + rgbGain, point.Color.b + rgbGain);
-                points[i] = point;
-            }
-        }
-
-        [BurstCompile]
-        struct TransformTexturesJob : IJobParallelFor
-        {
-            public Vector3 rotation;
-            public Vector3 translation;
-            public Vector3 scale;
-            public float rgbGain;
-            public NativeArray<Color> positionMap;
-            public NativeArray<Color> colorMap;
-
-            public void Execute(int i)
-            {
-                var positionData = positionMap[i];
-                var position = new Vector3(positionData.r, positionData.g, positionData.b)
-                    .RotateBy(rotation)
-                    .TranslateBy(translation)
-                    .ScaleBy(scale);
-                positionMap[i] = new Color(position.x, position.y, position.z);
-                var colorData = colorMap[i];
-                colorMap[i] = new Color(colorData.r + rgbGain, colorData.g + rgbGain, colorData.b + rgbGain);
-            }
         }
 
     }
