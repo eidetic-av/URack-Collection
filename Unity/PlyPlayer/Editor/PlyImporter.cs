@@ -30,7 +30,7 @@ namespace Eidetic.URack
             var header = ReadDataHeader(new StreamReader(stream));
             var body = ReadDataBody(header, new BinaryReader(stream));
             var pointCloud = ScriptableObject.CreateInstance<PointCloud>();
-            var textureMaps = pointCloud.SetPoints(body.vertices, body.colors, true);
+            var textureMaps = pointCloud.SetPoints(body.vertices, body.colors);
             context.AddObjectToAsset("PositionMap", textureMaps.Item1);
             context.AddObjectToAsset("ColorMap", textureMaps.Item2);
             pointCloud.name = Path.GetFileNameWithoutExtension(path);
