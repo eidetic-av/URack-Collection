@@ -19,6 +19,9 @@ namespace Eidetic.URack.Collection
         List<Vector3> VertexPositions = new List<Vector3>();
         ColorLine VertexColors = new ColorLine();
 
+        Light tipLight;
+        Light TipLight => tipLight ?? (tipLight = GetComponentsInChildren<Light>().First());
+
         Vector3 TipPosition = new Vector3(0, 0, 0);
         [Input(-5f, 5f, -1.5f, 1.5f)] public float TipX { set => TipPosition.x = value; }
 
@@ -71,17 +74,20 @@ namespace Eidetic.URack.Collection
             }
         }
 
-        Vector3 HeadHSV = new Vector3(0f, 1f, 1f);
-        [Input] public float Hue { set => HeadHSV.x = Mathf.Clamp(value, 0, 10) / 10f; }
+        Vector3 TipHSV = new Vector3(0f, 1f, 1f);
+        [Input] public float Hue { set => TipHSV.x = Mathf.Clamp(value, 0, 10) / 10f; }
 
-        [Input] public float Saturation { set => HeadHSV.y = Mathf.Clamp(value, 0, 10) / 10f; }
+        [Input] public float Saturation { set => TipHSV.y = Mathf.Clamp(value, 0, 10) / 10f; }
 
-        [Input] public float Brightness { set => HeadHSV.z = Mathf.Clamp(value, 0, 10) / 10f; }
+        [Input] public float Brightness { set => TipHSV.z = Mathf.Clamp(value, 0, 10) / 10f; }
 
         [Input] public float Glow
         {
-            set =>
+            set
+            {
                 LineRenderer.material.SetFloat("_EmissiveExposureWeight", value.Map(0, 10, 1, 0.85f));
+                TipLight.intensity = value.Map(0, 10, 0, 10000);
+            }
         }
 
         int PointCount = 0;
@@ -95,7 +101,7 @@ namespace Eidetic.URack.Collection
                 while (VertexPositions.Count < PointCount)
                 {
                     VertexPositions.Insert(0, VertexPositions.Count > 0 ? VertexPositions[0] : TipPosition);
-                    VertexColors.Insert(0, VertexColors.Count > 0 ? VertexColors[0] : HeadHSV.AsHSVColor());
+                    VertexColors.Insert(0, VertexColors.Count > 0 ? VertexColors[0] : TipHSV.AsHSVColor());
                 }
                 while (VertexPositions.Count > PointCount)
                 {
@@ -144,7 +150,7 @@ namespace Eidetic.URack.Collection
 
             // Set tip position and color
             VertexPositions[PointCount - 1] = TipPosition;
-            VertexColors[PointCount - 1] = HeadHSV.AsHSVColor();
+            VertexColors[PointCount - 1] = TipHSV.AsHSVColor();
 
             // Transfer positions to the LineRenderer
             LineRenderer.positionCount = PointCount;
@@ -154,6 +160,11 @@ namespace Eidetic.URack.Collection
             var colorTexture = VertexColors.ToTexture();
             LineRenderer.material.SetTexture("_BaseColorMap", colorTexture);
             LineRenderer.material.SetTexture("_EmissiveColorMap", colorTexture);
+
+            // Set tip light position and color
+            TipLight.gameObject.transform.localPosition = TipPosition;
+            TipLight.color = VertexColors[PointCount - 1];
+
         }
     }
 }
