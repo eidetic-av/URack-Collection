@@ -60,38 +60,29 @@ namespace Eidetic.URack.Collection
         PointCloud pointCloudOutput;
         public PointCloud PointCloudOutput => pointCloudOutput ?? (pointCloudOutput = ScriptableObject.CreateInstance<PointCloud>());
 
-        int frameCount = 0;
         List<PointCloud> Frames;
+        int FrameCount => Frames.Count();
 
         float lastFrameTime;
-        int CurrentFrameNumber => Mathf.FloorToInt(Speed.Map(0, 10, 0, frameCount - 1));
-        PointCloud CurrentFrame => Frames[Mathf.Clamp(CurrentFrameNumber, 0, frameCount - 1)];
+        int CurrentFrameNumber => Mathf.FloorToInt(Speed.Map(0, 10, 0, FrameCount - 1));
+        PointCloud CurrentFrame => Frames[Mathf.Clamp(CurrentFrameNumber, 0, FrameCount - 1)];
 
         ComputeShader transformShader;
         ComputeShader TransformShader => transformShader ??
-            (transformShader = Instantiate(Resources.Load("PlyPlayerTransform") as ComputeShader));
+            (transformShader = GetAsset<ComputeShader>("PlyTransformShader.compute"));
         int TransformHandle => TransformShader.FindKernel("Transform");
         RenderTexture TransformedPositions;
         RenderTexture TransformedColors;
 
         public void Start()
         {
-            Frames = new List<PointCloud>();
-            foreach (var ply in Resources.LoadAll<PointCloud>(FolderName))
-            {
-                var frame = ScriptableObject.CreateInstance<PointCloud>();
-                frame.SetPositionMap(ply.PositionMap);
-                frame.SetColorMap(ply.ColorMap);
-
-                Frames.Add(frame);
-                frameCount++;
-            }
-            Debug.Log($"Loaded {frameCount} frames into PlyPlayer instance from Resources/{FolderName}");
+            Frames = GetPointCloudAssets(FolderName);
+            Debug.Log($"Loaded {Frames.Count()} frames into PlyPlayer instance from /{FolderName}");
         }
 
         public void Update()
         {
-            if (Frames == null) return;
+            if (FrameCount == 0) return;
 
             if (Position != LastPosition || Rotation != LastRotation || Scale != LastScale || RGBGain != LastRGBGain)
                 TransformChanged = true;
