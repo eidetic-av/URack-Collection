@@ -1435,7 +1435,7 @@ VisualEffectResource:
       vOffsets = kOffsets[id % 3];\n\t\t\t\to.VFX_VARYING_UV.xy = (vOffsets * kUVScale)
       + 0.5f;\n\t\t\t\t\n\t\t\t#elif VFX_PRIMITIVE_OCTAGON\t\n\t\t\t\t\n\t\t\t\tconst
       float2 kUvs[8] = \n\t\t\t\t{\n\t\t\t\t\tfloat2(-0.5f,\t0.0f),\n\t\t\t\t\tfloat2(-0.5f,\t0.5f),\n\t\t\t\t\tfloat2(0.0f,\t0.5f),\n\t\t\t\t\tfloat2(0.5f,\t0.5f),\n\t\t\t\t\tfloat2(0.5f,\t0.0f),\n\t\t\t\t\tfloat2(0.5f,\t-0.5f),\n\t\t\t\t\tfloat2(0.0f,\t-0.5f),\n\t\t\t\t\tfloat2(-0.5f,\t-0.5f),\n\t\t\t\t};\n\t\t\t\t\n\t\t\t\tfloat
-      cropFactor = (float)0;\n\t\t\t\t{\n\t\t\t\t    \n\t\t\t\t    cropFactor = (float)0.784011185;\n\t\t\t\t}\n\t\t\t\t\n\n\t\t\t\tcropFactor
+      cropFactor = (float)0;\n\t\t\t\t{\n\t\t\t\t    \n\t\t\t\t    cropFactor = (float)0.741613328;\n\t\t\t\t}\n\t\t\t\t\n\n\t\t\t\tcropFactor
       = id & 1 ? 1.0f - cropFactor : 1.0f;\n\t\t\t\tconst float2 vOffsets = kUvs[id
       & 7] * cropFactor;\n\t\t\t\to.VFX_VARYING_UV.xy = vOffsets + 0.5f;\n\t\t\t\t\n\t\t\t#endif\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\tfloat3
       size3 = float3(attributes.size,attributes.size,attributes.size);\n\t\t\t\t\t\t#if
@@ -1454,7 +1454,7 @@ VisualEffectResource:
       < 0 ? -1 : 1;\n\t\t\t\to.VFX_VARYING_NORMAL = normalFlip * normalWS;\n\t\t\t\t#endif\n\t\t\t\t#ifdef
       VFX_VARYING_TANGENT\n\t\t\t\to.VFX_VARYING_TANGENT = normalize(TransformDirectionVFXToWorld(normalize(transpose(elementToVFX)[0].xyz)));\n\t\t\t\t#endif\n\t\t\t\t#ifdef
       VFX_VARYING_BENTFACTORS\n\t\t\t\tfloat normalBendingFactor = (float)0;\n\t\t\t\t{\n\t\t\t\t   
-      \n\t\t\t\t    normalBendingFactor = (float)0.733520329;\n\t\t\t\t}\n\t\t\t\t\n\n\t\t\t\t#if
+      \n\t\t\t\t    normalBendingFactor = (float)0.363226205;\n\t\t\t\t}\n\t\t\t\t\n\n\t\t\t\t#if
       HAS_STRIPS\n\t\t\t\t#define BENT_FACTOR_MULTIPLIER 2.0f\n\t\t\t\t#else\n\t\t\t\t#define
       BENT_FACTOR_MULTIPLIER 1.41421353816986083984375f\n\t\t\t\t#endif\n\t\t\t\to.VFX_VARYING_BENTFACTORS
       = vOffsets * normalBendingFactor * BENT_FACTOR_MULTIPLIER;\n\t\t\t\t#endif\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t#if
@@ -1720,7 +1720,7 @@ VisualEffectResource:
       vOffsets = kOffsets[id % 3];\n\t\t\t\to.VFX_VARYING_UV.xy = (vOffsets * kUVScale)
       + 0.5f;\n\t\t\t\t\n\t\t\t#elif VFX_PRIMITIVE_OCTAGON\t\n\t\t\t\t\n\t\t\t\tconst
       float2 kUvs[8] = \n\t\t\t\t{\n\t\t\t\t\tfloat2(-0.5f,\t0.0f),\n\t\t\t\t\tfloat2(-0.5f,\t0.5f),\n\t\t\t\t\tfloat2(0.0f,\t0.5f),\n\t\t\t\t\tfloat2(0.5f,\t0.5f),\n\t\t\t\t\tfloat2(0.5f,\t0.0f),\n\t\t\t\t\tfloat2(0.5f,\t-0.5f),\n\t\t\t\t\tfloat2(0.0f,\t-0.5f),\n\t\t\t\t\tfloat2(-0.5f,\t-0.5f),\n\t\t\t\t};\n\t\t\t\t\n\t\t\t\tfloat
-      cropFactor = (float)0;\n\t\t\t\t{\n\t\t\t\t    \n\t\t\t\t    cropFactor = (float)0.784011185;\n\t\t\t\t}\n\t\t\t\t\n\n\t\t\t\tcropFactor
+      cropFactor = (float)0;\n\t\t\t\t{\n\t\t\t\t    \n\t\t\t\t    cropFactor = (float)0.741613328;\n\t\t\t\t}\n\t\t\t\t\n\n\t\t\t\tcropFactor
       = id & 1 ? 1.0f - cropFactor : 1.0f;\n\t\t\t\tconst float2 vOffsets = kUvs[id
       & 7] * cropFactor;\n\t\t\t\to.VFX_VARYING_UV.xy = vOffsets + 0.5f;\n\t\t\t\t\n\t\t\t#endif\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\tfloat3
       size3 = float3(attributes.size,attributes.size,attributes.size);\n\t\t\t\t\t\t#if
@@ -1739,7 +1739,7 @@ VisualEffectResource:
       < 0 ? -1 : 1;\n\t\t\t\to.VFX_VARYING_NORMAL = normalFlip * normalWS;\n\t\t\t\t#endif\n\t\t\t\t#ifdef
       VFX_VARYING_TANGENT\n\t\t\t\to.VFX_VARYING_TANGENT = normalize(TransformDirectionVFXToWorld(normalize(transpose(elementToVFX)[0].xyz)));\n\t\t\t\t#endif\n\t\t\t\t#ifdef
       VFX_VARYING_BENTFACTORS\n\t\t\t\tfloat normalBendingFactor = (float)0;\n\t\t\t\t{\n\t\t\t\t   
-      \n\t\t\t\t    normalBendingFactor = (float)0.733520329;\n\t\t\t\t}\n\t\t\t\t\n\n\t\t\t\t#if
+      \n\t\t\t\t    normalBendingFactor = (float)0.363226205;\n\t\t\t\t}\n\t\t\t\t\n\n\t\t\t\t#if
       HAS_STRIPS\n\t\t\t\t#define BENT_FACTOR_MULTIPLIER 2.0f\n\t\t\t\t#else\n\t\t\t\t#define
       BENT_FACTOR_MULTIPLIER 1.41421353816986083984375f\n\t\t\t\t#endif\n\t\t\t\to.VFX_VARYING_BENTFACTORS
       = vOffsets * normalBendingFactor * BENT_FACTOR_MULTIPLIER;\n\t\t\t\t#endif\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t#if
@@ -2021,7 +2021,7 @@ VisualEffectResource:
       vOffsets = kOffsets[id % 3];\n\t\t\t\to.VFX_VARYING_UV.xy = (vOffsets * kUVScale)
       + 0.5f;\n\t\t\t\t\n\t\t\t#elif VFX_PRIMITIVE_OCTAGON\t\n\t\t\t\t\n\t\t\t\tconst
       float2 kUvs[8] = \n\t\t\t\t{\n\t\t\t\t\tfloat2(-0.5f,\t0.0f),\n\t\t\t\t\tfloat2(-0.5f,\t0.5f),\n\t\t\t\t\tfloat2(0.0f,\t0.5f),\n\t\t\t\t\tfloat2(0.5f,\t0.5f),\n\t\t\t\t\tfloat2(0.5f,\t0.0f),\n\t\t\t\t\tfloat2(0.5f,\t-0.5f),\n\t\t\t\t\tfloat2(0.0f,\t-0.5f),\n\t\t\t\t\tfloat2(-0.5f,\t-0.5f),\n\t\t\t\t};\n\t\t\t\t\n\t\t\t\tfloat
-      cropFactor = (float)0;\n\t\t\t\t{\n\t\t\t\t    \n\t\t\t\t    cropFactor = (float)0.784011185;\n\t\t\t\t}\n\t\t\t\t\n\n\t\t\t\tcropFactor
+      cropFactor = (float)0;\n\t\t\t\t{\n\t\t\t\t    \n\t\t\t\t    cropFactor = (float)0.741613328;\n\t\t\t\t}\n\t\t\t\t\n\n\t\t\t\tcropFactor
       = id & 1 ? 1.0f - cropFactor : 1.0f;\n\t\t\t\tconst float2 vOffsets = kUvs[id
       & 7] * cropFactor;\n\t\t\t\to.VFX_VARYING_UV.xy = vOffsets + 0.5f;\n\t\t\t\t\n\t\t\t#endif\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\tfloat3
       size3 = float3(attributes.size,attributes.size,attributes.size);\n\t\t\t\t\t\t#if
@@ -2040,7 +2040,7 @@ VisualEffectResource:
       < 0 ? -1 : 1;\n\t\t\t\to.VFX_VARYING_NORMAL = normalFlip * normalWS;\n\t\t\t\t#endif\n\t\t\t\t#ifdef
       VFX_VARYING_TANGENT\n\t\t\t\to.VFX_VARYING_TANGENT = normalize(TransformDirectionVFXToWorld(normalize(transpose(elementToVFX)[0].xyz)));\n\t\t\t\t#endif\n\t\t\t\t#ifdef
       VFX_VARYING_BENTFACTORS\n\t\t\t\tfloat normalBendingFactor = (float)0;\n\t\t\t\t{\n\t\t\t\t   
-      \n\t\t\t\t    normalBendingFactor = (float)0.733520329;\n\t\t\t\t}\n\t\t\t\t\n\n\t\t\t\t#if
+      \n\t\t\t\t    normalBendingFactor = (float)0.363226205;\n\t\t\t\t}\n\t\t\t\t\n\n\t\t\t\t#if
       HAS_STRIPS\n\t\t\t\t#define BENT_FACTOR_MULTIPLIER 2.0f\n\t\t\t\t#else\n\t\t\t\t#define
       BENT_FACTOR_MULTIPLIER 1.41421353816986083984375f\n\t\t\t\t#endif\n\t\t\t\to.VFX_VARYING_BENTFACTORS
       = vOffsets * normalBendingFactor * BENT_FACTOR_MULTIPLIER;\n\t\t\t\t#endif\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t#if
@@ -2340,7 +2340,7 @@ VisualEffectResource:
       vOffsets = kOffsets[id % 3];\n\t\t\t\to.VFX_VARYING_UV.xy = (vOffsets * kUVScale)
       + 0.5f;\n\t\t\t\t\n\t\t\t#elif VFX_PRIMITIVE_OCTAGON\t\n\t\t\t\t\n\t\t\t\tconst
       float2 kUvs[8] = \n\t\t\t\t{\n\t\t\t\t\tfloat2(-0.5f,\t0.0f),\n\t\t\t\t\tfloat2(-0.5f,\t0.5f),\n\t\t\t\t\tfloat2(0.0f,\t0.5f),\n\t\t\t\t\tfloat2(0.5f,\t0.5f),\n\t\t\t\t\tfloat2(0.5f,\t0.0f),\n\t\t\t\t\tfloat2(0.5f,\t-0.5f),\n\t\t\t\t\tfloat2(0.0f,\t-0.5f),\n\t\t\t\t\tfloat2(-0.5f,\t-0.5f),\n\t\t\t\t};\n\t\t\t\t\n\t\t\t\tfloat
-      cropFactor = (float)0;\n\t\t\t\t{\n\t\t\t\t    \n\t\t\t\t    cropFactor = (float)0.784011185;\n\t\t\t\t}\n\t\t\t\t\n\n\t\t\t\tcropFactor
+      cropFactor = (float)0;\n\t\t\t\t{\n\t\t\t\t    \n\t\t\t\t    cropFactor = (float)0.741613328;\n\t\t\t\t}\n\t\t\t\t\n\n\t\t\t\tcropFactor
       = id & 1 ? 1.0f - cropFactor : 1.0f;\n\t\t\t\tconst float2 vOffsets = kUvs[id
       & 7] * cropFactor;\n\t\t\t\to.VFX_VARYING_UV.xy = vOffsets + 0.5f;\n\t\t\t\t\n\t\t\t#endif\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\tfloat3
       size3 = float3(attributes.size,attributes.size,attributes.size);\n\t\t\t\t\t\t#if
@@ -2359,7 +2359,7 @@ VisualEffectResource:
       < 0 ? -1 : 1;\n\t\t\t\to.VFX_VARYING_NORMAL = normalFlip * normalWS;\n\t\t\t\t#endif\n\t\t\t\t#ifdef
       VFX_VARYING_TANGENT\n\t\t\t\to.VFX_VARYING_TANGENT = normalize(TransformDirectionVFXToWorld(normalize(transpose(elementToVFX)[0].xyz)));\n\t\t\t\t#endif\n\t\t\t\t#ifdef
       VFX_VARYING_BENTFACTORS\n\t\t\t\tfloat normalBendingFactor = (float)0;\n\t\t\t\t{\n\t\t\t\t   
-      \n\t\t\t\t    normalBendingFactor = (float)0.733520329;\n\t\t\t\t}\n\t\t\t\t\n\n\t\t\t\t#if
+      \n\t\t\t\t    normalBendingFactor = (float)0.363226205;\n\t\t\t\t}\n\t\t\t\t\n\n\t\t\t\t#if
       HAS_STRIPS\n\t\t\t\t#define BENT_FACTOR_MULTIPLIER 2.0f\n\t\t\t\t#else\n\t\t\t\t#define
       BENT_FACTOR_MULTIPLIER 1.41421353816986083984375f\n\t\t\t\t#endif\n\t\t\t\to.VFX_VARYING_BENTFACTORS
       = vOffsets * normalBendingFactor * BENT_FACTOR_MULTIPLIER;\n\t\t\t\t#endif\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t#if
@@ -3452,13 +3452,13 @@ VisualEffectResource:
         - m_ExpressionIndex: 131
           m_Value: 0.1
         - m_ExpressionIndex: 135
-          m_Value: 0.7335203
+          m_Value: 0.3632262
         - m_ExpressionIndex: 136
           m_Value: 1.5
         - m_ExpressionIndex: 138
           m_Value: 0.5094391
         - m_ExpressionIndex: 144
-          m_Value: 0.7840112
+          m_Value: 0.7416133
       m_Vector2f:
         m_Array: []
       m_Vector3f:
@@ -17843,8 +17843,8 @@ MonoBehaviour:
   - {fileID: 8926484042661615946}
   - {fileID: 8926484042661615947}
   - {fileID: 8926484042661615948}
-  - {fileID: 8926484042661616062}
-  - {fileID: 8926484042661615949}
+  - {fileID: 8926484042661616066}
+  - {fileID: 8926484042661616064}
   m_OutputSlots: []
   m_Label: 
   m_Data: {fileID: 114428730288789306}
@@ -18018,54 +18018,6 @@ MonoBehaviour:
       m_Min: -Infinity
       m_Max: Infinity
       m_Tooltip: Specifies the base color (RGB) and opacity (A) of the particle.
-      m_Regex: 
-      m_RegexMaxLength: 0
-  m_Direction: 0
-  m_LinkedSlots: []
---- !u!114 &8926484042661615949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f780aa281814f9842a7c076d436932e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Parent: {fileID: 0}
-  m_Children: []
-  m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 1
-  m_UISuperCollapsed: 0
-  m_MasterSlot: {fileID: 8926484042661615949}
-  m_MasterData:
-    m_Owner: {fileID: 8926484042661615945}
-    m_Value:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0.7840112
-    m_Space: 2147483647
-  m_Property:
-    name: cropFactor
-    m_serializedType:
-      m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-    attributes:
-    - m_Type: 0
-      m_Min: 0
-      m_Max: 1
-      m_Tooltip: 
-      m_Regex: 
-      m_RegexMaxLength: 0
-    - m_Type: 3
-      m_Min: -Infinity
-      m_Max: Infinity
-      m_Tooltip: Sets the amount by which the octagonal particle shape is cropped,
-        allowing for a tighter fit and reducing potential overdraw by eliminating
-        transparent pixels.
       m_Regex: 
       m_RegexMaxLength: 0
   m_Direction: 0
@@ -19669,7 +19621,7 @@ MonoBehaviour:
   m_Direction: 0
   m_LinkedSlots:
   - {fileID: 8926484042661615783}
---- !u!114 &8926484042661616062
+--- !u!114 &8926484042661616064
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -19686,14 +19638,62 @@ MonoBehaviour:
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
   m_UISuperCollapsed: 0
-  m_MasterSlot: {fileID: 8926484042661616062}
+  m_MasterSlot: {fileID: 8926484042661616064}
   m_MasterData:
     m_Owner: {fileID: 8926484042661615945}
     m_Value:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0.7335203
+      m_SerializableObject: 0.7416133
+    m_Space: 2147483647
+  m_Property:
+    name: cropFactor
+    m_serializedType:
+      m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+    attributes:
+    - m_Type: 0
+      m_Min: 0
+      m_Max: 1
+      m_Tooltip: 
+      m_Regex: 
+      m_RegexMaxLength: 0
+    - m_Type: 3
+      m_Min: -Infinity
+      m_Max: Infinity
+      m_Tooltip: Sets the amount by which the octagonal particle shape is cropped,
+        allowing for a tighter fit and reducing potential overdraw by eliminating
+        transparent pixels.
+      m_Regex: 
+      m_RegexMaxLength: 0
+  m_Direction: 0
+  m_LinkedSlots: []
+--- !u!114 &8926484042661616066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f780aa281814f9842a7c076d436932e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Parent: {fileID: 0}
+  m_Children: []
+  m_UIPosition: {x: 0, y: 0}
+  m_UICollapsed: 1
+  m_UISuperCollapsed: 0
+  m_MasterSlot: {fileID: 8926484042661616066}
+  m_MasterData:
+    m_Owner: {fileID: 8926484042661615945}
+    m_Value:
+      m_Type:
+        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      m_SerializableObject: 0.3632262
     m_Space: 2147483647
   m_Property:
     name: normalBendingFactor
