@@ -2,6 +2,7 @@
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.Rendering.HighDefinition;
 
 namespace Eidetic.URack.Collection
 {
@@ -24,14 +25,16 @@ namespace Eidetic.URack.Collection
         [Input]
         public float Glow { get; set; }
 
-        [SerializeField] Volume Sky;
-        // GradientSky GradientSkyComponent;
+        GradientSky GradientSky;
+        Light SunLight;
 
         public void Start()
         {
-            // GradientSky gradient;
-            // if (Sky.profile.TryGet<GradientSky>(out gradient))
-            //     GradientSkyComponent = gradient;
+            GradientSky gradient;
+            if (gameObject.GetComponentsInChildren<Volume>().First()
+                .profile.TryGet<GradientSky>(out gradient))
+                GradientSky = gradient;
+            SunLight = gameObject.GetComponentsInChildren<Light>().First();
         }
 
         public void Update()
@@ -73,12 +76,16 @@ namespace Eidetic.URack.Collection
             bottomHue = (bottomHue + phase) % 1;
 
             // Set parameters
-            // GradientSkyComponent.top.value = Color.HSVToRGB(topHue, topSat, topVal);
-            // GradientSkyComponent.middle.value = Color.HSVToRGB(midHue, midSat, midVal);
-            // GradientSkyComponent.bottom.value = Color.HSVToRGB(bottomHue, bottomSat, bottomVal);
+            GradientSky.top.value = Color.HSVToRGB(topHue, topSat, topVal);
+            GradientSky.middle.value = Color.HSVToRGB(midHue, midSat, midVal);
+            GradientSky.bottom.value = Color.HSVToRGB(bottomHue, bottomSat, bottomVal);
 
-            // GradientSkyComponent.gradientDiffusion.value = Diffusion.Clamp(0, 10).Map(0, 10, 0, 10, 3);
-            // GradientSkyComponent.exposure.value = Glow.Clamp(0, 10).Map(0, 10, 0, 20);
+            GradientSky.exposure.value = Glow.Clamp(0, 10).Map(0, 10, 0, 20);
+            GradientSky.gradientDiffusion.value = Diffusion.Clamp(0, 10).Map(0, 10, 0, 10, 3);
+
+            // Set sun color (less saturated)
+            SunLight.color = Color.HSVToRGB(topHue, topSat/4f, topVal * 2f);
+            SunLight.intensity = Glow.Clamp(0, 10).Map(0, 10, 0, 30000, 3);
         }
     }
 

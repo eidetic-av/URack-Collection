@@ -19,7 +19,7 @@ MonoBehaviour:
     m_Value: 3
   skyAmbientMode:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
   fogType:
     m_OverrideState: 1
     m_Value: 3
@@ -78,11 +78,11 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 20000
   updateMode:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   updatePeriod:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 0.05
     min: 0
   includeSunInBaking:
     m_OverrideState: 0
