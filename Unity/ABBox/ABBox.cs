@@ -5,155 +5,141 @@ using UnityEngine;
 using UnityEngine.Serialization;
 using System.Collections;
 using System.Collections.Generic;
+using static UnityEngine.Experimental.Rendering.GraphicsFormat;
 
 namespace Eidetic.URack.Collection
 {
-    public class ABBox : VFXModule
+    public class ABBox : UModule
     {
-        const int JobBatchSize = 1000;
-        override public void OnSetPointCloud(PointCloud value)
+        const int JobBatchSize = 4096;
+
+        [Input] public float PositionX { set { Position.x = value; } }
+        [Input] public float PositionY { set { Position.y = value; } }
+        [Input] public float PositionZ { set { Position.z = value; } }
+        Vector3 Position = Vector3.zero;
+        Vector3 lastPosition = Vector3.zero;
+
+        [Input] public float ScaleX { set { Scale.x = value; } }
+        [Input] public float ScaleY { set { Scale.y = value; } }
+        [Input] public float ScaleZ { set { Scale.z = value; } }
+        Vector3 Scale = Vector3.one;
+        Vector3 lastScale = Vector3.one;
+
+        ComputeShader abBoxShader;
+        ComputeShader ABBoxShader => abBoxShader ??
+            (abBoxShader = GetAsset<ComputeShader>("ABBoxShader.compute"));
+        int ShaderHandle => ABBoxShader.FindKernel("ABBox");
+
+        PointCloud pointCloud;
+        [Input]
+        public PointCloud PointCloud
         {
-            if (!Active) return;
-
-            var pointCount = value.PointCount;
-
-            var pointArray = new NativeArray<PointCloud.Point>(value.Points, Allocator.TempJob);
-
-            var insideIndices = new NativeList<int>(Allocator.TempJob);
-            var insideJob = new InsideFilter()
+            set
             {
-                points = pointArray,
-                positionX = PositionX,
-                positionY = PositionY,
-                positionZ = PositionZ,
-                scaleX = ScaleX,
-                scaleY = ScaleY,
-                scaleZ = ScaleZ
-            };
-            insideJob.ScheduleAppend(insideIndices, pointCount, JobBatchSize).Complete();
-
-            var outsideIndices = new NativeList<int>(Allocator.TempJob);
-            var outsideJob = new OutsideFilter()
-            {
-                points = pointArray,
-                positionX = PositionX,
-                positionY = PositionY,
-                positionZ = PositionZ,
-                scaleX = ScaleX,
-                scaleY = ScaleY,
-                scaleZ = ScaleZ
-            };
-            outsideJob.ScheduleAppend(outsideIndices, pointCount, JobBatchSize).Complete();
-
-            var buildInsideArrayJob = new LiveScanReceiver.BuildFilteredArrayJob()
-            {
-                unfilteredPoints = pointArray,
-                pointFilter = insideIndices,
-                filteredPoints = new NativeArray<PointCloud.Point>(insideIndices.Length, Allocator.TempJob)
-            };
-            buildInsideArrayJob.Schedule(insideIndices.Length, JobBatchSize).Complete();
-
-            var buildOutsideArrayJob = new LiveScanReceiver.BuildFilteredArrayJob()
-            {
-                unfilteredPoints = pointArray,
-                pointFilter = outsideIndices,
-                filteredPoints = new NativeArray<PointCloud.Point>(outsideIndices.Length, Allocator.TempJob)
-            };
-            buildOutsideArrayJob.Schedule(outsideIndices.Length, JobBatchSize).Complete();
-
-            Inside.Points = new PointCloud.Point[insideIndices.Length];
-            buildInsideArrayJob.filteredPoints.CopyTo(Inside.Points);
-
-            Outside.Points = new PointCloud.Point[outsideIndices.Length];
-            buildOutsideArrayJob.filteredPoints.CopyTo(Outside.Points);
-
-            pointArray.Dispose();
-            insideIndices.Dispose();
-            outsideIndices.Dispose();
-            buildInsideArrayJob.filteredPoints.Dispose();
-            buildOutsideArrayJob.filteredPoints.Dispose();
+                if (pointCloud == value) return;
+                pointCloud = value;
+                if (pointCloud.PositionMap != null)
+                {
+                    ABBoxShader.SetTexture(ShaderHandle, "InputPositions", pointCloud.PositionMap);
+                    ABBoxShader.SetTexture(ShaderHandle, "InputColors", pointCloud.ColorMap);
+                }
+            }
+            get => pointCloud;
         }
 
-        [Input] public float PositionX { get; set; }
-
-        [Input] public float PositionY { get; set; }
-
-        [Input] public float PositionZ { get; set; }
-
-        [Input] public float ScaleX { get; set; }
-
-        [Input] public float ScaleY { get; set; }
-
-        [Input] public float ScaleZ { get; set; }
-
-        PointCloud outside;
-        public PointCloud Outside => outside ?? (outside = ScriptableObject.CreateInstance<PointCloud>());
-
         PointCloud inside;
-        public PointCloud Inside => inside ?? (inside = ScriptableObject.CreateInstance<PointCloud>());
-
-
-        [BurstCompile]
-        public struct InsideFilter : IJobParallelForFilter
+        public PointCloud Inside
         {
-            public NativeArray<PointCloud.Point> points;
-            public float positionX;
-            public float positionY;
-            public float positionZ;
-            public float scaleX;
-            public float scaleY;
-            public float scaleZ;
-            bool IJobParallelForFilter.Execute(int i)
+            get
             {
-                var position = points[i].Position;
-
-                bool inside = false;
-
-                float minX = positionX - (scaleX / 2);
-                float minY = positionY - (scaleY / 2);
-                float minZ = positionZ - (scaleZ / 2);
-                float maxX = positionX + (scaleX / 2);
-                float maxY = positionY + (scaleY / 2);
-                float maxZ = positionZ + (scaleZ / 2);
-
-                if (position.x < maxX && position.x > minX)
-                    if (position.y < maxY && position.y > minY)
-                        if (position.z < maxZ && position.z > minZ)
-                            inside = true;
-
+                if (Position == lastPosition && Scale == lastScale)
+                    return inside;
+                CalculateOutputMaps();
                 return inside;
             }
         }
 
-        [BurstCompile]
-        public struct OutsideFilter : IJobParallelForFilter
+        PointCloud outside;
+        public PointCloud Outside
         {
-            public NativeArray<PointCloud.Point> points;
-            public float positionX;
-            public float positionY;
-            public float positionZ;
-            public float scaleX;
-            public float scaleY;
-            public float scaleZ;
-            bool IJobParallelForFilter.Execute(int i)
+            get
             {
-                var position = points[i].Position;
-
-                float minX = positionX - (scaleX / 2);
-                float minY = positionY - (scaleY / 2);
-                float minZ = positionZ - (scaleZ / 2);
-                float maxX = positionX + (scaleX / 2);
-                float maxY = positionY + (scaleY / 2);
-                float maxZ = positionZ + (scaleZ / 2);
-
-                bool outside = true;
-                if (position.x < maxX && position.x > minX)
-                    if (position.y < maxY && position.y > minY)
-                        if (position.z < maxZ && position.z > minZ)
-                            outside = false;
-
+                if (Position == lastPosition && Scale == lastScale)
+                    return outside;
+                CalculateOutputMaps();
                 return outside;
             }
         }
+
+        RenderTexture InsidePositionMap;
+        RenderTexture InsideColorMap;
+        RenderTexture OutsidePositionMap;
+        RenderTexture OutsideColorMap;
+
+        void CalculateOutputMaps()
+        {
+            if (inside == null) inside = ScriptableObject.CreateInstance<PointCloud>();
+            if (outside == null) outside = ScriptableObject.CreateInstance<PointCloud>();
+
+            if (PointCloud.PositionMap == null) return;
+            var inputPositions = PointCloud.PositionMap;
+            var inputColors = PointCloud.ColorMap;
+
+            var width = inputPositions.width;
+            var height = inputPositions.height;
+
+            if (InsidePositionMap == null || InsidePositionMap.height != height)
+            {
+                Destroy(InsidePositionMap);
+                InsidePositionMap = new RenderTexture(width, height, 24, R32G32B32A32_SFloat);
+                InsidePositionMap.enableRandomWrite = true;
+                InsidePositionMap.Create();
+                ABBoxShader.SetTexture(ShaderHandle, "InsidePositions", InsidePositionMap);
+
+                Destroy(InsideColorMap);
+                InsideColorMap = new RenderTexture(width, height, 24, R32G32B32A32_SFloat);
+                InsideColorMap.enableRandomWrite = true;
+                InsideColorMap.Create();
+                ABBoxShader.SetTexture(ShaderHandle, "InsideColors", InsideColorMap);
+
+                Destroy(OutsidePositionMap);
+                OutsidePositionMap = new RenderTexture(width, height, 24, R32G32B32A32_SFloat);
+                OutsidePositionMap.enableRandomWrite = true;
+                OutsidePositionMap.Create();
+                ABBoxShader.SetTexture(ShaderHandle, "OutsidePositions", OutsidePositionMap);
+
+                Destroy(OutsideColorMap);
+                OutsideColorMap = new RenderTexture(width, height, 24, R32G32B32A32_SFloat);
+                OutsideColorMap.enableRandomWrite = true;
+                OutsideColorMap.Create();
+                ABBoxShader.SetTexture(ShaderHandle, "OutsideColors", OutsideColorMap);
+            }
+
+            float minX = Position.x - (Scale.x / 2);
+            float minY = Position.y - (Scale.y / 2);
+            float minZ = Position.z - (Scale.z / 2);
+            float maxX = Position.x + (Scale.x / 2);
+            float maxY = Position.y + (Scale.y / 2);
+            float maxZ = Position.z + (Scale.z / 2);
+
+            ABBoxShader.SetFloat("MinX", minX);
+            ABBoxShader.SetFloat("MinY", minY);
+            ABBoxShader.SetFloat("MinZ", minZ);
+            ABBoxShader.SetFloat("MaxX", maxX);
+            ABBoxShader.SetFloat("MaxY", maxY);
+            ABBoxShader.SetFloat("MaxZ", maxZ);
+
+            ABBoxShader.Dispatch(ShaderHandle, width / 8, height / 8, 1);
+
+            inside.SetPositionMap(InsidePositionMap);
+            inside.SetColorMap(InsideColorMap);
+
+            outside.SetPositionMap(OutsidePositionMap);
+            outside.SetColorMap(OutsideColorMap);
+
+            lastPosition = Position;
+            lastScale = Scale;
+        }
+
     }
 }
