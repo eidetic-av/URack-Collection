@@ -1,4 +1,5 @@
-#include "UModule.hpp"
+#include "plugin.hpp"
+#include "collection-ui.hpp"
 
 struct Harmony : URack::UModule {
 	enum ParamIds {
@@ -53,12 +54,12 @@ struct HarmonyWidget : URack::UModuleWidget {
 		addChild(createWidget<ScrewBlack>(Vec(RACK_GRID_WIDTH, RACK_GRID_HEIGHT - RACK_GRID_WIDTH)));
 		addChild(createWidget<ScrewBlack>(Vec(box.size.x - 2 * RACK_GRID_WIDTH,	RACK_GRID_HEIGHT - RACK_GRID_WIDTH)));
 
-		addParam(createParamCentered<Davies1900hWhiteKnob>(mm2px(Vec(14.081, 35.289)), module, Harmony::COLOR_HARMONY_PARAM));
-		addParam(createParamCentered<Davies1900hWhiteKnob>(mm2px(Vec(36.719, 35.289)), module, Harmony::PHASE_PARAM));
+		addParam(createParamCentered<Davies1900hCustomWhiteKnob>(mm2px(Vec(14.081, 35.289)), module, Harmony::COLOR_HARMONY_PARAM));
+		addParam(createParamCentered<Davies1900hCustomWhiteKnob>(mm2px(Vec(36.719, 35.289)), module, Harmony::PHASE_PARAM));
 		addParam(createParamCentered<TrimpotGray>(mm2px(Vec(8.223, 56.249)), module, Harmony::COLOR_HARMONY_ATTEN_PARAM));
 		addParam(createParamCentered<TrimpotGray>(mm2px(Vec(30.86, 56.249)), module, Harmony::PHASE_ATTEN_PARAM));
-		addParam(createParamCentered<Davies1900hWhiteKnob>(mm2px(Vec(14.081, 75.028)), module, Harmony::DIFFUSION_PARAM));
-		addParam(createParamCentered<Davies1900hWhiteKnob>(mm2px(Vec(36.719, 75.028)), module, Harmony::GLOW_PARAM));
+		addParam(createParamCentered<Davies1900hCustomWhiteKnob>(mm2px(Vec(14.081, 75.028)), module, Harmony::DIFFUSION_PARAM));
+		addParam(createParamCentered<Davies1900hCustomWhiteKnob>(mm2px(Vec(36.719, 75.028)), module, Harmony::GLOW_PARAM));
 		addParam(createParamCentered<TrimpotGray>(mm2px(Vec(8.223, 95.988)), module, Harmony::DIFFUSION_ATTEN_PARAM));
 		addParam(createParamCentered<TrimpotGray>(mm2px(Vec(30.86, 95.988)), module, Harmony::GLOW_ATTEN_PARAM));
                 addParam(createParamCentered<LEDBezel>(mm2px(Vec(19.371, 108.759)), module, Harmony::ACTIVE_PARAM));

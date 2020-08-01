@@ -1,4 +1,5 @@
-#include "UModule.hpp"
+#include "plugin.hpp"
+#include "collection-ui.hpp"
 
 struct DayTripper : URack::UModule {
   enum ParamIds {
@@ -39,9 +40,9 @@ struct DayTripperWidget : URack::UModuleWidget {
     addChild(createWidget<ScrewBlack>(Vec(box.size.x - 2 * RACK_GRID_WIDTH,
                                           RACK_GRID_HEIGHT - RACK_GRID_WIDTH)));
 
-    addParam(createParamCentered<Davies1900hWhiteKnob>(
+    addParam(createParamCentered<Davies1900hCustomWhiteKnob>(
         mm2px(Vec(16.515, 75.034)), module, DayTripper::PROGRAM_A_PARAM));
-    addParam(createParamCentered<Davies1900hWhiteKnob>(
+    addParam(createParamCentered<Davies1900hCustomWhiteKnob>(
         mm2px(Vec(44.444, 75.034)), module, DayTripper::PROGRAM_B_PARAM));
     addParam(createParamCentered<TrimpotGray>(
         mm2px(Vec(10.656, 95.994)), module, DayTripper::PROGRAM_A_ATTEN_PARAM));

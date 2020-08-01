@@ -1,4 +1,4 @@
-#include "UModule.hpp"
+#include "plugin.hpp"
 
 struct Bounds : URack::UModule {
 	enum ParamIds {

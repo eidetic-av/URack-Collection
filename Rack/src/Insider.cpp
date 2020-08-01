@@ -1,4 +1,5 @@
-#include "UModule.hpp"
+#include "plugin.hpp"
+#include "collection-ui.hpp"
 
 struct Insider : URack::UModule {
     enum ParamIds {

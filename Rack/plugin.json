@@ -1,10 +1,10 @@
 {
-  "slug": "Eidetic-URack",
-  "name": "URack",
+  "slug": "URack-Collection",
+  "name": "URack Collection",
   "version": "1.0.0",
   "license": "GPLv3.0",
-  "brand": "URack",
-  "author": "Eidetic",
+  "brand": "Eidetic",
+  "author": "Matt Hughes",
   "authorEmail": "matt@eidetic.net.au",
   "authorUrl": "",
   "pluginUrl": "https://eidetic.net.au/urack-docs",
@@ -13,41 +13,6 @@
   "donateUrl": "",
   "changelogUrl": "",
   "modules": [
-    {
-      "slug": "LiveScan3D",
-      "name": "LiveScan3D",
-      "description": "",
-      "tags": [
-        "URack",
-        "Camera",
-        "Point Cloud",
-        "Input"
-      ]
-    },
-    {
-      "slug": "Bounds",
-      "name": "Bounds",
-      "description": "",
-      "tags": []
-    },
-    {
-      "slug": "PointCounter",
-      "name": "PointCounter",
-      "description": "",
-      "tags": []
-    },
-    {
-      "slug": "ABBox",
-      "name": "ABBox",
-      "description": "",
-      "tags": []
-    },
-    {
-      "slug": "HighestPoint",
-      "name": "HighestPoint",
-      "description": "",
-      "tags": []
-    },
     {
       "slug": "Drone",
       "name": "Drone",
@@ -63,18 +28,6 @@
     {
       "slug": "Billboard",
       "name": "Billboard",
-      "description": "",
-      "tags": []
-    },
-    {
-      "slug": "Insider",
-      "name": "Insider",
-      "description": "",
-      "tags": []
-    },
-    {
-      "slug": "DayTripper",
-      "name": "DayTripper",
       "description": "",
       "tags": []
     },
@@ -97,6 +50,48 @@
     {
       "slug": "PlyPlayer",
       "name": "PlyPlayer",
+      "description": "",
+      "tags": []
+    },
+    {
+      "slug": "LiveScan3D",
+      "name": "LiveScan3D",
+      "description": "",
+      "tags": []
+    },
+    {
+      "slug": "Bounds",
+      "name": "Bounds",
+      "description": "",
+      "tags": []
+    },
+    {
+      "slug": "ABBox",
+      "name": "ABBox",
+      "description": "",
+      "tags": []
+    },
+    {
+      "slug": "PointCounter",
+      "name": "PointCounter",
+      "description": "",
+      "tags": []
+    },
+    {
+      "slug": "HighestPoint",
+      "name": "HighestPoint",
+      "description": "",
+      "tags": []
+    },
+    {
+      "slug": "Insider",
+      "name": "Insider",
+      "description": "",
+      "tags": []
+    },
+    {
+      "slug": "DayTripper",
+      "name": "DayTripper",
       "description": "",
       "tags": []
     }

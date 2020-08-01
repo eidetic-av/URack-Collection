@@ -1,4 +1,5 @@
-#include "UModule.hpp"
+#include "plugin.hpp"
+#include "collection-ui.hpp"
 
 struct Billboard : URack::UModule {
 	enum ParamIds {
@@ -90,9 +91,9 @@ struct BillboardWidget : URack::UModuleWidget {
 
 		addParam(createParamCentered<Davies1900hSmallWhiteKnob>(mm2px(Vec(19.394, 28.045)), module, Billboard::FADE_PARAM));
 		addParam(createParamCentered<Davies1900hSmallWhiteKnob>(mm2px(Vec(102.262, 28.045)), module, Billboard::GROWTH_PARAM));
-		addParam(createParamCentered<Davies1900hWhiteKnob>(mm2px(Vec(38.21, 32.116)), module, Billboard::LIFE_PARAM));
-		addParam(createParamCentered<Davies1900hWhiteKnob>(mm2px(Vec(60.796, 32.116)), module, Billboard::SPAWN_RATE_PARAM));
-		addParam(createParamCentered<Davies1900hWhiteKnob>(mm2px(Vec(83.446, 32.116)), module, Billboard::SIZE_PARAM));
+		addParam(createParamCentered<Davies1900hCustomWhiteKnob>(mm2px(Vec(38.21, 32.116)), module, Billboard::LIFE_PARAM));
+		addParam(createParamCentered<Davies1900hCustomWhiteKnob>(mm2px(Vec(60.796, 32.116)), module, Billboard::SPAWN_RATE_PARAM));
+		addParam(createParamCentered<Davies1900hCustomWhiteKnob>(mm2px(Vec(83.446, 32.116)), module, Billboard::SIZE_PARAM));
 		addParam(createParamCentered<TrimpotGray>(mm2px(Vec(32.352, 53.076)), module, Billboard::LIFE_ATTEN_PARAM));
 		addParam(createParamCentered<TrimpotGray>(mm2px(Vec(54.938, 53.076)), module, Billboard::SPAWN_RATE_ATTEN_PARAM));
 		addParam(createParamCentered<TrimpotGray>(mm2px(Vec(77.588, 53.076)), module, Billboard::SIZE_ATTEN_PARAM));
@@ -100,7 +101,7 @@ struct BillboardWidget : URack::UModuleWidget {
 		addParam(createParamCentered<Davies1900hSmallWhiteKnob>(mm2px(Vec(99.812, 63.831)), module, Billboard::GAIN_PARAM));
 		addParam(createParamCentered<Davies1900hSmallWhiteKnob>(mm2px(Vec(41.116, 67.732)), module, Billboard::TURBULENCE_DELAY_PARAM));
 		addParam(createParamCentered<Davies1900hSmallWhiteKnob>(mm2px(Vec(80.545, 68.654)), module, Billboard::TURBULENCE_SCALE_PARAM));
-		addParam(createParamCentered<Davies1900hWhiteKnob>(mm2px(Vec(60.873, 71.804)), module, Billboard::TURBULENCE_PARAM));
+		addParam(createParamCentered<Davies1900hCustomWhiteKnob>(mm2px(Vec(60.873, 71.804)), module, Billboard::TURBULENCE_PARAM));
 		addParam(createParamCentered<Davies1900hSmallWhiteKnob>(mm2px(Vec(25.22, 81.293)), module, Billboard::FUZZ_PARAM));
 		addParam(createParamCentered<Davies1900hSmallWhiteKnob>(mm2px(Vec(96.449, 81.293)), module, Billboard::TINT_PARAM));
 		addParam(createParamCentered<TrimpotGray>(mm2px(Vec(55.014, 92.764)), module, Billboard::TURBULENCE_ATTEN_PARAM));

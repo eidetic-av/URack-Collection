@@ -1,4 +1,4 @@
-#include "UModule.hpp"
+#include "plugin.hpp"
 
 struct PointCounter : URack::UModule {
 	enum ParamIds { NUM_PARAMS };

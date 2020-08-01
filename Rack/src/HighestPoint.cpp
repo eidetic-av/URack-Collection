@@ -1,4 +1,4 @@
-#include "UModule.hpp"
+#include "plugin.hpp"
 
 struct HighestPoint : URack::UModule {
 	enum ParamIds { NUM_PARAMS };

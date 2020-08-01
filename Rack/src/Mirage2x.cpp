@@ -1,4 +1,5 @@
-#include "UModule.hpp"
+#include "plugin.hpp"
+#include "collection-ui.hpp"
 
 struct Mirage2x : URack::UModule {
     enum ParamIds {
@@ -166,15 +167,15 @@ struct Mirage2xWidget : URack::UModuleWidget {
             Mirage2x::TURBULENCE_X_SCALE_PARAM));
         addParam(createParamCentered<Davies1900hSmallWhiteKnob>(
             mm2px(Vec(99.928, 41.51)), module, Mirage2x::WARP_X_EULER_PARAM));
-        addParam(createParamCentered<Davies1900hWhiteKnob>(
+        addParam(createParamCentered<Davies1900hCustomWhiteKnob>(
             mm2px(Vec(125.086, 43.093)), module, Mirage2x::GLOW_PARAM));
-        addParam(createParamCentered<Davies1900hWhiteKnob>(
+        addParam(createParamCentered<Davies1900hCustomWhiteKnob>(
             mm2px(Vec(155.635, 43.093)), module,
             Mirage2x::SIMULATION_SPEED_PARAM));
-        addParam(createParamCentered<Davies1900hWhiteKnob>(
+        addParam(createParamCentered<Davies1900hCustomWhiteKnob>(
             mm2px(Vec(13.406, 44.148)), module,
             Mirage2x::TURBULENCE_AMOUNT_PARAM));
-        addParam(createParamCentered<Davies1900hWhiteKnob>(
+        addParam(createParamCentered<Davies1900hCustomWhiteKnob>(
             mm2px(Vec(69.705, 44.148)), module, Mirage2x::WARP_DISTANCE_PARAM));
         addParam(createParamCentered<TrimpotGray>(
             mm2px(Vec(38.437, 50.956)), module,
@@ -194,10 +195,10 @@ struct Mirage2xWidget : URack::UModuleWidget {
         addParam(
             createParamCentered<TrimpotGray>(mm2px(Vec(81.421, 61.859)), module,
                                              Mirage2x::WARP_SHARD_ATTEN_PARAM));
-        addParam(createParamCentered<Davies1900hWhiteKnob>(
+        addParam(createParamCentered<Davies1900hCustomWhiteKnob>(
             mm2px(Vec(125.086, 64.548)), module,
             Mirage2x::PARTICLE_SIZE_PARAM));
-        addParam(createParamCentered<Davies1900hWhiteKnob>(
+        addParam(createParamCentered<Davies1900hCustomWhiteKnob>(
             mm2px(Vec(155.635, 64.548)), module,
             Mirage2x::PARTICLE_SHAPE_PARAM));
         addParam(createParamCentered<Davies1900hSmallWhiteKnob>(
@@ -205,10 +206,10 @@ struct Mirage2xWidget : URack::UModuleWidget {
             Mirage2x::TURBULENCE_Y_SCALE_PARAM));
         addParam(createParamCentered<Davies1900hSmallWhiteKnob>(
             mm2px(Vec(99.928, 65.611)), module, Mirage2x::WARP_Y_EULER_PARAM));
-        addParam(createParamCentered<Davies1900hWhiteKnob>(
+        addParam(createParamCentered<Davies1900hCustomWhiteKnob>(
             mm2px(Vec(13.406, 68.249)), module,
             Mirage2x::TURBULENCE_FREQUENCY_PARAM));
-        addParam(createParamCentered<Davies1900hWhiteKnob>(
+        addParam(createParamCentered<Davies1900hCustomWhiteKnob>(
             mm2px(Vec(69.705, 68.249)), module, Mirage2x::WARP_SHARD_PARAM));
         addParam(createParamCentered<TrimpotGray>(
             mm2px(Vec(38.437, 75.056)), module,
@@ -234,10 +235,10 @@ struct Mirage2xWidget : URack::UModuleWidget {
             mm2px(Vec(142.153, 99.851)), module, Mirage2x::ROTATION_Y_PARAM));
         addParam(createParamCentered<Davies1900hSmallWhiteKnob>(
             mm2px(Vec(161.745, 99.851)), module, Mirage2x::ROTATION_Z_PARAM));
-        addParam(createParamCentered<Davies1900hWhiteKnob>(
+        addParam(createParamCentered<Davies1900hCustomWhiteKnob>(
             mm2px(Vec(27.325, 101.506)), module,
             Mirage2x::TEXTURE_SELECT_A_PARAM));
-        addParam(createParamCentered<Davies1900hWhiteKnob>(
+        addParam(createParamCentered<Davies1900hCustomWhiteKnob>(
             mm2px(Vec(86.18, 101.506)), module,
             Mirage2x::TEXTURE_SELECT_B_PARAM));
         addParam(createParamCentered<Davies1900hSmallWhiteKnob>(

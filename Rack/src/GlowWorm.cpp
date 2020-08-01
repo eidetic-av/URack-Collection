@@ -1,4 +1,5 @@
-#include "UModule.hpp"
+#include "plugin.hpp"
+#include "collection-ui.hpp"
 
 struct GlowWorm : URack::UModule {
 	enum ParamIds {
@@ -107,9 +108,9 @@ struct GlowWormWidget : URack::UModuleWidget {
 		addParam(createParamCentered<TrimpotGray>(mm2px(Vec(15.206, 35.423)), module, GlowWorm::LENGTH_ATTEN_PARAM));
 		addParam(createParamCentered<Davies1900hSmallWhiteKnob>(mm2px(Vec(94.637, 38.136)), module, GlowWorm::CAP_TYPE_PARAM));
 		addParam(createParamCentered<TrimpotGray>(mm2px(Vec(125.914, 38.342)), module, GlowWorm::GLOW_ATTEN_PARAM));
-		addParam(createParamCentered<Davies1900hWhiteKnob>(mm2px(Vec(26.922, 41.813)), module, GlowWorm::LENGTH_PARAM));
-		addParam(createParamCentered<Davies1900hWhiteKnob>(mm2px(Vec(62.156, 42.263)), module, GlowWorm::WIDTH_PARAM));
-		addParam(createParamCentered<Davies1900hWhiteKnob>(mm2px(Vec(114.198, 46.083)), module, GlowWorm::GLOW_PARAM));
+		addParam(createParamCentered<Davies1900hCustomWhiteKnob>(mm2px(Vec(26.922, 41.813)), module, GlowWorm::LENGTH_PARAM));
+		addParam(createParamCentered<Davies1900hCustomWhiteKnob>(mm2px(Vec(62.156, 42.263)), module, GlowWorm::WIDTH_PARAM));
+		addParam(createParamCentered<Davies1900hCustomWhiteKnob>(mm2px(Vec(114.198, 46.083)), module, GlowWorm::GLOW_PARAM));
 		addParam(createParamCentered<Davies1900hSmallWhiteKnob>(mm2px(Vec(44.448, 46.55)), module, GlowWorm::TAIL_PARAM));
 		addParam(createParamCentered<Davies1900hSmallWhiteKnob>(mm2px(Vec(34.229, 73.274)), module, GlowWorm::HUE_PARAM));
 		addParam(createParamCentered<Davies1900hSmallWhiteKnob>(mm2px(Vec(48.157, 73.274)), module, GlowWorm::SATURATION_PARAM));

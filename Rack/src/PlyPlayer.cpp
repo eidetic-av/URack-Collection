@@ -1,4 +1,5 @@
-#include "UModule.hpp"
+#include "plugin.hpp"
+#include "collection-ui.hpp"
 
 struct PlyPlayer : URack::UModule {
 	enum ParamIds {
@@ -77,13 +78,13 @@ struct PlyPlayerWidget : URack::UModuleWidget {
 		addParam(createParamCentered<Davies1900hSmallWhiteKnob>(mm2px(Vec(22.346, 47.143)), module, PlyPlayer::ROTATION_Y_PARAM));
 		addParam(createParamCentered<Davies1900hSmallWhiteKnob>(mm2px(Vec(36.274, 47.143)), module, PlyPlayer::ROTATION_Z_PARAM));
 		addParam(createParamCentered<TrimpotGray>(mm2px(Vec(51.341, 70.112)), module, PlyPlayer::SCALE_ATTEN_PARAM));
-		addParam(createParamCentered<Davies1900hWhiteKnob>(mm2px(Vec(42.801, 79.148)), module, PlyPlayer::SCALE_PARAM));
+		addParam(createParamCentered<Davies1900hCustomWhiteKnob>(mm2px(Vec(42.801, 79.148)), module, PlyPlayer::SCALE_PARAM));
                 addParam(createParamCentered<LEDBezel>(mm2px(Vec(16.566, 84.062)), module, PlyPlayer::ACTIVE_PARAM));
                 addChild(createLightCentered<LEDBezelLight<RedLight>>(mm2px(Vec(16.566, 84.062)), module, PlyPlayer::ACTIVE_LIGHT));
 		addParam(createParamCentered<TrimpotGray>(mm2px(Vec(51.015, 96.4)), module, PlyPlayer::SPEED_ATTEN_PARAM));
-		addParam(createParamCentered<Davies1900hWhiteKnob>(mm2px(Vec(19.422, 100.522)), module, PlyPlayer::RUN_PARAM));
-		addParam(createParamCentered<Davies1900hWhiteKnob>(mm2px(Vec(42.475, 105.435)), module, PlyPlayer::SPEED_PARAM));
-		addParam(createParamCentered<Davies1900hWhiteKnob>(mm2px(Vec(22.754, 116.333)), module, PlyPlayer::RESET_PARAM));
+		addParam(createParamCentered<Davies1900hCustomWhiteKnob>(mm2px(Vec(19.422, 100.522)), module, PlyPlayer::RUN_PARAM));
+		addParam(createParamCentered<Davies1900hCustomWhiteKnob>(mm2px(Vec(42.475, 105.435)), module, PlyPlayer::SPEED_PARAM));
+		addParam(createParamCentered<Davies1900hCustomWhiteKnob>(mm2px(Vec(22.754, 116.333)), module, PlyPlayer::RESET_PARAM));
 
 		addInput(createInputCentered<PJ301MPort>(mm2px(Vec(29.445, 36.124)), module, PlyPlayer::POSITION_X_INPUT));
 		addInput(createInputCentered<PJ301MPort>(mm2px(Vec(43.373, 36.124)), module, PlyPlayer::POSITION_Y_INPUT));

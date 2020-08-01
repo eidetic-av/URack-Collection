@@ -1,4 +1,5 @@
-#include "UModule.hpp"
+#include "plugin.hpp"
+#include "collection-ui.hpp"
 
 struct Drone : URack::UModule {
     enum ParamIds {
@@ -102,11 +103,11 @@ struct DroneWidget : URack::UModuleWidget {
             createWidget<ScrewBlack>(Vec(box.size.x - 2 * RACK_GRID_WIDTH,
                                          RACK_GRID_HEIGHT - RACK_GRID_WIDTH)));
 
-        addParam(createParamCentered<Davies1900hWhiteKnob>(
+        addParam(createParamCentered<Davies1900hCustomWhiteKnob>(
             mm2px(Vec(12.923, 35.291)), module, Drone::X_PARAM));
-        addParam(createParamCentered<Davies1900hWhiteKnob>(
+        addParam(createParamCentered<Davies1900hCustomWhiteKnob>(
             mm2px(Vec(35.56, 35.291)), module, Drone::Y_PARAM));
-        addParam(createParamCentered<Davies1900hWhiteKnob>(
+        addParam(createParamCentered<Davies1900hCustomWhiteKnob>(
             mm2px(Vec(58.197, 35.291)), module, Drone::Z_PARAM));
         addParam(createParamCentered<TrimpotGray>(
             mm2px(Vec(7.064, 56.251)), module, Drone::X_ATTEN_PARAM));
@@ -114,11 +115,11 @@ struct DroneWidget : URack::UModuleWidget {
             mm2px(Vec(29.701, 56.251)), module, Drone::Y_ATTEN_PARAM));
         addParam(createParamCentered<TrimpotGray>(
             mm2px(Vec(52.339, 56.251)), module, Drone::Z_ATTEN_PARAM));
-        addParam(createParamCentered<Davies1900hWhiteKnob>(
+        addParam(createParamCentered<Davies1900hCustomWhiteKnob>(
             mm2px(Vec(12.922, 75.034)), module, Drone::ORBIT_PARAM));
-        addParam(createParamCentered<Davies1900hWhiteKnob>(
+        addParam(createParamCentered<Davies1900hCustomWhiteKnob>(
             mm2px(Vec(35.56, 75.034)), module, Drone::ELEVATION_PARAM));
-        addParam(createParamCentered<Davies1900hWhiteKnob>(
+        addParam(createParamCentered<Davies1900hCustomWhiteKnob>(
             mm2px(Vec(58.197, 75.034)), module, Drone::DISTANCE_PARAM));
         addParam(createParamCentered<TrimpotGray>(
             mm2px(Vec(7.064, 95.994)), module, Drone::ORBIT_ATTEN_PARAM));
