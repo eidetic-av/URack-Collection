@@ -1,16 +1,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.Jobs;
 using static UnityEngine.Experimental.Rendering.GraphicsFormat;
 
 namespace Eidetic.URack.Collection
 {
     public class PlyPlayer : UModule
     {
-        const int JobBatchSize = 4096;
-
         public string FolderName = "Melbourne";
+
+        [Query]
+        public string[] QueryUserAssets()
+        {
+            return new List<string>() { "red", "blue" }.ToArray();
+        }
 
         [Input] public float Run { get; set; }
 

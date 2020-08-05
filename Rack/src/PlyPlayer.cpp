@@ -54,6 +54,12 @@ struct PlyPlayer : URack::UModule {
 		configUpdate("Run", RUN_PARAM, RUN_INPUT);
 		configUpdate("Speed", SPEED_PARAM, SPEED_INPUT, SPEED_ATTEN_PARAM, 0.f);
 		configUpdate("Reset", RESET_PARAM, RESET_INPUT);
+		//
+	}
+
+	void start() override {
+		//  Query for point cloud sequence folder names
+		URack::Dispatcher::query(activeHosts, instanceAddress + "/QueryUserAssets");
 	}
 
 	void update(const ProcessArgs& args) override {
