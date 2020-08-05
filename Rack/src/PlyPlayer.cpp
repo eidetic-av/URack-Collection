@@ -54,12 +54,23 @@ struct PlyPlayer : URack::UModule {
 		configUpdate("Run", RUN_PARAM, RUN_INPUT);
 		configUpdate("Speed", SPEED_PARAM, SPEED_INPUT, SPEED_ATTEN_PARAM, 0.f);
 		configUpdate("Reset", RESET_PARAM, RESET_INPUT);
-		//
 	}
+
+	int selectedSequence = 0;
+	std::vector<std::string> sequenceNames;
+
+	static void loadSequenceNames(void* instance, std::vector<std::string> sequences) {
+		auto thisModule = static_cast<PlyPlayer*>(instance);
+		for (int i = 0; i < sequences.size(); i++) {
+			auto sequenceName = sequences[i];
+			thisModule->sequenceNames.push_back(sequenceName);
+		}
+	}
+
 
 	void start() override {
 		//  Query for point cloud sequence folder names
-		URack::Dispatcher::query(activeHosts, instanceAddress + "/QueryUserAssets");
+		URack::Dispatcher::query(activeHosts, instanceAddress + "/QueryUserAssets", loadSequenceNames, this);
 	}
 
 	void update(const ProcessArgs& args) override {

@@ -9,11 +9,8 @@ namespace Eidetic.URack.Collection
     {
         public string FolderName = "Melbourne";
 
-        [Query]
-        public string[] QueryUserAssets()
-        {
-            return new List<string>() { "red", "blue" }.ToArray();
-        }
+        [Query] public string[] QueryUserAssets() =>
+                    GetUserAssetDirectoryNames().ToArray();
 
         [Input] public float Run { get; set; }
 
