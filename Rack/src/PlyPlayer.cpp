@@ -16,6 +16,8 @@ struct PlyPlayer : URack::UModule {
 		RUN_PARAM,
 		SPEED_PARAM,
 		RESET_PARAM,
+		NEXT_SEQ_PARAM,
+		PREV_SEQ_PARAM,
 		NUM_PARAMS
 	};
 	enum InputIds {
@@ -41,6 +43,13 @@ struct PlyPlayer : URack::UModule {
 		NUM_LIGHTS
 	};
 
+	int selectedSequence = -1;
+	std::string selectedSequenceName = "Default Sequence";
+	std::vector<std::string> sequenceNames;
+
+	dsp::SchmittTrigger nextTrigger;
+	dsp::SchmittTrigger prevTrigger;
+
 	PlyPlayer() {
 		config(NUM_PARAMS, NUM_INPUTS, NUM_OUTPUTS, NUM_LIGHTS);
 		configBiUpdate("PositionX", POSITION_X_PARAM, POSITION_X_INPUT);
@@ -54,11 +63,9 @@ struct PlyPlayer : URack::UModule {
 		configUpdate("Run", RUN_PARAM, RUN_INPUT);
 		configUpdate("Speed", SPEED_PARAM, SPEED_INPUT, SPEED_ATTEN_PARAM, 0.f);
 		configUpdate("Reset", RESET_PARAM, RESET_INPUT);
+		configParam(NEXT_SEQ_PARAM, 0.f, 1.f, 0.f);
+		configParam(PREV_SEQ_PARAM, 0.f, 1.f, 0.f);
 	}
-
-	int selectedSequence = -1;
-	std::string selectedSequenceName = "Cloe";
-	std::vector<std::string> sequenceNames;
 
 	static void loadSequenceNames(void* instance, std::vector<std::string> sequences) {
 		auto thisModule = static_cast<PlyPlayer*>(instance);
@@ -80,18 +87,56 @@ struct PlyPlayer : URack::UModule {
 		URack::Dispatcher::query(activeHosts, instanceAddress + "/QueryUserAssets", loadSequenceNames, this);
 	}
 
+	void loadSequence(int sequenceIndex) {
+		auto sequenceName = sequenceNames[sequenceIndex];
+		loadSequence(sequenceName);
+	}
+
 	void loadSequence(std::string sequenceName)	{
 		auto it = std::find(sequenceNames.begin(), sequenceNames.end(), sequenceName);
 		selectedSequence = std::distance(sequenceNames.begin(), it);
-		URack::Dispatcher::action(activeHosts, instanceAddress + "/LoadSequence", sequenceName);
+		selectedSequenceName = sequenceName;
+		URack::Dispatcher::action(activeHosts, instanceAddress + "/LoadSequence", selectedSequenceName);
+	}
+
+	void nextSequence() {
+		int newIndex = selectedSequence + 1;
+		if (newIndex > sequenceNames.size() - 1) newIndex = 0;
+		loadSequence(newIndex);
+	}
+
+	void prevSequence() {
+		int newIndex = selectedSequence - 1;
+		if (newIndex < 0) newIndex = sequenceNames.size() - 1;
+		loadSequence(newIndex);
+	}
+
+	void onLoad(json_t *rootJ) override {
+		json_t *targetJ = json_object_get(rootJ, "selectedSequenceName");
+		if (targetJ)
+			selectedSequenceName = json_string_value(targetJ);
+	}
+
+	json_t *onSave() override {
+		json_t *rootJ = json_object();
+		json_object_set_new(rootJ, "selectedSequenceName", json_string(selectedSequenceName.c_str()));
+		return rootJ;
 	}
 
 	void update(const ProcessArgs& args) override {
+		if (nextTrigger.process(params[NEXT_SEQ_PARAM].getValue()))
+			nextSequence();
+		if (prevTrigger.process(params[PREV_SEQ_PARAM].getValue()))
+			prevSequence();
 	}
 };
 
 
 struct PlyPlayerWidget : URack::UModuleWidget {
+
+	PlyPlayer* moduleInstance;
+	TextField* sequenceField;
+
 	PlyPlayerWidget(PlyPlayer* module) {
 		setModule(module);
 		setPanel(APP->window->loadSvg(asset::plugin(pluginInstance, "res/PlyPlayer.svg")));
@@ -129,7 +174,27 @@ struct PlyPlayerWidget : URack::UModuleWidget {
 		addInput(createInputCentered<PJ301MPort>(mm2px(Vec(11.715, 116.567)), module, PlyPlayer::RESET_INPUT));
 
 		addPointCloudOutput(mm2px(Vec(56.035, 120.973)), module, PlyPlayer::POINT_CLOUD_OUTPUT, "PointCloudOutput");
+
+		sequenceField = createWidget<LedDisplayTextField>(mm2px(Vec(5, 10)));
+		sequenceField->box.size = mm2px(Vec(20, 10));
+		sequenceField->setText("Default Sequence");
+		addChild(sequenceField);
+
+		addParam(createParam<LEDButton>(mm2px(Vec(2, 10)), module, PlyPlayer::PREV_SEQ_PARAM));
+		addParam(createParam<LEDButton>(mm2px(Vec(23, 10)), module, PlyPlayer::NEXT_SEQ_PARAM));
+
+		if (module == NULL) return;
+	
+		moduleInstance = static_cast<PlyPlayer*>(module);
+		sequenceField->setText(module->selectedSequenceName);
 	}
+
+	void step() override {
+		URack::UModuleWidget::step();
+		if (module == NULL) return;
+		sequenceField->setText(moduleInstance->selectedSequenceName);
+	}
+
 };
 
 

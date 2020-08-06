@@ -10,21 +10,24 @@ namespace Eidetic.URack.Collection
         public string FolderName = "Melbourne";
 
         [Query]
-        public string[] QueryUserAssets() =>
-                    GetUserAssetDirectoryNames().ToArray();
+        public string[] QueryUserAssets() => GetUserAssetDirectoryNames().ToArray();
 
         [Action]
         public void LoadSequence(string sequenceName)
         {
+            if (FrameCount != 0)
+                foreach(var frame in Frames) Destroy(frame);
+
             Frames = GetPointCloudAssets(FolderName = sequenceName);
             Debug.Log($"Loaded {Frames.Count()} frames into PlyPlayer instance from /{FolderName}");
+            FrameChanged = true;
         }
 
         [Input] public float Run { get; set; }
 
         [Input] public float Reset { get; set; }
 
-        bool ScrubChanged = true;
+        bool FrameChanged = true;
         bool TransformChanged = true;
 
         public float scrubPosition = -1;
@@ -36,7 +39,7 @@ namespace Eidetic.URack.Collection
             {
                 if (scrubPosition == value) return;
                 scrubPosition = value;
-                ScrubChanged = true;
+                FrameChanged = true;
             }
         }
 
@@ -65,7 +68,7 @@ namespace Eidetic.URack.Collection
         PointCloud pointCloudOutput;
         public PointCloud PointCloudOutput => pointCloudOutput ?? (pointCloudOutput = ScriptableObject.CreateInstance<PointCloud>());
 
-        List<PointCloud> Frames;
+        List<PointCloud> Frames = new List<PointCloud>();
         int FrameCount => Frames.Count();
 
         float lastFrameTime;
@@ -79,11 +82,6 @@ namespace Eidetic.URack.Collection
         RenderTexture TransformedPositions;
         RenderTexture TransformedColors;
 
-        public void Start()
-        {
-            LoadSequence(FolderName);
-        }
-
         public void Update()
         {
             if (FrameCount == 0) return;
@@ -91,7 +89,7 @@ namespace Eidetic.URack.Collection
             if (Position != LastPosition || Rotation != LastRotation || Scale != LastScale || RGBGain != LastRGBGain)
                 TransformChanged = true;
 
-            if (!ScrubChanged && !TransformChanged) return;
+            if (!FrameChanged && !TransformChanged) return;
 
             var framePositions = CurrentFrame.PositionMap;
             var frameColors = CurrentFrame.ColorMap;
@@ -114,7 +112,7 @@ namespace Eidetic.URack.Collection
                 newTexture = true;
             }
 
-            if (ScrubChanged || newTexture)
+            if (FrameChanged || newTexture)
             {
                 TransformShader.SetTexture(TransformHandle, "Input", framePositions);
             }
@@ -138,7 +136,7 @@ namespace Eidetic.URack.Collection
             LastScale = Scale;
             LastRGBGain = RGBGain;
 
-            ScrubChanged = false;
+            FrameChanged = false;
             TransformChanged = false;
         }
 
