@@ -9,8 +9,16 @@ namespace Eidetic.URack.Collection
     {
         public string FolderName = "Melbourne";
 
-        [Query] public string[] QueryUserAssets() =>
+        [Query]
+        public string[] QueryUserAssets() =>
                     GetUserAssetDirectoryNames().ToArray();
+
+        [Action]
+        public void LoadSequence(string sequenceName)
+        {
+            Frames = GetPointCloudAssets(FolderName = sequenceName);
+            Debug.Log($"Loaded {Frames.Count()} frames into PlyPlayer instance from /{FolderName}");
+        }
 
         [Input] public float Run { get; set; }
 
@@ -73,8 +81,7 @@ namespace Eidetic.URack.Collection
 
         public void Start()
         {
-            Frames = GetPointCloudAssets(FolderName);
-            Debug.Log($"Loaded {Frames.Count()} frames into PlyPlayer instance from /{FolderName}");
+            LoadSequence(FolderName);
         }
 
         public void Update()
@@ -119,7 +126,9 @@ namespace Eidetic.URack.Collection
                 TransformShader.SetFloat("Scale", Scale);
             }
 
-            TransformShader.Dispatch(TransformHandle, width / 8, height / 8, 1);
+            var threadGroupsX = Mathf.CeilToInt(width / 8f);
+            var threadGroupsY = Mathf.CeilToInt(height / 8f);
+            TransformShader.Dispatch(TransformHandle, threadGroupsX, threadGroupsY, 1);
 
             PointCloudOutput.SetPositionMap(TransformedPositions);
             PointCloudOutput.SetColorMap(frameColors);

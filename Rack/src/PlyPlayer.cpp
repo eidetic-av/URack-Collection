@@ -56,7 +56,8 @@ struct PlyPlayer : URack::UModule {
 		configUpdate("Reset", RESET_PARAM, RESET_INPUT);
 	}
 
-	int selectedSequence = 0;
+	int selectedSequence = -1;
+	std::string selectedSequenceName = "Cloe";
 	std::vector<std::string> sequenceNames;
 
 	static void loadSequenceNames(void* instance, std::vector<std::string> sequences) {
@@ -64,6 +65,12 @@ struct PlyPlayer : URack::UModule {
 		for (int i = 0; i < sequences.size(); i++) {
 			auto sequenceName = sequences[i];
 			thisModule->sequenceNames.push_back(sequenceName);
+			// check if we haven't selected a sequence yet
+			if (thisModule->selectedSequence != -1) continue;
+			// if we need to choose a sequence,
+			// and this result is the selected sequence, trigger it's load
+			if (thisModule->selectedSequenceName == sequenceName)
+				thisModule->loadSequence(sequenceName);
 		}
 	}
 
@@ -71,6 +78,12 @@ struct PlyPlayer : URack::UModule {
 	void start() override {
 		//  Query for point cloud sequence folder names
 		URack::Dispatcher::query(activeHosts, instanceAddress + "/QueryUserAssets", loadSequenceNames, this);
+	}
+
+	void loadSequence(std::string sequenceName)	{
+		auto it = std::find(sequenceNames.begin(), sequenceNames.end(), sequenceName);
+		selectedSequence = std::distance(sequenceNames.begin(), it);
+		URack::Dispatcher::action(activeHosts, instanceAddress + "/LoadSequence", sequenceName);
 	}
 
 	void update(const ProcessArgs& args) override {
