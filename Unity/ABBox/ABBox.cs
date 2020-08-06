@@ -78,7 +78,8 @@ namespace Eidetic.URack.Collection
             if (inside == null) inside = ScriptableObject.CreateInstance<PointCloud>();
             if (outside == null) outside = ScriptableObject.CreateInstance<PointCloud>();
 
-            if (PointCloud.PositionMap == null) return;
+            if (PointCloud?.PositionMap == null) return;
+
             var inputPositions = PointCloud.PositionMap;
             var inputColors = PointCloud.ColorMap;
 
@@ -126,7 +127,9 @@ namespace Eidetic.URack.Collection
             ABBoxShader.SetFloat("MaxY", maxY);
             ABBoxShader.SetFloat("MaxZ", maxZ);
 
-            ABBoxShader.Dispatch(ShaderHandle, width / 8, height / 8, 1);
+            var threadGroupsX = Mathf.CeilToInt(width / 8f);
+            var threadGroupsY = Mathf.CeilToInt(height / 8f);
+            ABBoxShader.Dispatch(ShaderHandle, threadGroupsX, threadGroupsY, 1);
 
             inside.SetPositionMap(InsidePositionMap);
             inside.SetColorMap(InsideColorMap);
