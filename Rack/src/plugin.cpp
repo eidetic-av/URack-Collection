@@ -2,6 +2,13 @@
 
 Plugin *pluginInstance;
 
+extern "C" {
+    URack::NetworkManager* baseManager = new URack::NetworkManager;
+    URack::Settings* baseSettings = new URack::Settings;
+    std::map<std::string, URack::UModule *>* moduleInstanceList = new std::map<std::string, URack::UModule *>();
+    std::vector<int>* defaultHostSelections = new std::vector<int>();
+}
+
 void init(Plugin *p) {
     pluginInstance = p;
 
