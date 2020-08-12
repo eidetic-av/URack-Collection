@@ -51,8 +51,8 @@ struct Drone : URack::UModule {
     }
 
     void start() override {
-        URack::Dispatcher::send(activeHosts, instanceAddress + "/Target",
-                                target);
+        URack::networkManager->dispatcher->send(activeHosts, instanceAddress + "/Target",
+                                         target);
         lights[TARGET_LIGHT].setBrightness(target * 10.f);
     }
 
@@ -70,7 +70,7 @@ struct Drone : URack::UModule {
         }
         if (oldTarget != target) {
             lights[TARGET_LIGHT].setBrightness(target * 10.f);
-            URack::Dispatcher::send(activeHosts, instanceAddress + "/Target",
+            URack::networkManager->dispatcher->send(activeHosts, instanceAddress + "/Target",
                                     target);
         }
     }

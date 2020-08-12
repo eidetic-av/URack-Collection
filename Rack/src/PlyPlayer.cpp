@@ -84,7 +84,7 @@ struct PlyPlayer : URack::UModule {
 
 	void start() override {
 		//  Query for point cloud sequence folder names
-		URack::Dispatcher::query(activeHosts, instanceAddress + "/QueryUserAssets", loadSequenceNames, this);
+		URack::networkManager->dispatcher->query(activeHosts, instanceAddress + "/QueryUserAssets", loadSequenceNames, this);
 	}
 
 	void loadSequence(int sequenceIndex) {
@@ -96,7 +96,7 @@ struct PlyPlayer : URack::UModule {
 		auto it = std::find(sequenceNames.begin(), sequenceNames.end(), sequenceName);
 		selectedSequence = std::distance(sequenceNames.begin(), it);
 		selectedSequenceName = sequenceName;
-		URack::Dispatcher::action(activeHosts, instanceAddress + "/LoadSequence", selectedSequenceName);
+		URack::networkManager->dispatcher->action(activeHosts, instanceAddress + "/LoadSequence", selectedSequenceName);
 	}
 
 	void nextSequence() {
