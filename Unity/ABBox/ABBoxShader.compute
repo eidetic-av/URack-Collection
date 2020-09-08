@@ -27,7 +27,7 @@ void ABBox (uint3 id : SV_DispatchThreadID)
     float b = InputColors[id.xy].z;
     float a = InputColors[id.xy].w;
 
-    bool inside = ((x < MaxX && x > MinX) && (y < MaxY && y > MinY) && (x < MaxZ && z > MinZ));
+    bool inside = ((x < MaxX && x > MinX) && (y < MaxY && y > MinY) && (z < MaxZ && z > MinZ));
 
     // fill the matching map (inside or outside) with the correct
     // positions and colors, and fill the other one with dummy values
