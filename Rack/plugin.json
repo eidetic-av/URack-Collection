@@ -94,6 +94,19 @@
       "name": "DayTripper",
       "description": "",
       "tags": []
+    },
+    {
+      "slug": "Populator",
+      "name": "Populator",
+      "description": "Primitive particle renderer",
+      "tags": [
+        "point cloud",
+        "render",
+        "visual",
+        "urack",
+        "unity",
+        "3d"
+      ]
     }
   ]
 }

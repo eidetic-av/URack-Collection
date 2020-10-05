@@ -20,3 +20,4 @@ extern Model *modelPointCounter;
 extern Model *modelHighestPoint;
 extern Model *modelInsider;
 extern Model *modelDayTripper;
+extern Model *modelPopulator;
