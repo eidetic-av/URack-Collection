@@ -1,0 +1,99 @@
+{
+  "slug": "URack-Collection",
+  "name": "URack Collection",
+  "version": "1.0.0",
+  "license": "GPLv3.0",
+  "brand": "Eidetic",
+  "author": "Matt Hughes",
+  "authorEmail": "matt@eidetic.net.au",
+  "authorUrl": "",
+  "pluginUrl": "https://eidetic.net.au/urack-docs",
+  "manualUrl": "",
+  "sourceUrl": "https://github.com/eidetic-av/URack-Collection",
+  "donateUrl": "",
+  "changelogUrl": "",
+  "modules": [
+    {
+      "slug": "Drone",
+      "name": "Drone",
+      "description": "",
+      "tags": []
+    },
+    {
+      "slug": "Harmony",
+      "name": "Harmony",
+      "description": "",
+      "tags": []
+    },
+    {
+      "slug": "Billboard",
+      "name": "Billboard",
+      "description": "",
+      "tags": []
+    },
+    {
+      "slug": "GlowWorm",
+      "name": "Glow-worm",
+      "description": "Generate dancing neon trails",
+      "tags": [
+        "visual"
+      ]
+    },
+    {
+      "slug": "Mirage2x",
+      "name": "Mirage-2X",
+      "description": "Blend and manipulate 2x texture clouds",
+      "tags": [
+        "visual"
+      ]
+    },
+    {
+      "slug": "PlyPlayer",
+      "name": "PlyPlayer",
+      "description": "",
+      "tags": []
+    },
+    {
+      "slug": "LiveScan3D",
+      "name": "LiveScan3D",
+      "description": "",
+      "tags": []
+    },
+    {
+      "slug": "Bounds",
+      "name": "Bounds",
+      "description": "",
+      "tags": []
+    },
+    {
+      "slug": "ABBox",
+      "name": "ABBox",
+      "description": "",
+      "tags": []
+    },
+    {
+      "slug": "PointCounter",
+      "name": "PointCounter",
+      "description": "",
+      "tags": []
+    },
+    {
+      "slug": "HighestPoint",
+      "name": "HighestPoint",
+      "description": "",
+      "tags": []
+    },
+    {
+      "slug": "Insider",
+      "name": "Insider",
+      "description": "",
+      "tags": []
+    },
+    {
+      "slug": "DayTripper",
+      "name": "DayTripper",
+      "description": "",
+      "tags": []
+    }
+  ]
+}

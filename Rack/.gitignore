@@ -1,0 +1,8 @@
+*~
+
+build
+dist
+
+*.so
+*.o
+*.d

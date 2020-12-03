@@ -9,6 +9,12 @@ namespace Eidetic.URack.Collection
 {
     public class Mirage2x : VFXModule
     {
+        public void Start()
+        {
+            lastSequence = ImageSequence;
+            images = Resources.LoadAll<Texture2D>("beeple").ToList();
+        }
+
         public void Update()
         {
             if (nextTextureDirectory)

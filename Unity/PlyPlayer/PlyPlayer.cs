@@ -7,7 +7,12 @@ namespace Eidetic.URack.Collection
 {
     public class PlyPlayer : UModule
     {
+
+        public Texture2D Colors;
+        public Texture2D Positions;
+        
         public string FolderName = "Melbourne";
+        public bool LoadSequenceOnStart = false;
 
         [Query]
         public string[] QueryUserAssets() => GetUserAssetDirectoryNames().ToArray();
@@ -57,7 +62,7 @@ namespace Eidetic.URack.Collection
 
         [Input] public float PositionZ { get; set; }
         Vector3 LastPosition;
-        Vector3 Position => new Vector3(PositionX, PositionY, PositionZ);
+        Vector3 Position => new Vector3(PositionX, PositionY, PositionZ) * 2;
 
         float LastScale;
         [Input] public float Scale { get; set; } = 1;
@@ -68,7 +73,7 @@ namespace Eidetic.URack.Collection
         PointCloud pointCloudOutput;
         public PointCloud PointCloudOutput => pointCloudOutput ?? (pointCloudOutput = ScriptableObject.CreateInstance<PointCloud>());
 
-        List<PointCloud> Frames = new List<PointCloud>();
+        public List<PointCloud> Frames = new List<PointCloud>();
         int FrameCount => Frames.Count();
 
         float lastFrameTime;
@@ -77,10 +82,16 @@ namespace Eidetic.URack.Collection
 
         ComputeShader transformShader;
         ComputeShader TransformShader => transformShader ??
-            (transformShader = GetAsset<ComputeShader>("PlyTransformShader.compute"));
+            (transformShader = Instantiate(GetAsset<ComputeShader>("PlyTransformShader.compute")));
         int TransformHandle => TransformShader.FindKernel("Transform");
         RenderTexture TransformedPositions;
         RenderTexture TransformedColors;
+        
+        public void Start() 
+        { 
+            if (LoadSequenceOnStart && Frames.Count() == 0) LoadSequence(FolderName); 
+            FrameChanged = true;
+        }
 
         public void Update()
         {
@@ -128,8 +139,8 @@ namespace Eidetic.URack.Collection
             var threadGroupsY = Mathf.CeilToInt(height / 8f);
             TransformShader.Dispatch(TransformHandle, threadGroupsX, threadGroupsY, 1);
 
-            PointCloudOutput.SetPositionMap(TransformedPositions);
-            PointCloudOutput.SetColorMap(frameColors);
+            PointCloudOutput.SetPositionMap(TransformedPositions, false);
+            PointCloudOutput.SetColorMap(frameColors, false);
 
             LastPosition = Position;
             LastRotation = Rotation;

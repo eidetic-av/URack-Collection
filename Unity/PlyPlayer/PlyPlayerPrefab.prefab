@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1337714699511885580}
-  - component: {fileID: 279708072693357468}
+  - component: {fileID: 2364914874221670655}
   m_Layer: 0
   m_Name: PlyPlayerPrefab
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &279708072693357468
+--- !u!114 &2364914874221670655
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,6 +43,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f7c2180ef93a4441bfa6583c742afb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FolderName: Melbourne
+  Colors: {fileID: 0}
+  Positions: {fileID: 0}
+  FolderName: tree
+  LoadSequenceOnStart: 1
   scrubPosition: -1
   RGBGain: 0
+  Frames: []

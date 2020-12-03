@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7467263158879654989}
   - component: {fileID: 67670944571093006}
   - component: {fileID: 8893085226958796473}
-  - component: {fileID: 580505049269552102}
+  - component: {fileID: 6499434662506530790}
   m_Layer: 0
   m_Name: BillboardPrefab
   m_TagString: Untagged
@@ -96,6 +96,7 @@ VFXRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 0}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -144,15 +145,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e025e1dcd73794d4b8a3d04fecedc08f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxTextureSize: 4096
-  JobBatchSize: 4096
   PositionsProperty:
     m_Name: Positions
   ColorsProperty:
     m_Name: Colors
   PointCountProperty:
     m_Name: PointCount
---- !u!114 &580505049269552102
+--- !u!114 &6499434662506530790
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -1,0 +1,52 @@
+// #pragma kernel Calculate
+
+// Texture2D<float3> InputPositions;
+// Texture2D<float4> InputColors;
+
+// int CutMethod;
+// float CutWidth;
+// float CutOffset;
+// float Spread;
+
+// RWTexture2D<float3> OutputAPositions;
+// RWTexture2D<float4> OutputAColors;
+// RWTexture2D<float3> OutputBPositions;
+// RWTexture2D<float4> OutputBColors;
+// RWTexture2D<float3> OutputCPositions;
+// RWTexture2D<float4> OutputCColors;
+// RWTexture2D<float3> OutputDPositions;
+// RWTexture2D<float4> OutputDColors;
+// RWTexture2D<float3> OutputEPositions;
+// RWTexture2D<float4> OutputEColors;
+// RWTexture2D<float3> OutputFPositions;
+// RWTexture2D<float4> OutputFColors;
+// RWTexture2D<float3> OutputGPositions;
+// RWTexture2D<float4> OutputGColors;
+// RWTexture2D<float3> OutputHPositions;
+// RWTexture2D<float4> OutputHColors;
+
+// [numthreads(8,8,1)]
+// void Calculate (uint3 id : SV_DispatchThreadID)
+// {
+//     float3 position = InputPositions[id.xy];
+//     float4 color = InputColors[id.xy];
+
+//     [branch] switch(CutMethod)
+//     {
+//         // 'Batonnet' 2D slice
+//         case 1:
+//              // find distance from origin/offset
+//              float xDist = position.x - CutOffset;
+//              return;
+
+//         // 'Julienne' 3D slice
+//         case 2:
+
+//         // 'Brunoise' 3D cube
+//         case 3:
+
+//         // 'Mirepoix' 3D shards
+//         default:
+//     }
+//     //id.xy
+// }
