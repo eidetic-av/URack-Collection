@@ -49,7 +49,11 @@ namespace Eidetic.URack.Collection
 
         public int Target
         {
-            set => OriginTarget.SetActive(value > 0);
+            set 
+            {
+                Debug.Log($"set target to {value}");
+                OriginTarget.SetActive(value > 0);
+            }
         }
 
         Camera camera;

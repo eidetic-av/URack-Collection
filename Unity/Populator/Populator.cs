@@ -1,8 +1,8 @@
+using Eidetic.PointClouds;
 using System;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.VFX;
-using Eidetic.URack;
 
 namespace Eidetic.URack.Collection
 {
@@ -16,7 +16,8 @@ public class Populator : VFXModule
 
     public void Start()
     {
-        // PointCloudInput = GetPointCloudAssets("Melbourne").First();
+        base.Start();
+        // PointCloudInput = GetPointCloudAssets("melbourne").FirstOrDefault();
     }
 
     override public void OnSetPointCloud(PointCloud value)

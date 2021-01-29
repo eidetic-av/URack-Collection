@@ -1,4 +1,8 @@
-﻿using System.Collections.Generic;
+﻿#if UNITY_ANDROID
+// Harmony module requires HDRP and therefor is not compatible with URP
+// (Android) builds of the player.
+#else
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -90,3 +94,4 @@ namespace Eidetic.URack.Collection
     }
 
 }
+#endif

@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 5741466160035824230}
   - component: {fileID: 5741466160035824227}
   - component: {fileID: 5741466160035824224}
-  - component: {fileID: 6059203069023792525}
+  - component: {fileID: -5642314717962304858}
   m_Layer: 0
-  m_Name: PopulatorPrefab
+  m_Name: BBPre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,16 +83,16 @@ VisualEffect:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5741466160035824229}
   m_Enabled: 1
-  m_Asset: {fileID: 8926484042661614526, guid: 718103913f3c0a642813d3314db9f514, type: 3}
+  m_Asset: {fileID: 8926484042661614526, guid: a2a437b2d96754447b62787ddf2fafa9, type: 3}
   m_InitialEventName: OnPlay
-  m_InitialEventNameOverriden: 0
+  m_InitialEventNameOverriden: 1
   m_StartSeed: 458835225
-  m_ResetSeedOnPlay: 0
+  m_ResetSeedOnPlay: 1
   m_ResourceVersion: 1
   m_PropertySheet:
     m_Float:
       m_Array:
-      - m_Value: 10
+      - m_Value: 5
         m_Name: Select
         m_Overridden: 0
       - m_Value: 0
@@ -158,8 +158,7 @@ MonoBehaviour:
     m_Name: Colors
   PointCountProperty:
     m_Name: PointCount
-  UpdateMaps: 0
---- !u!114 &6059203069023792525
+--- !u!114 &-5642314717962304858
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,7 +167,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 5741466160035824229}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9be2e2f3d14e6bc49be46ce1b7af3143, type: 3}
+  m_Script: {fileID: 11500000, guid: d89860490c6467645bee1a2608add055, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AutoReSeed: 0
