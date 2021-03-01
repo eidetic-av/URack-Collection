@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -14,7 +12,7 @@
    viewBox="0 0 101.6 128.5"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
    sodipodi:docname="Insider.svg"
    inkscape:export-filename="/home/mega/Downloads/pestrez/pastrezVlist6.png"
    inkscape:export-xdpi="300.13"
@@ -2387,17 +2385,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8909354"
-     inkscape:cx="250.35219"
-     inkscape:cy="245.54678"
+     inkscape:zoom="2.2546623"
+     inkscape:cx="105.71603"
+     inkscape:cy="76.277991"
      inkscape:document-units="mm"
-     inkscape:current-layer="g26190"
+     inkscape:current-layer="layer4"
      showgrid="false"
-     inkscape:window-width="3840"
-     inkscape:window-height="2054"
+     inkscape:window-width="1920"
+     inkscape:window-height="1021"
      inkscape:window-x="0"
-     inkscape:window-y="106"
-     inkscape:window-maximized="0" />
+     inkscape:window-y="59"
+     inkscape:window-maximized="1"
+     inkscape:document-rotation="0" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -2418,36 +2417,30 @@
      style="display:inline">
     <text
        xml:space="preserve"
-       style="line-height:0%;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';letter-spacing:0.08202086px;word-spacing:-0.29104167px;writing-mode:lr-tb;stroke-width:0.26458332"
+       style="line-height:0%;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';letter-spacing:0.0820209px;word-spacing:-0.291042px;writing-mode:lr-tb;stroke-width:0.264583"
        x="269.77972"
        y="71.524643"
-       id="text4963">
-<tspan
+       id="text4963"> <tspan
    sodipodi:role="line"
    id="tspan4961"
    x="269.77972"
    y="71.524643"
-   style="font-size:7.05555487px;line-height:0;stroke-width:0.26458332">
- </tspan>
-</text>
+   style="font-size:7.05555px;line-height:0;stroke-width:0.264583"> </tspan></text>
     <text
        xml:space="preserve"
-       style="line-height:0%;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';letter-spacing:0.08202086px;word-spacing:-0.29104167px;writing-mode:lr-tb;stroke-width:0.26458332"
+       style="line-height:0%;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';letter-spacing:0.0820209px;word-spacing:-0.291042px;writing-mode:lr-tb;stroke-width:0.264583"
        x="300.38208"
        y="111.94916"
-       id="text4967">
-<tspan
+       id="text4967"> <tspan
    sodipodi:role="line"
    id="tspan4965"
    x="300.38208"
    y="111.94916"
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:0;font-family:Neckar;-inkscape-font-specification:'Neckar, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;word-spacing:-0.5185833px;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332">
- </tspan>
-</text>
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:0;font-family:Neckar;-inkscape-font-specification:'Neckar, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;word-spacing:-0.518583px;writing-mode:lr-tb;text-anchor:start;stroke-width:0.264583"> </tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot20476"
-       style="line-height:0.01%;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';letter-spacing:0.31000009px;word-spacing:-1.10000002px;writing-mode:lr-tb">
+       style="line-height:0.01%;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';letter-spacing:0.31px;word-spacing:-1.1px;writing-mode:lr-tb">
 
 <flowRegion
    id="flowRegion20478">
@@ -2459,12 +2452,13 @@
    y="130.50426" />
 </flowRegion>
 <flowPara
-   style="font-size:26.66666603px;line-height:0"
+   style="font-size:26.6667px;line-height:0"
    id="flowPara20482"> </flowPara>
-</flowRoot>    <flowRoot
+</flowRoot>
+    <flowRoot
        xml:space="preserve"
        id="flowRoot20492"
-       style="line-height:0.01%;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';letter-spacing:0.31000009px;word-spacing:-1.10000002px;writing-mode:lr-tb">
+       style="line-height:0.01%;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';letter-spacing:0.31px;word-spacing:-1.1px;writing-mode:lr-tb">
 
 <flowRegion
    id="flowRegion20494">
@@ -2476,22 +2470,20 @@
    y="-2.4318113" />
 </flowRegion>
 <flowPara
-   style="font-size:26.66666603px;line-height:0"
+   style="font-size:26.6667px;line-height:0"
    id="flowPara20498"> </flowPara>
-</flowRoot>    <text
+</flowRoot>
+    <text
        xml:space="preserve"
-       style="line-height:0%;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';letter-spacing:0.08202086px;word-spacing:-0.29104167px;writing-mode:lr-tb;stroke-width:0.26458332"
+       style="line-height:0%;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';letter-spacing:0.0820209px;word-spacing:-0.291042px;writing-mode:lr-tb;stroke-width:0.264583"
        x="404.76212"
        y="28.013163"
-       id="text9514">
-<tspan
+       id="text9514"> <tspan
    sodipodi:role="line"
    id="tspan9512"
    x="404.76212"
    y="28.013163"
-   style="font-size:7.05555487px;line-height:0;stroke-width:0.26458332">
- </tspan>
-</text>
+   style="font-size:7.05555px;line-height:0;stroke-width:0.264583"> </tspan></text>
     <rect
        y="161.45065"
        x="-107.47122"
@@ -2502,17 +2494,10 @@
        sodipodi:insensitive="true" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="-94.394981"
        y="277.66043"
-       id="text3611">
-<tspan
-   sodipodi:role="line"
-   id="tspan3609"
-   x="-94.394981"
-   y="284.52719"
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';stroke-width:0.26458332" />
-</text>
+       id="text3611"> </text>
     <g
        style="display:inline"
        transform="translate(36.418417,1.0583304)"
@@ -2614,67 +2599,50 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="text"
-     style="display:none">
+     style="display:inline">
     <text
        id="text2369"
-       y="19.174049"
-       x="50.790295"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       xml:space="preserve">
-<tspan
-   id="tspan2375"
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c5a372;fill-opacity:1;stroke-width:0.26458332"
-   y="19.174049"
-   x="50.790295"
-   sodipodi:role="line">UNITY MODULE
-PROTOTYPER</tspan>
-</text>
+       y="19.411728"
+       x="50.789001"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.52643px;line-height:1.25;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.308619"
+       xml:space="preserve">customisable unity controller</text>
     <text
        id="text2381"
        y="13.001929"
        x="51.124027"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       xml:space="preserve">
-<tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87777805px;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';fill:#c5a372;fill-opacity:1;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"> <tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';fill:#c5a372;fill-opacity:1;stroke-width:0.264583"
    y="13.001929"
    x="51.124027"
    id="tspan2379"
-   sodipodi:role="line">
-INSIDER</tspan>
-</text>
+   sodipodi:role="line">INSIDER</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="50.792236"
        y="125.23869"
-       id="text3349">
-<tspan
+       id="text3349"> <tspan
    sodipodi:role="line"
    id="tspan3347"
    x="50.792236"
    y="125.23869"
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c5a372;fill-opacity:1;stroke-width:0.26458332">
-URACK</tspan>
-</text>
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c5a372;fill-opacity:1;stroke-width:0.264583">URACK</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="50.933174"
        y="117.85102"
-       id="text3615">
-<tspan
+       id="text3615"> <tspan
    sodipodi:role="line"
    id="tspan3613"
    x="51.065464"
    y="117.85102"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c5a372;fill-opacity:1;stroke-width:0.26458332">
-ACTIVE</tspan>
-</text>
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c5a372;fill-opacity:1;stroke-width:0.264583">ACTIVE</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="rect10117-3-3"
-       style="display:inline;opacity:1;fill:#232323;fill-opacity:1;stroke:#c5a372;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       style="display:inline;opacity:1;fill:#232323;fill-opacity:1;stroke:#c5a372;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
        d="m 15.615782,103.12742 c -2.962681,0 -5.383311,2.49724 -5.383311,5.45425 h 10.766016 c 0,-2.95701 -2.425681,-5.45425 -5.382705,-5.45425 z m -5.383311,5.45425 h 10.766016 v 10.12769 H 10.232471 Z"
        sodipodi:nodetypes="sccsccccc" />
     <path
@@ -2684,32 +2652,26 @@ ACTIVE</tspan>
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#232323;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#232323;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="30.003986"
        y="117.5873"
-       id="text3615-4">
-<tspan
+       id="text3615-4"> <tspan
    sodipodi:role="line"
    id="tspan3613-33"
    x="30.136278"
    y="117.5873"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#232323;fill-opacity:1;stroke-width:0.26458332">
-P1</tspan>
-</text>
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#232323;fill-opacity:1;stroke-width:0.264583">P1</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="15.805962"
        y="117.58514"
-       id="text3615-4-3">
-<tspan
+       id="text3615-4-3"> <tspan
    sodipodi:role="line"
    id="tspan3613-33-8"
    x="15.938253"
    y="117.58514"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c5a372;fill-opacity:1;stroke-width:0.26458332">
-P1</tspan>
-</text>
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c5a372;fill-opacity:1;stroke-width:0.264583">P1</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="use21815-3-73-6-0-5-7-9"
@@ -2717,32 +2679,26 @@ P1</tspan>
        d="m 59.923991,27.337657 0.462213,0.880535 m -2.643118,1.051823 0.818471,0.564876 m -1.851573,2.159648 0.987233,0.119819 m -0.635869,2.772752 0.929836,-0.352691 m 0.725516,2.750645 0.659427,-0.744401 m 7.414535,0.744103 -0.659481,-0.744354 M 68.44585,34.88671 67.51599,34.534081 m 1.281028,-2.539961 -0.987226,0.119887 M 67.763712,29.269662 66.94528,29.8346 m -1.362611,-2.497147 -0.462152,0.88057 m -2.367002,-1.57788 v 0.994476 m 0,-0.994476 v 0.994476 m 0,10.251364 c -2.829663,0 -5.13168,-2.302008 -5.13168,-5.131666 0,-2.829671 2.302017,-5.132065 5.13168,-5.132065 2.829662,0 5.131678,2.302394 5.131678,5.132065 0,2.829658 -2.302016,5.131666 -5.131678,5.131666 m -0.0059,0.972551 c -3.362618,0 -6.098284,-2.741343 -6.098284,-6.110021 0,-3.362631 2.735666,-6.098278 6.098284,-6.098278 3.369059,0 6.110025,2.735647 6.110025,6.098278 0,3.368678 -2.740966,6.110021 -6.110026,6.110021" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="62.826897"
        y="26.099724"
-       id="text3615-9-6-1-6-9-2-4-4-0-2">
-<tspan
+       id="text3615-9-6-1-6-9-2-4-4-0-2"> <tspan
    sodipodi:role="line"
    id="tspan3613-3-2-6-9-4-6-9-6-9-88"
    x="62.959187"
    y="26.099724"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222223px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c5a372;fill-opacity:1;stroke-width:0.26458332">
-0</tspan>
-</text>
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c5a372;fill-opacity:1;stroke-width:0.264583">0</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="73.51461"
        y="34.190903"
-       id="text3615-9-8-89-7-6-33-7-9-9-0-3-8">
-<tspan
+       id="text3615-9-8-89-7-6-33-7-9-9-0-3-8"> <tspan
    sodipodi:role="line"
    id="tspan3613-3-7-0-5-9-4-8-4-2-5-6-6"
    x="73.646904"
    y="34.190903"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c5a372;fill-opacity:1;stroke-width:0.26458332">
-E</tspan>
-</text>
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c5a372;fill-opacity:1;stroke-width:0.264583">E</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="use21815-3-73-6-0-5-7-3-3"
@@ -2750,32 +2706,26 @@ E</tspan>
        d="m 59.923991,47.507912 0.462213,0.880535 m -2.643118,1.051823 0.818471,0.564876 m -1.851573,2.159648 0.987233,0.119819 m -0.635869,2.772752 0.929836,-0.352691 m 0.725516,2.750645 0.659427,-0.744401 m 7.414535,0.744103 -0.659481,-0.744354 m 2.314669,-1.653702 -0.92986,-0.352629 m 1.281028,-2.539961 -0.987226,0.119887 m -0.04608,-2.844345 -0.818432,0.564938 m -1.362611,-2.497147 -0.462152,0.88057 m -2.367002,-1.57788 v 0.994476 m 0,-0.994476 v 0.994476 m 0,10.251364 c -2.829663,0 -5.13168,-2.302008 -5.13168,-5.131666 0,-2.829671 2.302017,-5.132065 5.13168,-5.132065 2.829662,0 5.131678,2.302394 5.131678,5.132065 0,2.829658 -2.302016,5.131666 -5.131678,5.131666 m -0.0059,0.972551 c -3.362618,0 -6.098284,-2.741343 -6.098284,-6.110021 0,-3.362631 2.735666,-6.098278 6.098284,-6.098278 3.369059,0 6.110025,2.735647 6.110025,6.098278 0,3.368678 -2.740966,6.110021 -6.110026,6.110021" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="62.826897"
        y="46.269981"
-       id="text3615-9-6-1-6-9-2-4-4-0-8-3">
-<tspan
+       id="text3615-9-6-1-6-9-2-4-4-0-8-3"> <tspan
    sodipodi:role="line"
    id="tspan3613-3-2-6-9-4-6-9-6-9-8-3"
    x="62.959187"
    y="46.269981"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222223px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c5a372;fill-opacity:1;stroke-width:0.26458332">
-0</tspan>
-</text>
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c5a372;fill-opacity:1;stroke-width:0.264583">0</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="73.51461"
        y="54.36116"
-       id="text3615-9-8-89-7-6-33-7-9-9-0-3-3-7">
-<tspan
+       id="text3615-9-8-89-7-6-33-7-9-9-0-3-3-7"> <tspan
    sodipodi:role="line"
    id="tspan3613-3-7-0-5-9-4-8-4-2-5-6-1-3"
    x="73.646904"
    y="54.36116"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c5a372;fill-opacity:1;stroke-width:0.26458332">
-F</tspan>
-</text>
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c5a372;fill-opacity:1;stroke-width:0.264583">F</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="use21815-3-73-6-0-5-7-3-4-7"
@@ -2783,32 +2733,26 @@ F</tspan>
        d="m 59.923991,66.619834 0.462213,0.880535 m -2.643118,1.051823 0.818471,0.564876 m -1.851573,2.159648 0.987233,0.119819 m -0.635869,2.772752 0.929836,-0.352691 m 0.725516,2.750645 0.659427,-0.744401 m 7.414535,0.744103 -0.659481,-0.744354 m 2.314669,-1.653702 -0.92986,-0.352629 m 1.281028,-2.539961 -0.987226,0.119887 m -0.04608,-2.844345 -0.818432,0.564938 M 65.582669,66.61963 65.120517,67.5002 m -2.367002,-1.57788 v 0.994476 m 0,-0.994476 v 0.994476 m 0,10.251364 c -2.829663,0 -5.13168,-2.302008 -5.13168,-5.131666 0,-2.829671 2.302017,-5.132065 5.13168,-5.132065 2.829662,0 5.131678,2.302394 5.131678,5.132065 0,2.829658 -2.302016,5.131666 -5.131678,5.131666 m -0.0059,0.972551 c -3.362618,0 -6.098284,-2.741343 -6.098284,-6.110021 0,-3.362631 2.735666,-6.098278 6.098284,-6.098278 3.369059,0 6.110025,2.735647 6.110025,6.098278 0,3.368678 -2.740966,6.110021 -6.110026,6.110021" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="62.826897"
        y="65.381897"
-       id="text3615-9-6-1-6-9-2-4-4-0-8-7-0">
-<tspan
+       id="text3615-9-6-1-6-9-2-4-4-0-8-7-0"> <tspan
    sodipodi:role="line"
    id="tspan3613-3-2-6-9-4-6-9-6-9-8-7-8"
    x="62.959187"
    y="65.381897"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222223px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c5a372;fill-opacity:1;stroke-width:0.26458332">
-0</tspan>
-</text>
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c5a372;fill-opacity:1;stroke-width:0.264583">0</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="73.51461"
        y="73.473083"
-       id="text3615-9-8-89-7-6-33-7-9-9-0-3-3-5-6">
-<tspan
+       id="text3615-9-8-89-7-6-33-7-9-9-0-3-3-5-6"> <tspan
    sodipodi:role="line"
    id="tspan3613-3-7-0-5-9-4-8-4-2-5-6-1-4-2"
    x="73.646904"
    y="73.473083"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c5a372;fill-opacity:1;stroke-width:0.26458332">
-G</tspan>
-</text>
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c5a372;fill-opacity:1;stroke-width:0.264583">G</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="use21815-3-73-6-0-5-7-3-4-6-9"
@@ -2816,32 +2760,26 @@ G</tspan>
        d="m 59.923991,85.731756 0.462213,0.880535 m -2.643118,1.051823 0.818471,0.564876 m -1.851573,2.159648 0.987233,0.119819 m -0.635869,2.772752 0.929836,-0.352691 m 0.725516,2.750645 0.659427,-0.744401 m 7.414535,0.744103 -0.659481,-0.744354 M 68.44585,93.280809 67.51599,92.92818 m 1.281028,-2.539961 -0.987226,0.119887 m -0.04608,-2.844345 -0.818432,0.564938 m -1.362611,-2.497147 -0.462152,0.88057 m -2.367002,-1.57788 v 0.994476 m 0,-0.994476 v 0.994476 m 0,10.251364 c -2.829663,0 -5.13168,-2.302008 -5.13168,-5.131666 0,-2.829671 2.302017,-5.132065 5.13168,-5.132065 2.829662,0 5.131678,2.302394 5.131678,5.132065 0,2.829658 -2.302016,5.131666 -5.131678,5.131666 m -0.0059,0.972551 c -3.362618,0 -6.098284,-2.741343 -6.098284,-6.110021 0,-3.362631 2.735666,-6.098278 6.098284,-6.098278 3.369059,0 6.110025,2.735647 6.110025,6.098278 0,3.368678 -2.740966,6.110021 -6.110026,6.110021" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="62.826897"
        y="84.493828"
-       id="text3615-9-6-1-6-9-2-4-4-0-8-7-6-2">
-<tspan
+       id="text3615-9-6-1-6-9-2-4-4-0-8-7-6-2"> <tspan
    sodipodi:role="line"
    id="tspan3613-3-2-6-9-4-6-9-6-9-8-7-4-5"
    x="62.959187"
    y="84.493828"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222223px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c5a372;fill-opacity:1;stroke-width:0.26458332">
-0</tspan>
-</text>
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c5a372;fill-opacity:1;stroke-width:0.264583">0</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="73.51461"
        y="92.585007"
-       id="text3615-9-8-89-7-6-33-7-9-9-0-3-3-5-0-7">
-<tspan
+       id="text3615-9-8-89-7-6-33-7-9-9-0-3-3-5-0-7"> <tspan
    sodipodi:role="line"
    id="tspan3613-3-7-0-5-9-4-8-4-2-5-6-1-4-0-4"
    x="73.646904"
    y="92.585007"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c5a372;fill-opacity:1;stroke-width:0.26458332">
-H</tspan>
-</text>
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c5a372;fill-opacity:1;stroke-width:0.264583">H</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="use21815-3-73-6-0-5-7"
@@ -2849,32 +2787,26 @@ H</tspan>
        d="m 26.016588,27.337657 0.462213,0.880535 m -2.643118,1.051823 0.818471,0.564876 m -1.851573,2.159648 0.987233,0.119819 m -0.635869,2.772752 0.929836,-0.352691 m 0.725516,2.750645 0.659427,-0.744401 m 7.414535,0.744103 -0.659481,-0.744354 m 2.314669,-1.653702 -0.92986,-0.352629 m 1.281028,-2.539961 -0.987226,0.119887 m -0.04608,-2.844345 -0.818432,0.564938 m -1.362611,-2.497147 -0.462152,0.88057 m -2.367002,-1.57788 v 0.994476 m 0,-0.994476 v 0.994476 m 0,10.251364 c -2.829663,0 -5.13168,-2.302008 -5.13168,-5.131666 0,-2.829671 2.302017,-5.132065 5.13168,-5.132065 2.829662,0 5.131678,2.302394 5.131678,5.132065 0,2.829658 -2.302016,5.131666 -5.131678,5.131666 m -0.0059,0.972551 c -3.362618,0 -6.098284,-2.741343 -6.098284,-6.110021 0,-3.362631 2.735666,-6.098278 6.098284,-6.098278 3.369059,0 6.110025,2.735647 6.110025,6.098278 0,3.368678 -2.740966,6.110021 -6.110026,6.110021" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="28.919489"
        y="26.099724"
-       id="text3615-9-6-1-6-9-2-4-4-0">
-<tspan
+       id="text3615-9-6-1-6-9-2-4-4-0"> <tspan
    sodipodi:role="line"
    id="tspan3613-3-2-6-9-4-6-9-6-9"
    x="29.051781"
    y="26.099724"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222223px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c5a372;fill-opacity:1;stroke-width:0.26458332">
-0</tspan>
-</text>
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c5a372;fill-opacity:1;stroke-width:0.264583">0</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="39.607212"
        y="34.190903"
-       id="text3615-9-8-89-7-6-33-7-9-9-0-3">
-<tspan
+       id="text3615-9-8-89-7-6-33-7-9-9-0-3"> <tspan
    sodipodi:role="line"
    id="tspan3613-3-7-0-5-9-4-8-4-2-5-6"
    x="39.739502"
    y="34.190903"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c5a372;fill-opacity:1;stroke-width:0.26458332">
-A</tspan>
-</text>
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c5a372;fill-opacity:1;stroke-width:0.264583">A</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="use21815-3-73-6-0-5-7-5"
@@ -2882,32 +2814,26 @@ A</tspan>
        d="m 26.016588,47.507912 0.462213,0.880535 m -2.643118,1.051823 0.818471,0.564876 m -1.851573,2.159648 0.987233,0.119819 m -0.635869,2.772752 0.929836,-0.352691 m 0.725516,2.750645 0.659427,-0.744401 m 7.414535,0.744103 -0.659481,-0.744354 m 2.314669,-1.653702 -0.92986,-0.352629 m 1.281028,-2.539961 -0.987226,0.119887 m -0.04608,-2.844345 -0.818432,0.564938 m -1.362611,-2.497147 -0.462152,0.88057 m -2.367002,-1.57788 v 0.994476 m 0,-0.994476 v 0.994476 m 0,10.251364 c -2.829663,0 -5.13168,-2.302008 -5.13168,-5.131666 0,-2.829671 2.302017,-5.132065 5.13168,-5.132065 2.829662,0 5.131678,2.302394 5.131678,5.132065 0,2.829658 -2.302016,5.131666 -5.131678,5.131666 m -0.0059,0.972551 c -3.362618,0 -6.098284,-2.741343 -6.098284,-6.110021 0,-3.362631 2.735666,-6.098278 6.098284,-6.098278 3.369059,0 6.110025,2.735647 6.110025,6.098278 0,3.368678 -2.740966,6.110021 -6.110026,6.110021" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="28.919489"
        y="46.269981"
-       id="text3615-9-6-1-6-9-2-4-4-0-3">
-<tspan
+       id="text3615-9-6-1-6-9-2-4-4-0-3"> <tspan
    sodipodi:role="line"
    id="tspan3613-3-2-6-9-4-6-9-6-9-4"
    x="29.051781"
    y="46.269981"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222223px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c5a372;fill-opacity:1;stroke-width:0.26458332">
-0</tspan>
-</text>
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c5a372;fill-opacity:1;stroke-width:0.264583">0</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="39.607212"
        y="54.36116"
-       id="text3615-9-8-89-7-6-33-7-9-9-0-3-9">
-<tspan
+       id="text3615-9-8-89-7-6-33-7-9-9-0-3-9"> <tspan
    sodipodi:role="line"
    id="tspan3613-3-7-0-5-9-4-8-4-2-5-6-0"
    x="39.739502"
    y="54.36116"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c5a372;fill-opacity:1;stroke-width:0.26458332">
-B</tspan>
-</text>
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c5a372;fill-opacity:1;stroke-width:0.264583">B</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="use21815-3-73-6-0-5-7-5-4"
@@ -2915,32 +2841,26 @@ B</tspan>
        d="m 26.016588,66.619834 0.462213,0.880535 m -2.643118,1.051823 0.818471,0.564876 m -1.851573,2.159648 0.987233,0.119819 m -0.635869,2.772752 0.929836,-0.352691 m 0.725516,2.750645 0.659427,-0.744401 m 7.414535,0.744103 -0.659481,-0.744354 m 2.314669,-1.653702 -0.92986,-0.352629 m 1.281028,-2.539961 -0.987226,0.119887 m -0.04608,-2.844345 -0.818432,0.564938 M 31.675266,66.61963 31.213114,67.5002 m -2.367002,-1.57788 v 0.994476 m 0,-0.994476 v 0.994476 m 0,10.251364 c -2.829663,0 -5.13168,-2.302008 -5.13168,-5.131666 0,-2.829671 2.302017,-5.132065 5.13168,-5.132065 2.829662,0 5.131678,2.302394 5.131678,5.132065 0,2.829658 -2.302016,5.131666 -5.131678,5.131666 m -0.0059,0.972551 c -3.362618,0 -6.098284,-2.741343 -6.098284,-6.110021 0,-3.362631 2.735666,-6.098278 6.098284,-6.098278 3.369059,0 6.110025,2.735647 6.110025,6.098278 0,3.368678 -2.740966,6.110021 -6.110026,6.110021" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="28.919489"
        y="65.381897"
-       id="text3615-9-6-1-6-9-2-4-4-0-3-0">
-<tspan
+       id="text3615-9-6-1-6-9-2-4-4-0-3-0"> <tspan
    sodipodi:role="line"
    id="tspan3613-3-2-6-9-4-6-9-6-9-4-6"
    x="29.051781"
    y="65.381897"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222223px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c5a372;fill-opacity:1;stroke-width:0.26458332">
-0</tspan>
-</text>
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c5a372;fill-opacity:1;stroke-width:0.264583">0</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="39.607212"
        y="73.473083"
-       id="text3615-9-8-89-7-6-33-7-9-9-0-3-9-4">
-<tspan
+       id="text3615-9-8-89-7-6-33-7-9-9-0-3-9-4"> <tspan
    sodipodi:role="line"
    id="tspan3613-3-7-0-5-9-4-8-4-2-5-6-0-7"
    x="39.739502"
    y="73.473083"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c5a372;fill-opacity:1;stroke-width:0.26458332">
-C</tspan>
-</text>
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c5a372;fill-opacity:1;stroke-width:0.264583">C</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="use21815-3-73-6-0-5-7-5-4-0"
@@ -2948,108 +2868,87 @@ C</tspan>
        d="m 26.016588,85.731756 0.462213,0.880535 m -2.643118,1.051823 0.818471,0.564876 m -1.851573,2.159648 0.987233,0.119819 m -0.635869,2.772752 0.929836,-0.352691 m 0.725516,2.750645 0.659427,-0.744401 m 7.414535,0.744103 -0.659481,-0.744354 m 2.314669,-1.653702 -0.92986,-0.352629 m 1.281028,-2.539961 -0.987226,0.119887 m -0.04608,-2.844345 -0.818432,0.564938 m -1.362611,-2.497147 -0.462152,0.88057 m -2.367002,-1.57788 v 0.994476 m 0,-0.994476 v 0.994476 m 0,10.251364 c -2.829663,0 -5.13168,-2.302008 -5.13168,-5.131666 0,-2.829671 2.302017,-5.132065 5.13168,-5.132065 2.829662,0 5.131678,2.302394 5.131678,5.132065 0,2.829658 -2.302016,5.131666 -5.131678,5.131666 m -0.0059,0.972551 c -3.362618,0 -6.098284,-2.741343 -6.098284,-6.110021 0,-3.362631 2.735666,-6.098278 6.098284,-6.098278 3.369059,0 6.110025,2.735647 6.110025,6.098278 0,3.368678 -2.740966,6.110021 -6.110026,6.110021" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="28.919489"
        y="84.493828"
-       id="text3615-9-6-1-6-9-2-4-4-0-3-0-1">
-<tspan
+       id="text3615-9-6-1-6-9-2-4-4-0-3-0-1"> <tspan
    sodipodi:role="line"
    id="tspan3613-3-2-6-9-4-6-9-6-9-4-6-3"
    x="29.051781"
    y="84.493828"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222223px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c5a372;fill-opacity:1;stroke-width:0.26458332">
-0</tspan>
-</text>
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c5a372;fill-opacity:1;stroke-width:0.264583">0</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="39.607212"
        y="92.585007"
-       id="text3615-9-8-89-7-6-33-7-9-9-0-3-9-4-7">
-<tspan
+       id="text3615-9-8-89-7-6-33-7-9-9-0-3-9-4-7"> <tspan
    sodipodi:role="line"
    id="tspan3613-3-7-0-5-9-4-8-4-2-5-6-0-7-7"
    x="39.739502"
    y="92.585007"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c5a372;fill-opacity:1;stroke-width:0.26458332">
-D</tspan>
-</text>
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c5a372;fill-opacity:1;stroke-width:0.264583">D</tspan></text>
     <path
-       style="display:inline;opacity:1;fill:#c5a372;fill-opacity:1;stroke:#c5a372;stroke-width:0.20102495;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       style="display:inline;opacity:1;fill:#c5a372;fill-opacity:1;stroke:#c5a372;stroke-width:0.201025;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
        d="m 87.709759,30.5036 c 1.56677,-0.01974 3.047907,0.05251 4.536157,0.05639 2.962677,0 5.372797,2.430172 5.372797,5.417567 h -6.135027 -4.600747 -6.135027 c 0,-2.987395 2.40596,-5.417567 5.362977,-5.417567 0.54466,-0.03291 1.07661,-0.04982 1.59887,-0.05639 z m 9.919804,5.566879 V 46.302096 H 91.494026 86.863299 80.728272 V 36.070479 h 6.135027 4.630727 z m 0,9.886525 V 88.264873 H 91.494026 86.863299 80.728272 V 45.957004 h 6.135027 4.630727 z m -0.0108,42.400796 c 0,2.987395 -2.41012,5.417568 -5.372797,5.417568 -1.98433,0.0051 -3.956387,0.131649 -6.135027,0 -2.957007,0 -5.362977,-2.430173 -5.362977,-5.417568 h 6.135027 4.600757 z"
        id="rect10117-3-37-2"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="sccccccsccccccccccccccccccccccccc" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#232323;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#232323;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="84.689056"
        y="37.895073"
-       id="text3615-9-8-89-7-6-33-7-9-9-0-3-8-3">
-<tspan
+       id="text3615-9-8-89-7-6-33-7-9-9-0-3-8-3"> <tspan
    sodipodi:role="line"
    id="tspan3613-3-7-0-5-9-4-8-4-2-5-6-6-3"
    x="84.82135"
    y="37.895073"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#232323;fill-opacity:1;stroke-width:0.26458332">
-I</tspan>
-</text>
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#232323;fill-opacity:1;stroke-width:0.264583">I</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#232323;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#232323;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="84.689056"
        y="50.656994"
-       id="text3615-9-8-89-7-6-33-7-9-9-0-3-3-7-8">
-<tspan
+       id="text3615-9-8-89-7-6-33-7-9-9-0-3-3-7-8"> <tspan
    sodipodi:role="line"
    id="tspan3613-3-7-0-5-9-4-8-4-2-5-6-1-3-3"
    x="84.82135"
    y="50.656994"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#232323;fill-opacity:1;stroke-width:0.26458332">
-J</tspan>
-</text>
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#232323;fill-opacity:1;stroke-width:0.264583">J</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#232323;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#232323;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="84.689056"
        y="63.418915"
-       id="text3615-9-8-89-7-6-33-7-9-9-0-3-3-5-6-7">
-<tspan
+       id="text3615-9-8-89-7-6-33-7-9-9-0-3-3-5-6-7"> <tspan
    sodipodi:role="line"
    id="tspan3613-3-7-0-5-9-4-8-4-2-5-6-1-4-2-9"
    x="84.82135"
    y="63.418915"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#232323;fill-opacity:1;stroke-width:0.26458332">
-K</tspan>
-</text>
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#232323;fill-opacity:1;stroke-width:0.264583">K</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#232323;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#232323;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="84.689056"
        y="76.180817"
-       id="text3615-9-8-89-7-6-33-7-9-9-0-3-3-5-0-7-3">
-<tspan
+       id="text3615-9-8-89-7-6-33-7-9-9-0-3-3-5-0-7-3"> <tspan
    sodipodi:role="line"
    id="tspan3613-3-7-0-5-9-4-8-4-2-5-6-1-4-0-4-7"
    x="84.82135"
    y="76.180817"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#232323;fill-opacity:1;stroke-width:0.26458332">
-L</tspan>
-</text>
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#232323;fill-opacity:1;stroke-width:0.264583">L</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#232323;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#232323;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="84.689049"
        y="88.942734"
-       id="text3615-9-8-89-7-6-33-7-9-9-0-3-3-5-0-7-3-8">
-<tspan
+       id="text3615-9-8-89-7-6-33-7-9-9-0-3-3-5-0-7-3-8"> <tspan
    sodipodi:role="line"
    id="tspan3613-3-7-0-5-9-4-8-4-2-5-6-1-4-0-4-7-4"
    x="84.821342"
    y="88.942734"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#232323;fill-opacity:1;stroke-width:0.26458332">
-M</tspan>
-</text>
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#232323;fill-opacity:1;stroke-width:0.264583">M</tspan></text>
     <path
        id="rect10117-3-37"
        style="display:inline;opacity:1;fill:#c5a372;fill-opacity:1;stroke:#c5a372;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
@@ -3058,466 +2957,460 @@ M</tspan>
     <path
        inkscape:connector-curvature="0"
        id="rect10117-3-3-1"
-       style="display:inline;opacity:1;fill:#232323;fill-opacity:1;stroke:#c5a372;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       style="display:inline;opacity:1;fill:#232323;fill-opacity:1;stroke:#c5a372;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
        d="m 72.198488,103.20842 c -2.962681,0 -5.383311,2.49724 -5.383311,5.45425 h 10.766016 c 0,-2.95701 -2.425681,-5.45425 -5.382705,-5.45425 z m -5.383311,5.45425 h 10.766016 v 10.12769 H 66.815177 Z"
        sodipodi:nodetypes="sccsccccc" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#232323;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#232323;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="86.586693"
        y="117.6683"
-       id="text3615-4-38">
-<tspan
+       id="text3615-4-38"> <tspan
    sodipodi:role="line"
    id="tspan3613-33-0"
    x="86.718987"
    y="117.6683"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#232323;fill-opacity:1;stroke-width:0.26458332">
-P2</tspan>
-</text>
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#232323;fill-opacity:1;stroke-width:0.264583">P2</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c5a372;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="72.388664"
        y="117.66614"
-       id="text3615-4-3-9">
-<tspan
+       id="text3615-4-3-9"> <tspan
    sodipodi:role="line"
    id="tspan3613-33-8-7"
    x="72.520958"
    y="117.66614"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c5a372;fill-opacity:1;stroke-width:0.26458332">
-P2</tspan>
-</text>
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c5a372;fill-opacity:1;stroke-width:0.264583">P2</tspan></text>
   </g>
   <g
-     style="display:inline"
+     style="display:none"
      inkscape:label="text_paths"
      id="g6825"
      inkscape:groupmode="layer">
     <g
        aria-label="UNITY MODULE PROTOTYPER"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.264583"
        id="text6685">
       <path
          d="m 26.891952,16.283035 v 1.688042 q 0,0.104775 -0.02328,0.197908 -0.0194,0.09313 -0.06597,0.162984 -0.04269,0.06985 -0.112537,0.112536 -0.06985,0.0388 -0.166863,0.0388 -0.09701,0 -0.166864,-0.0388 -0.06985,-0.04269 -0.116417,-0.112536 -0.04657,-0.06985 -0.06985,-0.162984 -0.0194,-0.09313 -0.0194,-0.197908 V 16.283035 H 25.47943 v 1.738489 q 0,0.228953 0.05433,0.438503 0.05821,0.20955 0.182386,0.372533 0.124178,0.159103 0.322086,0.252237 0.197908,0.09313 0.481189,0.08925 h 0.0039 q 0.256116,0.0039 0.450144,-0.07761 0.194028,-0.08537 0.322086,-0.236714 0.131939,-0.155222 0.197908,-0.368652 0.06985,-0.213431 0.06985,-0.469548 v -1.738489 z m -1.664758,-0.566561 h 2.580569 v 4.059062 h -2.580569 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6966" />
       <path
          d="m 29.422069,17.703319 -0.772231,-1.416403 h -0.663575 v 2.887133 h 0.690739 v -1.420283 l 0.776111,1.420283 h 0.659695 V 16.286916 H 29.422069 Z M 27.757311,15.716474 H 30.334 v 4.059062 h -2.576689 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6968" />
       <path
          d="m 31.187716,16.286916 h -0.651933 v 2.887133 h 0.651933 z m -0.900289,-0.570442 h 1.164167 v 4.059062 h -1.164167 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6970" />
       <path
          d="m 31.544716,16.286916 v 0.651933 h 0.655814 v 2.2352 h 0.651934 v -2.2352 h 0.655813 V 16.286916 Z M 31.35845,15.716474 h 2.367139 v 4.059062 H 31.35845 Z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6972" />
       <path
          d="m 35.223478,16.286916 -0.333728,0.682978 -0.337608,-0.682978 h -0.729544 l 0.741186,1.443567 v 1.443566 h 0.613127 v -1.443566 l 0.776112,-1.443567 z M 33.69842,15.716474 h 2.440869 v 4.059062 H 33.69842 Z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6974" />
       <path
          d="m 36.088836,15.716474 h 1.210733 v 4.059062 h -1.210733 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6976" />
       <path
          d="m 39.40283,16.286916 v 0 l -0.601486,1.6764 -0.597606,-1.6764 h -0.663575 v 2.887133 h 0.690739 V 18.13406 l 0.360892,1.039989 h 0.4191 l 0.35313,-1.008944 v 1.008944 h 0.690739 v -2.887133 0 z m -2.188634,-0.570442 h 3.135489 v 4.059062 h -3.135489 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6978" />
       <path
          d="m 42.701295,17.350188 q -0.0039,-0.197908 -0.07373,-0.384175 -0.06985,-0.186266 -0.20955,-0.333728 -0.159103,-0.166863 -0.364772,-0.256116 -0.201789,-0.08925 -0.430742,-0.08925 h -0.0039 q -0.228952,0 -0.430741,0.08925 -0.201789,0.08925 -0.364772,0.256116 -0.13582,0.147462 -0.20955,0.341489 -0.07373,0.190148 -0.07373,0.376414 v 0.675217 q 0.0039,0.232833 0.06597,0.438503 0.06597,0.205669 0.217312,0.368652 0.162983,0.166864 0.364772,0.256117 0.205669,0.08925 0.430741,0.08925 h 0.0039 q 0.228953,0 0.430742,-0.08925 0.205669,-0.08925 0.364772,-0.259997 0.155222,-0.162983 0.217311,-0.376414 0.06597,-0.217311 0.06597,-0.426861 z m -2.390422,-1.633714 h 2.599972 v 4.059062 h -2.599972 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6980" />
       <path
          d="m 45.08783,17.730483 q 0,-0.306564 -0.08537,-0.570442 -0.08537,-0.267758 -0.256117,-0.457906 -0.170745,-0.194027 -0.426861,-0.302683 -0.256117,-0.112536 -0.593725,-0.112536 h -0.582084 v 2.887133 h 0.582084 0.08537 q 0.353131,0 0.597606,-0.116416 0.244475,-0.116417 0.395816,-0.314325 0.151342,-0.197909 0.217311,-0.457906 0.06597,-0.263878 0.06597,-0.554919 z m -2.23132,-2.014009 h 2.561167 v 4.059062 H 42.85651 Z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6982" />
       <path
          d="m 47.039743,16.283035 v 1.688042 q 0,0.104775 -0.02328,0.197908 -0.0194,0.09313 -0.06597,0.162984 -0.04269,0.06985 -0.112536,0.112536 -0.06985,0.0388 -0.166864,0.0388 -0.09701,0 -0.166863,-0.0388 -0.06985,-0.04269 -0.116417,-0.112536 -0.04657,-0.06985 -0.06985,-0.162984 -0.0194,-0.09313 -0.0194,-0.197908 v -1.688042 h -0.671336 v 1.738489 q 0,0.228953 0.05433,0.438503 0.05821,0.20955 0.182386,0.372533 0.124178,0.159103 0.322086,0.252237 0.197908,0.09313 0.481189,0.08925 h 0.0039 q 0.256117,0.0039 0.450145,-0.07761 0.194028,-0.08537 0.322086,-0.236714 0.131939,-0.155222 0.197908,-0.368652 0.06985,-0.213431 0.06985,-0.469548 v -1.738489 z m -1.664758,-0.566561 h 2.580569 v 4.059062 h -2.580569 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6984" />
       <path
          d="m 48.844196,16.286916 h -0.651933 v 2.887133 h 1.424164 v -0.651933 h -0.772231 z m -0.939094,-0.570442 h 1.959681 v 4.059062 h -1.959681 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6986" />
       <path
          d="m 51.832218,16.286916 h -1.769533 v 2.887133 h 1.769533 v -0.651933 h -1.1176 v -0.465667 h 0.822678 v -0.651933 h -0.822678 v -0.465667 h 1.1176 z m -2.017889,-0.570442 h 2.270125 v 4.059062 h -2.270125 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6988" />
       <path
          d="m 52.01072,15.716474 h 1.210734 v 4.059062 H 52.01072 Z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6990" />
       <path
          d="m 54.261443,16.286916 h -0.877006 v 2.887133 h 0.663575 v -1.016705 h 0.213431 0.0039 q 0.186266,0 0.337608,-0.06597 0.151342,-0.06985 0.256117,-0.194027 0.108655,-0.124178 0.166863,-0.294923 0.05821,-0.170744 0.05821,-0.380294 0,-0.213431 -0.05821,-0.384175 -0.05821,-0.174625 -0.166863,-0.294922 -0.104775,-0.124178 -0.256117,-0.190148 -0.151342,-0.06597 -0.337608,-0.06597 z m -1.125361,-0.570442 h 2.204155 v 4.059062 h -2.204155 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6992" />
       <path
          d="m 56.76828,18.021524 q 0.05045,0 0.1397,-0.05045 0.08925,-0.05433 0.174625,-0.155222 0.08925,-0.104775 0.151342,-0.256117 0.06597,-0.151341 0.06597,-0.345369 0,-0.186267 -0.04269,-0.353131 -0.04269,-0.170744 -0.143581,-0.294922 -0.09701,-0.128058 -0.263877,-0.201789 -0.162984,-0.07761 -0.411339,-0.07761 h -0.0039 -0.877006 v 2.887133 h 0.651934 v -0.939094 h 0.0078 l 0.388056,0.939094 h 0.748947 z m -1.459089,-2.30505 h 2.308931 v 4.059062 h -2.308931 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6994" />
       <path
          d="m 59.958093,17.350188 q -0.0039,-0.197908 -0.07373,-0.384175 -0.06985,-0.186266 -0.20955,-0.333728 -0.159103,-0.166863 -0.364773,-0.256116 -0.201788,-0.08925 -0.430741,-0.08925 h -0.0039 q -0.228953,0 -0.430741,0.08925 -0.201789,0.08925 -0.364773,0.256116 -0.135819,0.147462 -0.20955,0.341489 -0.07373,0.190148 -0.07373,0.376414 v 0.675217 q 0.0039,0.232833 0.06597,0.438503 0.06597,0.205669 0.217311,0.368652 0.162984,0.166864 0.364773,0.256117 0.205669,0.08925 0.430741,0.08925 h 0.0039 q 0.228953,0 0.430741,-0.08925 0.20567,-0.08925 0.364773,-0.259997 0.155222,-0.162983 0.217311,-0.376414 0.06597,-0.217311 0.06597,-0.426861 z m -2.390422,-1.633714 h 2.599972 v 4.059062 h -2.599972 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6996" />
       <path
          d="m 60.299573,16.286916 v 0.651933 h 0.655814 v 2.2352 h 0.651933 v -2.2352 h 0.655814 v -0.651933 z m -0.186267,-0.570442 h 2.367139 v 4.059062 h -2.367139 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6998" />
       <path
          d="m 64.843698,17.350188 q -0.0039,-0.197908 -0.07373,-0.384175 -0.06985,-0.186266 -0.20955,-0.333728 -0.159103,-0.166863 -0.364773,-0.256116 -0.201789,-0.08925 -0.430741,-0.08925 h -0.0039 q -0.228953,0 -0.430742,0.08925 -0.201788,0.08925 -0.364772,0.256116 -0.135819,0.147462 -0.20955,0.341489 -0.07373,0.190148 -0.07373,0.376414 v 0.675217 q 0.0039,0.232833 0.06597,0.438503 0.06597,0.205669 0.217311,0.368652 0.162984,0.166864 0.364772,0.256117 0.20567,0.08925 0.430742,0.08925 h 0.0039 q 0.228952,0 0.430741,-0.08925 0.20567,-0.08925 0.364773,-0.259997 0.155222,-0.162983 0.217311,-0.376414 0.06597,-0.217311 0.06597,-0.426861 z m -2.390422,-1.633714 h 2.599972 v 4.059062 h -2.599972 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path7000" />
       <path
          d="m 65.185182,16.286916 v 0.651933 h 0.655813 v 2.2352 h 0.651934 v -2.2352 h 0.655814 v -0.651933 z m -0.186267,-0.570442 h 2.367139 v 4.059062 h -2.367139 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path7002" />
       <path
          d="m 68.863943,16.286916 -0.333728,0.682978 -0.337608,-0.682978 h -0.729545 l 0.741186,1.443567 v 1.443566 h 0.613128 v -1.443566 l 0.776111,-1.443567 z m -1.525058,-0.570442 h 2.440869 v 4.059062 h -2.440869 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path7004" />
       <path
          d="m 70.874066,16.286916 h -0.877005 v 2.887133 h 0.663575 v -1.016705 h 0.21343 0.0039 q 0.186266,0 0.337608,-0.06597 0.151342,-0.06985 0.256117,-0.194027 0.108655,-0.124178 0.166864,-0.294923 0.05821,-0.170744 0.05821,-0.380294 0,-0.213431 -0.05821,-0.384175 -0.05821,-0.174625 -0.166864,-0.294922 -0.104775,-0.124178 -0.256117,-0.190148 -0.151342,-0.06597 -0.337608,-0.06597 z m -1.125361,-0.570442 h 2.204156 v 4.059062 h -2.204156 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path7006" />
       <path
          d="m 73.865967,16.286916 h -1.769533 v 2.887133 h 1.769533 v -0.651933 h -1.1176 v -0.465667 h 0.822678 v -0.651933 h -0.822678 v -0.465667 h 1.1176 z m -2.017889,-0.570442 h 2.270125 v 4.059062 h -2.270125 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path7008" />
       <path
          d="m 75.52296,18.021524 q 0.05045,0 0.1397,-0.05045 0.08925,-0.05433 0.174625,-0.155222 0.08925,-0.104775 0.151342,-0.256117 0.06597,-0.151341 0.06597,-0.345369 0,-0.186267 -0.04269,-0.353131 -0.04269,-0.170744 -0.14358,-0.294922 -0.09701,-0.128058 -0.263878,-0.201789 -0.162983,-0.07761 -0.411339,-0.07761 h -0.0039 -0.877006 v 2.887133 h 0.651933 v -0.939094 h 0.0078 l 0.388055,0.939094 h 0.748947 z m -1.459088,-2.30505 h 2.30893 v 4.059062 h -2.30893 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path7010" />
     </g>
     <g
        aria-label="INSIDER"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.264583"
        id="text6689">
       <path
          d="m 35.097363,5.7713957 v 7.1120003 h 1.4224 V 5.7713957 Z M 36.75683,13.120463 H 34.860296 V 5.5343291 h 1.896534 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87777805px;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6951" />
       <path
-         d="m 42.871166,5.5343291 v 7.5861339 h -1.876778 l -1.778,-3.2596671 V 13.120463 H 37.221077 V 5.5343291 h 1.886656 l 1.768122,3.2596667 V 5.5343291 Z m -1.758244,3.783189 -0.197556,0.049389 -1.965678,-3.5955113 h -1.491544 v 7.1120003 h 1.521178 V 9.3273958 l 0.197555,-0.049389 1.975556,3.605389 H 42.6341 V 5.7713957 h -1.521178 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87777805px;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         d="m 42.871166,5.5343291 v 7.5861339 h -1.876778 l -1.778,-3.2596671 V 13.120463 H 37.221077 V 5.5343291 h 1.886656 l 1.768122,3.2596667 V 5.5343291 Z m -1.758244,3.783189 -0.197556,0.049389 -1.965678,-3.5955113 h -1.491544 v 7.1120002 h 1.521178 V 9.3273958 l 0.197555,-0.049389 1.975556,3.6053892 H 42.6341 V 5.7713957 h -1.521178 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6953" />
       <path
-         d="m 48.323682,11.302951 q -0.02963,0.375356 -0.217311,0.7112 -0.187678,0.325967 -0.523523,0.572912 -0.335844,0.246944 -0.819855,0.395111 -0.474133,0.138289 -1.0668,0.138289 -0.464256,0 -0.879122,-0.128411 -0.414867,-0.128412 -0.750712,-0.365478 -0.325966,-0.246945 -0.563033,-0.592667 -0.237067,-0.3556 -0.3556,-0.790222 l 1.6891,-0.701322 0.09878,0.217311 q -0.0099,0 0.04939,0.0889 0.06914,0.0889 0.187678,0.197555 0.118533,0.09878 0.2667,0.1778 0.148166,0.07902 0.306211,0.05927 0.06914,-0.0099 0.138289,-0.02963 0.06914,-0.02963 0.128411,-0.07902 0.05927,-0.05927 0.0889,-0.128411 0.03951,-0.07902 0.02963,-0.187678 -0.0099,-0.128411 -0.128411,-0.256822 -0.108656,-0.128411 -0.306211,-0.2667 Q 45.498637,10.206518 45.320837,10.097863 45.143037,9.9793292 44.975115,9.8706736 44.599759,9.6434847 44.283671,9.4360514 43.977459,9.2187403 43.750271,8.9717958 43.523082,8.7248514 43.394671,8.4087625 43.276137,8.0827958 43.276137,7.628418 q 0,-0.5136444 0.207434,-0.8988778 0.207433,-0.3852333 0.553155,-0.6420556 0.345722,-0.2667 0.790222,-0.4049889 0.4445,-0.1382888 0.918634,-0.1481666 0.572911,0 1.007533,0.1679222 0.434622,0.1679222 0.730956,0.4346222 0.296333,0.2667 0.464255,0.6025445 0.167922,0.3358445 0.217311,0.6618111 L 46.496293,8.0630403 Q 46.46666,7.9445069 46.407393,7.806218 46.348126,7.6679291 46.259226,7.5493958 46.170326,7.4209847 46.041915,7.3419625 45.913504,7.2629402 45.75546,7.2629402 q -0.158045,0 -0.286456,0.098778 -0.118533,0.0889 -0.118533,0.2765778 0,0.1382889 0.138289,0.2667 0.148166,0.1284111 0.4445,0.3457222 h -0.0099 q 0.464255,0.2568223 0.898878,0.5235223 0.434622,0.2667 0.760588,0.6025444 0.335845,0.3358445 0.5334,0.7704663 0.207434,0.424745 0.207434,1.007534 v 0.138289 z m -0.237067,-0.148166 q 0,-0.5334 -0.197555,-0.928511 Q 47.701382,9.8212847 47.375415,9.5051959 47.049448,9.189107 46.624704,8.9322847 46.209837,8.6754625 45.765337,8.428518 45.429493,8.1815736 45.271448,8.0334069 45.113404,7.8753625 45.113404,7.6382958 q 0,-0.3062111 0.197556,-0.4543778 0.197555,-0.1580444 0.4445,-0.1580444 0.197555,0 0.345722,0.069144 0.158044,0.069145 0.2667,0.1778 0.108655,0.098778 0.1778,0.2271889 0.07902,0.1284111 0.118533,0.2469445 0.316089,-0.1284112 0.612422,-0.2469445 0.296334,-0.1185333 0.6223,-0.2469444 Q 47.839671,6.9863624 47.681626,6.7196624 47.53346,6.4529624 47.26676,6.2455291 47.009937,6.028218 46.624704,5.8998069 46.249348,5.7713957 45.745582,5.7713957 q -0.434622,0.00988 -0.839611,0.1382889 -0.395112,0.1185334 -0.7112,0.3556001 -0.306212,0.2271888 -0.493889,0.5729111 -0.187678,0.3358444 -0.187678,0.7902222 0,0.4049889 0.118533,0.6914445 0.118534,0.2864555 0.325967,0.5235222 0.217311,0.2271889 0.503767,0.4247445 0.286455,0.1975555 0.632177,0.4049889 l 0.740834,0.4642559 q 0.256822,0.167922 0.385233,0.335844 0.138289,0.167922 0.148167,0.365478 0.0099,0.167922 -0.04939,0.296333 -0.04939,0.118534 -0.138289,0.197556 -0.07902,0.07902 -0.187678,0.128411 -0.108655,0.04939 -0.207433,0.05927 -0.1778,0.01975 -0.3556,-0.04939 -0.167922,-0.06915 -0.306211,-0.1778 -0.138289,-0.108656 -0.237067,-0.227189 -0.0889,-0.128411 -0.128411,-0.237067 l -1.313745,0.553156 q 0.227189,0.7112 0.829734,1.106311 0.602544,0.395111 1.4224,0.395111 0.5334,0 0.958144,-0.128411 0.434623,-0.128411 0.740834,-0.345722 0.306211,-0.217312 0.484011,-0.503767 0.1778,-0.296333 0.207433,-0.6223 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87777805px;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         d="m 48.323682,11.302951 q -0.02963,0.375356 -0.217311,0.7112 -0.187678,0.325967 -0.523523,0.572912 -0.335844,0.246944 -0.819855,0.395111 -0.474133,0.138289 -1.0668,0.138289 -0.464256,0 -0.879122,-0.128411 -0.414867,-0.128412 -0.750712,-0.365478 -0.325966,-0.246945 -0.563033,-0.592667 -0.237067,-0.3556 -0.3556,-0.790222 l 1.6891,-0.701322 0.09878,0.217311 q -0.0099,0 0.04939,0.0889 0.06914,0.0889 0.187678,0.197555 0.118533,0.09878 0.2667,0.1778 0.148166,0.07902 0.306211,0.05927 0.06914,-0.0099 0.138289,-0.02963 0.06914,-0.02963 0.128411,-0.07902 0.05927,-0.05927 0.0889,-0.128411 0.03951,-0.07902 0.02963,-0.187678 -0.0099,-0.128411 -0.128411,-0.256822 -0.108656,-0.128411 -0.306211,-0.2667 -0.197556,-0.12842 -0.375356,-0.237075 Q 45.143037,9.9793292 44.975115,9.8706736 44.599759,9.6434847 44.283671,9.4360514 43.977459,9.2187403 43.750271,8.9717958 43.523082,8.7248514 43.394671,8.4087625 43.276137,8.0827958 43.276137,7.628418 q 0,-0.5136444 0.207434,-0.8988778 0.207433,-0.3852333 0.553155,-0.6420556 0.345722,-0.2667 0.790222,-0.4049889 0.4445,-0.1382888 0.918634,-0.1481666 0.572911,0 1.007533,0.1679222 0.434622,0.1679222 0.730956,0.4346222 0.296333,0.2667 0.464255,0.6025445 0.167922,0.3358445 0.217311,0.6618111 L 46.496293,8.0630403 Q 46.46666,7.9445069 46.407393,7.806218 46.348126,7.6679291 46.259226,7.5493958 46.170326,7.4209847 46.041915,7.3419625 45.913504,7.2629402 45.75546,7.2629402 q -0.158045,0 -0.286456,0.098778 -0.118533,0.0889 -0.118533,0.2765778 0,0.1382889 0.138289,0.2667 0.148166,0.1284111 0.4445,0.3457222 h -0.0099 q 0.464255,0.2568223 0.898878,0.5235223 0.434622,0.2667 0.760588,0.6025444 0.335845,0.3358445 0.5334,0.7704661 0.207434,0.424745 0.207434,1.007534 v 0.138289 z m -0.237067,-0.148166 q 0,-0.5334 -0.197555,-0.928511 Q 47.701382,9.8212847 47.375415,9.5051959 47.049448,9.189107 46.624704,8.9322847 46.209837,8.6754625 45.765337,8.428518 45.429493,8.1815736 45.271448,8.0334069 45.113404,7.8753625 45.113404,7.6382958 q 0,-0.3062111 0.197556,-0.4543778 0.197555,-0.1580444 0.4445,-0.1580444 0.197555,0 0.345722,0.069144 0.158044,0.069145 0.2667,0.1778 0.108655,0.098778 0.1778,0.2271889 0.07902,0.1284111 0.118533,0.2469445 0.316089,-0.1284112 0.612422,-0.2469445 0.296334,-0.1185333 0.6223,-0.2469444 Q 47.839671,6.9863624 47.681626,6.7196624 47.53346,6.4529624 47.26676,6.2455291 47.009937,6.028218 46.624704,5.8998069 46.249348,5.7713957 45.745582,5.7713957 q -0.434622,0.00988 -0.839611,0.1382889 -0.395112,0.1185334 -0.7112,0.3556001 -0.306212,0.2271888 -0.493889,0.5729111 -0.187678,0.3358444 -0.187678,0.7902222 0,0.4049889 0.118533,0.6914445 0.118534,0.2864555 0.325967,0.5235222 0.217311,0.2271889 0.503767,0.4247445 0.286455,0.1975555 0.632177,0.4049889 l 0.740834,0.4642559 q 0.256822,0.167922 0.385233,0.335844 0.138289,0.167922 0.148167,0.365478 0.0099,0.167922 -0.04939,0.296333 -0.04939,0.118534 -0.138289,0.197556 -0.07902,0.07902 -0.187678,0.128411 -0.108655,0.04939 -0.207433,0.05927 -0.1778,0.01975 -0.3556,-0.04939 -0.167922,-0.06915 -0.306211,-0.1778 -0.138289,-0.108656 -0.237067,-0.227189 -0.0889,-0.128411 -0.128411,-0.237067 l -1.313745,0.553156 q 0.227189,0.7112 0.829734,1.106311 0.602544,0.395111 1.4224,0.395111 0.5334,0 0.958144,-0.128411 0.434623,-0.128411 0.740834,-0.345722 0.306211,-0.217312 0.484011,-0.503767 0.1778,-0.296333 0.207433,-0.6223 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6955" />
       <path
          d="m 49.084262,5.7713957 v 7.1120003 h 1.4224 V 5.7713957 Z m 1.659467,7.3490673 H 48.847196 V 5.5343291 h 1.896533 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87777805px;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6957" />
       <path
          d="m 56.383932,9.3273958 q 0,0.7605892 -0.1778,1.4520332 -0.167922,0.691445 -0.572911,1.214967 -0.395111,0.513644 -1.037166,0.819856 -0.642056,0.306211 -1.580445,0.306211 h -0.217311 -1.6002 V 5.5343291 h 1.6002 q 0.889,0 1.560689,0.2864555 0.671689,0.2864556 1.116189,0.8001001 0.454378,0.5037666 0.681567,1.2050889 0.227188,0.6914444 0.227188,1.5014222 z m -0.237066,0 q 0,-0.7605889 -0.217311,-1.4125222 Q 55.722121,7.2629402 55.297377,6.7888069 54.88251,6.3146735 54.250332,6.0479735 53.628032,5.7713957 52.798299,5.7713957 h -1.363133 v 7.1120003 h 1.363133 0.217311 q 0.869245,0 1.461911,-0.286456 0.602545,-0.286455 0.968023,-0.770466 0.375355,-0.493889 0.5334,-1.135945 0.167922,-0.642055 0.167922,-1.3631332 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87777805px;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6959" />
       <path
          d="m 58.833616,7.4308625 v 0.9482667 h 2.094088 v 1.8965338 h -2.094088 v 0.948266 h 2.8448 v 1.896534 H 56.937082 V 5.5343291 h 4.741334 v 1.8965334 z m 2.607733,-1.6594668 h -4.2672 v 7.1120003 h 4.2672 v -1.4224 h -2.8448 v -1.4224 h 2.094089 V 8.6161958 h -2.094089 v -1.4224 h 2.8448 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87777805px;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6961" />
       <path
          d="m 64.799786,13.120463 -0.809978,-1.936045 v 1.936045 H 62.093275 V 5.5343291 h 2.360789 q 0.661811,0 1.106311,0.2074333 0.4445,0.1975556 0.7112,0.5432778 0.2667,0.3358445 0.375356,0.7902223 0.118533,0.4445 0.118533,0.9383889 0,0.4543778 -0.138289,0.8198555 -0.138289,0.3654778 -0.345722,0.6321778 -0.197556,0.2667 -0.424745,0.4445001 -0.217311,0.1679222 -0.395111,0.2370662 0.365478,0.7112 0.760589,1.491545 0.404989,0.770467 0.760589,1.481667 z m 0.296333,-3.1707671 q 0.128412,0 0.365478,-0.1284112 0.246945,-0.1284111 0.484011,-0.3753555 0.237067,-0.2469445 0.404989,-0.6025445 0.1778,-0.3654778 0.1778,-0.8297333 0,-0.4543778 -0.09878,-0.8593667 -0.09878,-0.4049889 -0.345723,-0.7112 Q 65.846831,6.1368735 65.441842,5.9590735 65.046731,5.7713957 64.444186,5.7713957 h -2.113844 v 7.1120003 h 1.4224 q 0,-0.572911 0.0099,-1.165578 0.0099,-0.592667 0.0099,-1.1557 l 0.207434,-0.03951 0.987777,2.360789 h 1.619956 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87777805px;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6963" />
     </g>
     <g
        aria-label="URACK"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.264583"
        id="text6693">
       <path
          d="m 46.102599,122.34768 v 1.68804 q 0,0.10478 -0.02328,0.19791 -0.0194,0.0931 -0.06597,0.16298 -0.04269,0.0699 -0.112536,0.11254 -0.06985,0.0388 -0.166864,0.0388 -0.09701,0 -0.166863,-0.0388 -0.06985,-0.0427 -0.116417,-0.11254 -0.04657,-0.0699 -0.06985,-0.16298 -0.0194,-0.0931 -0.0194,-0.19791 v -1.68804 h -0.671336 v 1.73849 q 0,0.22895 0.05433,0.4385 0.05821,0.20955 0.182386,0.37253 0.124178,0.15911 0.322086,0.25224 0.197908,0.0931 0.481189,0.0893 h 0.0039 q 0.256117,0.004 0.450145,-0.0776 0.194028,-0.0854 0.322086,-0.23671 0.131939,-0.15522 0.197908,-0.36865 0.06985,-0.21344 0.06985,-0.46955 v -1.73849 z m -1.664758,-0.56656 h 2.580569 v 4.05906 h -2.580569 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6940" />
       <path
          d="m 48.427046,124.08617 q 0.05045,0 0.1397,-0.0504 0.08925,-0.0543 0.174625,-0.15522 0.08925,-0.10478 0.151342,-0.25612 0.06597,-0.15134 0.06597,-0.34537 0,-0.18626 -0.04269,-0.35313 -0.04269,-0.17074 -0.14358,-0.29492 -0.09701,-0.12806 -0.263878,-0.20179 -0.162983,-0.0776 -0.411339,-0.0776 h -0.0039 -0.877006 v 2.88713 h 0.651933 v -0.93909 h 0.0078 l 0.388056,0.93909 h 0.748947 z m -1.459089,-2.30505 h 2.308931 v 4.05906 h -2.308931 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6942" />
       <path
          d="m 51.151185,125.23869 h 0.741186 l -0.845961,-2.88713 h -0.869245 l -0.845961,2.88713 h 0.741186 l 0.256117,-0.76059 h 0.56268 z m -2.02565,-3.45757 h 3.081161 v 4.05906 h -3.081161 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6944" />
       <path
          d="m 53.440711,124.5984 q -0.197908,-0.0155 -0.318205,-0.1591 -0.120298,-0.14746 -0.120298,-0.36089 v -0.56268 q 0,-0.21343 0.116417,-0.35313 0.120297,-0.14358 0.318206,-0.15911 0.08149,-0.004 0.155222,0.0311 0.07373,0.0349 0.131939,0.0931 0.05821,0.0582 0.09701,0.13194 0.04269,0.0737 0.06597,0.14358 l 0.562681,-0.31432 q -0.04269,-0.13194 -0.120298,-0.26388 -0.07373,-0.13194 -0.197908,-0.23672 -0.120297,-0.10477 -0.291042,-0.17074 -0.170744,-0.066 -0.407458,-0.066 h -0.0039 q -0.267758,0 -0.469547,0.10089 -0.201789,0.097 -0.337608,0.26 -0.131939,0.16298 -0.201789,0.37253 -0.06597,0.20567 -0.06985,0.4191 v 0.59761 q 0.01164,0.22507 0.06985,0.43462 0.05821,0.20567 0.182386,0.36477 0.128058,0.15523 0.325967,0.24836 0.201789,0.0931 0.496711,0.0931 h 0.0039 q 0.263878,0 0.442384,-0.0737 0.182386,-0.0776 0.298803,-0.18238 0.116416,-0.10478 0.178505,-0.21343 0.06597,-0.10866 0.100895,-0.17851 l -0.562681,-0.31432 q -0.05821,0.13582 -0.170744,0.23283 -0.108656,0.097 -0.27552,0.0854 z m -1.292225,-2.81728 h 2.596092 v 4.05906 h -2.596092 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6946" />
       <path
          d="m 56.06784,122.35156 -0.469547,0.67134 v -0.67134 H 54.94636 v 2.88713 h 0.651933 v -0.62477 l 0.465667,0.62477 h 0.807155 l -1.071033,-1.43968 1.074914,-1.44745 z m -1.369836,-0.57044 h 2.464153 v 4.05906 h -2.464153 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88055563px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'Blackout 2AM';-inkscape-font-specification:'Blackout 2AM';fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6948" />
     </g>
     <g
        aria-label="ACTIVE"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.264583"
        id="text6697">
       <path
          d="m 47.007834,117.73249 c 0.01693,0.0635 0.08467,0.11853 0.148166,0.11853 h 0.122767 c 0.1016,0 0.169333,-0.0889 0.148167,-0.18627 l -0.5842,-2.54846 c -0.0127,-0.0635 -0.08467,-0.11854 -0.148167,-0.11854 h -0.09313 c -0.0635,0 -0.131234,0.055 -0.148167,0.11854 l -0.385233,1.65523 -0.2032,0.89747 c -0.02117,0.0974 0.04657,0.18203 0.148166,0.18203 h 0.122767 c 0.0635,0 0.131233,-0.055 0.148167,-0.11853 l 0.148166,-0.6604 h 0.4318 z M 46.648,115.97565 c 0.08043,0.35984 0.07197,0.47414 0.118534,0.67734 h -0.237067 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6927" />
       <path
          d="m 47.755011,117.02129 c 0,0.33443 0.09313,0.52916 0.224366,0.6604 0.1397,0.13546 0.313267,0.16933 0.474134,0.16933 0.1524,0 0.3302,-0.0339 0.4699,-0.16933 0.131233,-0.13124 0.220133,-0.32597 0.220133,-0.6604 v -0.0593 c 0,-0.0847 -0.06773,-0.1524 -0.148167,-0.1524 h -0.122766 c -0.08467,0 -0.1524,0.0677 -0.1524,0.1524 v 0.0593 c 0,0.1524 -0.02117,0.2667 -0.07197,0.33443 -0.0381,0.0423 -0.1143,0.0762 -0.194733,0.0762 -0.182034,0 -0.270934,-0.127 -0.270934,-0.41063 v -1.19804 c 0,-0.28363 0.09313,-0.4064 0.270934,-0.4064 0.173566,0 0.2667,0.12277 0.2667,0.4064 v 0.0593 c 0,0.0847 0.06773,0.1524 0.1524,0.1524 h 0.122766 c 0.08043,0 0.148167,-0.0677 0.148167,-0.1524 v -0.0593 c 0,-0.32173 -0.0889,-0.5334 -0.224367,-0.6604 -0.1397,-0.127 -0.309033,-0.1651 -0.465666,-0.1651 -0.160867,0 -0.3302,0.0381 -0.4699,0.1651 -0.135467,0.127 -0.2286,0.33867 -0.2286,0.6604 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6929" />
       <path
          d="m 49.543584,115.26445 c 0,0.0847 0.06773,0.1524 0.1524,0.1524 h 0.3429 v 2.27754 c 0,0.0847 0.06773,0.1524 0.1524,0.1524 h 0.1143 c 0.08467,0 0.1524,-0.0677 0.1524,-0.1524 v -2.27754 h 0.347133 c 0.08467,0 0.1524,-0.0677 0.1524,-0.1524 v -0.11853 c 0,-0.0847 -0.06773,-0.1524 -0.1524,-0.1524 h -1.109133 c -0.08467,0 -0.1524,0.0677 -0.1524,0.1524 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6931" />
       <path
          d="m 51.929063,115.15015 c 0,-0.0847 -0.07197,-0.1524 -0.1524,-0.1524 H 51.65813 c -0.08467,0 -0.1524,0.0677 -0.1524,0.1524 v 2.54847 c 0,0.0847 0.06773,0.1524 0.1524,0.1524 h 0.118533 c 0.08043,0 0.1524,-0.0677 0.1524,-0.1524 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6933" />
       <path
          d="m 52.845572,115.11205 c -0.01693,-0.0635 -0.08467,-0.11853 -0.148166,-0.11853 h -0.118534 c -0.105833,0 -0.173566,0.0889 -0.148166,0.18627 l 0.601133,2.54846 c 0.0127,0.0677 0.08043,0.11854 0.148167,0.11854 h 0.0889 c 0.0635,0 0.131233,-0.0508 0.148166,-0.11854 l 0.601134,-2.54846 c 0.02117,-0.0974 -0.04657,-0.18627 -0.148167,-0.18627 h -0.122767 c -0.0635,0 -0.135466,0.055 -0.148166,0.11853 l -0.376767,1.6129 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6935" />
       <path
          d="m 54.672253,114.99775 c -0.08467,0 -0.1524,0.0677 -0.1524,0.1524 v 2.54847 c 0,0.0847 0.06773,0.1524 0.1524,0.1524 h 0.9144 c 0.08467,0 0.1524,-0.0677 0.1524,-0.1524 v -0.1143 c 0,-0.0847 -0.06773,-0.1524 -0.1524,-0.1524 h -0.6477 v -0.8001 h 0.5334 c 0.08467,0 0.1524,-0.0677 0.1524,-0.1524 v -0.1143 c 0,-0.0847 -0.06773,-0.1524 -0.1524,-0.1524 h -0.5334 v -0.79587 h 0.6477 c 0.08467,0 0.1524,-0.0677 0.1524,-0.1524 v -0.1143 c 0,-0.0847 -0.06773,-0.1524 -0.1524,-0.1524 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6937" />
     </g>
     <g
        aria-label="P1"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#232323;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#232323;fill-opacity:1;stroke:none;stroke-width:0.264583"
        id="text6705">
       <path
          d="m 29.147797,116.3681 c 0.516467,0 0.745067,-0.27093 0.745067,-0.81703 0,-0.5461 -0.2286,-0.81703 -0.745067,-0.81703 h -0.4572 c -0.08467,0 -0.1524,0.0677 -0.1524,0.1524 v 2.54846 c 0,0.0847 0.06773,0.1524 0.1524,0.1524 h 0.118533 c 0.08043,0 0.148167,-0.0677 0.148167,-0.1524 v -1.0668 z m 0,-1.21496 c 0.2286,0 0.321733,0.1143 0.321733,0.39793 0,0.27517 -0.09313,0.39793 -0.321733,0.39793 h -0.1905 v -0.79586 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#232323;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#232323;fill-opacity:1;stroke-width:0.264583"
          id="path6922" />
       <path
          d="m 30.568078,115.5807 c 0.06773,0.0593 0.169333,0.0423 0.220133,-0.0254 l 0.02117,-0.0212 v 1.90076 c 0,0.0847 0.06773,0.1524 0.148166,0.1524 h 0.122767 c 0.08467,0 0.1524,-0.0677 0.1524,-0.1524 v -2.54846 c 0,-0.0847 -0.06773,-0.1524 -0.1524,-0.1524 h -0.118533 c -0.03387,0 -0.1016,0.0339 -0.118534,0.0593 l -0.389466,0.50377 c -0.0508,0.0677 -0.03387,0.1651 0.03387,0.21167 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#232323;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#232323;fill-opacity:1;stroke-width:0.264583"
          id="path6924" />
     </g>
     <g
        aria-label="P1"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.264583"
        id="text6709">
       <path
          d="m 14.949772,116.36594 c 0.516467,0 0.745067,-0.27094 0.745067,-0.81704 0,-0.5461 -0.2286,-0.81703 -0.745067,-0.81703 h -0.4572 c -0.08467,0 -0.1524,0.0677 -0.1524,0.1524 v 2.54847 c 0,0.0847 0.06773,0.1524 0.1524,0.1524 h 0.118534 c 0.08043,0 0.148166,-0.0677 0.148166,-0.1524 v -1.0668 z m 0,-1.21497 c 0.2286,0 0.321734,0.1143 0.321734,0.39793 0,0.27517 -0.09313,0.39794 -0.321734,0.39794 h -0.1905 v -0.79587 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6917" />
       <path
          d="m 16.370053,115.57854 c 0.06773,0.0593 0.169333,0.0423 0.220133,-0.0254 l 0.02117,-0.0212 v 1.90077 c 0,0.0847 0.06773,0.1524 0.148167,0.1524 h 0.122766 c 0.08467,0 0.1524,-0.0677 0.1524,-0.1524 v -2.54847 c 0,-0.0847 -0.06773,-0.1524 -0.1524,-0.1524 h -0.118533 c -0.03387,0 -0.1016,0.0339 -0.118533,0.0593 l -0.389467,0.50376 c -0.0508,0.0677 -0.03387,0.1651 0.03387,0.21167 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6919" />
     </g>
     <g
        aria-label="0"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.264583"
        id="text6715">
       <path
          d="m 62.301965,25.540924 c 0,0.3556 0.138289,0.5588 0.417689,0.5588 0.276578,0 0.414866,-0.211667 0.414866,-0.5588 v -0.7874 c 0,-0.347134 -0.135466,-0.555978 -0.414866,-0.555978 -0.282222,0 -0.417689,0.200378 -0.417689,0.555978 z m 0.282222,-0.815622 c 0,-0.183445 0.04516,-0.242712 0.135467,-0.242712 0.08749,0 0.132644,0.05927 0.132644,0.242712 v 0.843844 c 0,0.186267 -0.04515,0.245533 -0.132644,0.245533 -0.09031,0 -0.135467,-0.05927 -0.135467,-0.245533 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222223px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6914" />
     </g>
     <g
        aria-label="E"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.264583"
        id="text6719">
       <path
          d="m 72.91983,31.337636 c -0.08467,0 -0.1524,0.06773 -0.1524,0.1524 v 2.548467 c 0,0.08467 0.06773,0.1524 0.1524,0.1524 h 0.9144 c 0.08467,0 0.1524,-0.06773 0.1524,-0.1524 v -0.1143 c 0,-0.08467 -0.06773,-0.1524 -0.1524,-0.1524 h -0.6477 v -0.8001 h 0.5334 c 0.08467,0 0.1524,-0.06773 0.1524,-0.1524 v -0.1143 c 0,-0.08467 -0.06773,-0.1524 -0.1524,-0.1524 h -0.5334 v -0.795867 h 0.6477 c 0.08467,0 0.1524,-0.06773 0.1524,-0.1524 v -0.1143 c 0,-0.08467 -0.06773,-0.1524 -0.1524,-0.1524 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6911" />
     </g>
     <g
        aria-label="0"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.264583"
        id="text6725">
       <path
          d="m 62.301965,45.711181 c 0,0.3556 0.138289,0.5588 0.417689,0.5588 0.276578,0 0.414866,-0.211666 0.414866,-0.5588 v -0.7874 c 0,-0.347133 -0.135466,-0.555977 -0.414866,-0.555977 -0.282222,0 -0.417689,0.200377 -0.417689,0.555977 z m 0.282222,-0.815622 c 0,-0.183444 0.04516,-0.242711 0.135467,-0.242711 0.08749,0 0.132644,0.05927 0.132644,0.242711 v 0.843845 c 0,0.186266 -0.04515,0.245533 -0.132644,0.245533 -0.09031,0 -0.135467,-0.05927 -0.135467,-0.245533 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222223px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6908" />
     </g>
     <g
        aria-label="F"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.264583"
        id="text6729">
       <path
          d="m 72.896544,51.507894 c -0.08467,0 -0.1524,0.06773 -0.1524,0.1524 v 2.548466 c 0,0.08467 0.06773,0.1524 0.1524,0.1524 h 0.118533 c 0.08043,0 0.1524,-0.06773 0.1524,-0.1524 v -1.0668 h 0.474134 c 0.08467,0 0.1524,-0.06773 0.1524,-0.1524 v -0.1143 c 0,-0.08467 -0.06773,-0.1524 -0.1524,-0.1524 h -0.474134 v -0.795866 h 0.643467 c 0.08467,0 0.1524,-0.06773 0.1524,-0.1524 v -0.1143 c 0,-0.08467 -0.06773,-0.1524 -0.1524,-0.1524 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6905" />
     </g>
     <g
        aria-label="0"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.264583"
        id="text6735">
       <path
          d="m 62.301965,64.823097 c 0,0.3556 0.138289,0.5588 0.417689,0.5588 0.276578,0 0.414866,-0.211667 0.414866,-0.5588 v -0.7874 c 0,-0.347133 -0.135466,-0.555978 -0.414866,-0.555978 -0.282222,0 -0.417689,0.200378 -0.417689,0.555978 z m 0.282222,-0.815622 c 0,-0.183445 0.04516,-0.242711 0.135467,-0.242711 0.08749,0 0.132644,0.05927 0.132644,0.242711 v 0.843844 c 0,0.186267 -0.04515,0.245534 -0.132644,0.245534 -0.09031,0 -0.135467,-0.05927 -0.135467,-0.245534 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222223px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6902" />
     </g>
     <g
        aria-label="G"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.264583"
        id="text6739">
       <path
          d="m 73.489213,72.042217 c -0.249766,0 -0.237066,0.423333 0,0.423333 h 0.148167 v 0.182034 c 0,0.275166 -0.0889,0.4064 -0.270933,0.4064 -0.186267,0 -0.275167,-0.131234 -0.275167,-0.4064 0,-0.110067 0,-0.5334 0,-1.2065 0,-0.194734 0.0381,-0.296334 0.09737,-0.347134 0.04657,-0.04657 0.118533,-0.05503 0.1778,-0.05503 0.05927,0 0.127,0.0085 0.1778,0.05503 0.0508,0.04657 0.09313,0.148167 0.09313,0.347134 v 0.05927 c 0,0.08467 0.06773,0.1524 0.1524,0.1524 h 0.122767 c 0.08043,0 0.148166,-0.06773 0.148166,-0.1524 v -0.05927 c 0,-0.537634 -0.2286,-0.821267 -0.694266,-0.821267 -0.465667,0 -0.6985,0.283633 -0.6985,0.821267 v 1.2065 c 0,0.5334 0.232833,0.825499 0.6985,0.825499 0.465666,0 0.694266,-0.287866 0.694266,-0.825499 v -0.452967 c 0,-0.08467 -0.06773,-0.1524 -0.148166,-0.1524 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6899" />
     </g>
     <g
        aria-label="0"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.264583"
        id="text6745">
       <path
          d="m 62.301965,83.935028 c 0,0.3556 0.138289,0.5588 0.417689,0.5588 0.276578,0 0.414866,-0.211667 0.414866,-0.5588 v -0.7874 c 0,-0.347134 -0.135466,-0.555978 -0.414866,-0.555978 -0.282222,0 -0.417689,0.200378 -0.417689,0.555978 z m 0.282222,-0.815622 c 0,-0.183445 0.04516,-0.242712 0.135467,-0.242712 0.08749,0 0.132644,0.05927 0.132644,0.242712 v 0.843844 c 0,0.186267 -0.04515,0.245533 -0.132644,0.245533 -0.09031,0 -0.135467,-0.05927 -0.135467,-0.245533 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222223px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6896" />
     </g>
     <g
        aria-label="H"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.264583"
        id="text6749">
       <path
          d="m 73.108212,90.95094 v -1.0668 c 0,-0.08467 -0.06773,-0.1524 -0.1524,-0.1524 h -0.118533 c -0.08467,0 -0.1524,0.06773 -0.1524,0.1524 v 2.548467 c 0,0.08467 0.06773,0.1524 0.1524,0.1524 h 0.118533 c 0.08467,0 0.1524,-0.06773 0.1524,-0.1524 V 91.37004 h 0.4699 v 1.062567 c 0,0.08467 0.06773,0.1524 0.1524,0.1524 h 0.118534 c 0.08467,0 0.1524,-0.06773 0.1524,-0.1524 V 89.88414 c 0,-0.08467 -0.06773,-0.1524 -0.1524,-0.1524 h -0.118534 c -0.08467,0 -0.1524,0.06773 -0.1524,0.1524 v 1.0668 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6893" />
     </g>
     <g
        aria-label="0"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.264583"
        id="text6755">
       <path
          d="m 28.394557,25.540924 c 0,0.3556 0.138289,0.5588 0.417689,0.5588 0.276578,0 0.414867,-0.211667 0.414867,-0.5588 v -0.7874 c 0,-0.347134 -0.135467,-0.555978 -0.414867,-0.555978 -0.282222,0 -0.417689,0.200378 -0.417689,0.555978 z m 0.282222,-0.815622 c 0,-0.183445 0.04516,-0.242712 0.135467,-0.242712 0.08749,0 0.132644,0.05927 0.132644,0.242712 v 0.843844 c 0,0.186267 -0.04516,0.245533 -0.132644,0.245533 -0.09031,0 -0.135467,-0.05927 -0.135467,-0.245533 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222223px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6890" />
     </g>
     <g
        aria-label="A"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.264583"
        id="text6759">
       <path
          d="m 39.827347,34.072369 c 0.01693,0.0635 0.08467,0.118534 0.148166,0.118534 h 0.122767 c 0.1016,0 0.169333,-0.0889 0.148167,-0.186267 l -0.5842,-2.548466 c -0.0127,-0.0635 -0.08467,-0.118534 -0.148167,-0.118534 h -0.09313 c -0.0635,0 -0.131234,0.05503 -0.148167,0.118534 l -0.385233,1.655233 -0.2032,0.897466 c -0.02117,0.09737 0.04657,0.182034 0.148166,0.182034 h 0.122767 c 0.0635,0 0.131233,-0.05503 0.148167,-0.118534 l 0.148166,-0.6604 h 0.4318 z m -0.359834,-1.756833 c 0.08043,0.359833 0.07197,0.474133 0.118534,0.677333 H 39.34898 Z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6887" />
     </g>
     <g
        aria-label="0"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.264583"
        id="text6765">
       <path
          d="m 28.394557,45.711181 c 0,0.3556 0.138289,0.5588 0.417689,0.5588 0.276578,0 0.414867,-0.211666 0.414867,-0.5588 v -0.7874 c 0,-0.347133 -0.135467,-0.555977 -0.414867,-0.555977 -0.282222,0 -0.417689,0.200377 -0.417689,0.555977 z m 0.282222,-0.815622 c 0,-0.183444 0.04516,-0.242711 0.135467,-0.242711 0.08749,0 0.132644,0.05927 0.132644,0.242711 v 0.843845 c 0,0.186266 -0.04516,0.245533 -0.132644,0.245533 -0.09031,0 -0.135467,-0.05927 -0.135467,-0.245533 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222223px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6884" />
     </g>
     <g
        aria-label="B"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.264583"
        id="text6769">
       <path
          d="m 39.391313,54.36116 c 0.4953,0 0.715433,-0.270933 0.715433,-0.817033 0,-0.258233 -0.07197,-0.474133 -0.182033,-0.6096 0,0 0.182033,-0.2159 0.182033,-0.6096 0,-0.5461 -0.220133,-0.817033 -0.715433,-0.817033 h -0.4191 c -0.08467,0 -0.1524,0.06773 -0.1524,0.1524 v 2.548466 c 0,0.08467 0.06773,0.1524 0.1524,0.1524 z m 0,-2.434166 c 0.207433,0 0.2921,0.1143 0.2921,0.397933 0,0.283633 -0.08467,0.397933 -0.2921,0.397933 h -0.148167 v -0.795866 z m 0,1.214966 c 0.207433,0 0.2921,0.1143 0.2921,0.402167 0,0.283633 -0.08467,0.397933 -0.2921,0.397933 h -0.148167 v -0.8001 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6881" />
     </g>
     <g
        aria-label="0"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.264583"
        id="text6775">
       <path
          d="m 28.394557,64.823097 c 0,0.3556 0.138289,0.5588 0.417689,0.5588 0.276578,0 0.414867,-0.211667 0.414867,-0.5588 v -0.7874 c 0,-0.347133 -0.135467,-0.555978 -0.414867,-0.555978 -0.282222,0 -0.417689,0.200378 -0.417689,0.555978 z m 0.282222,-0.815622 c 0,-0.183445 0.04516,-0.242711 0.135467,-0.242711 0.08749,0 0.132644,0.05927 0.132644,0.242711 v 0.843844 c 0,0.186267 -0.04516,0.245534 -0.132644,0.245534 -0.09031,0 -0.135467,-0.05927 -0.135467,-0.245534 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222223px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6878" />
     </g>
     <g
        aria-label="C"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.264583"
        id="text6779">
       <path
          d="m 38.769014,72.64335 c 0,0.334434 0.09313,0.529167 0.224367,0.6604 0.1397,0.135467 0.313266,0.169333 0.474133,0.169333 0.1524,0 0.3302,-0.03387 0.4699,-0.169333 0.131233,-0.131233 0.220133,-0.325966 0.220133,-0.6604 v -0.05927 c 0,-0.08467 -0.06773,-0.1524 -0.148166,-0.1524 h -0.122767 c -0.08467,0 -0.1524,0.06773 -0.1524,0.1524 v 0.05927 c 0,0.1524 -0.02117,0.2667 -0.07197,0.334434 -0.0381,0.04233 -0.1143,0.0762 -0.194733,0.0762 -0.182033,0 -0.270933,-0.127 -0.270933,-0.410634 v -1.198033 c 0,-0.283633 0.09313,-0.4064 0.270933,-0.4064 0.173567,0 0.2667,0.122767 0.2667,0.4064 v 0.05927 c 0,0.08467 0.06773,0.1524 0.1524,0.1524 h 0.122767 c 0.08043,0 0.148166,-0.06773 0.148166,-0.1524 v -0.05927 c 0,-0.321733 -0.0889,-0.5334 -0.224366,-0.6604 -0.1397,-0.127 -0.309034,-0.1651 -0.465667,-0.1651 -0.160867,0 -0.3302,0.0381 -0.4699,0.1651 -0.135467,0.127 -0.2286,0.338667 -0.2286,0.6604 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6875" />
     </g>
     <g
        aria-label="0"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.264583"
        id="text6785">
       <path
          d="m 28.394557,83.935028 c 0,0.3556 0.138289,0.5588 0.417689,0.5588 0.276578,0 0.414867,-0.211667 0.414867,-0.5588 v -0.7874 c 0,-0.347134 -0.135467,-0.555978 -0.414867,-0.555978 -0.282222,0 -0.417689,0.200378 -0.417689,0.555978 z m 0.282222,-0.815622 c 0,-0.183445 0.04516,-0.242712 0.135467,-0.242712 0.08749,0 0.132644,0.05927 0.132644,0.242712 v 0.843844 c 0,0.186267 -0.04516,0.245533 -0.132644,0.245533 -0.09031,0 -0.135467,-0.05927 -0.135467,-0.245533 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222223px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6872" />
     </g>
     <g
        aria-label="D"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.264583"
        id="text6789">
       <path
          d="m 39.361681,92.585007 c 0.508,0 0.745067,-0.287867 0.745067,-0.8382 V 90.56994 c 0,-0.550333 -0.237067,-0.8382 -0.745067,-0.8382 h -0.4318 c -0.08467,0 -0.1524,0.06773 -0.1524,0.1524 v 2.548467 c 0,0.08467 0.06773,0.1524 0.1524,0.1524 z m 0,-2.434167 c 0.224367,0 0.3175,0.135467 0.3175,0.4191 v 1.176867 c 0,0.283633 -0.09313,0.4191 -0.3175,0.4191 h -0.1651 V 90.15084 Z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6869" />
     </g>
     <g
        aria-label="I"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#232323;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#232323;fill-opacity:1;stroke:none;stroke-width:0.264583"
        id="text6795">
       <path
          d="m 84.752557,35.194206 c 0,-0.08467 -0.07197,-0.1524 -0.1524,-0.1524 h -0.118533 c -0.08467,0 -0.1524,0.06773 -0.1524,0.1524 v 2.548467 c 0,0.08467 0.06773,0.1524 0.1524,0.1524 h 0.118533 c 0.08043,0 0.1524,-0.06773 0.1524,-0.1524 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#232323;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#232323;fill-opacity:1;stroke-width:0.264583"
          id="path6866" />
     </g>
     <g
        aria-label="J"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#232323;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#232323;fill-opacity:1;stroke:none;stroke-width:0.264583"
        id="text6799">
       <path
          d="m 83.859326,49.882294 c 0,0.508 0.220133,0.7747 0.6604,0.7747 0.440267,0 0.651933,-0.2667 0.651933,-0.7747 v -1.926167 c 0,-0.08467 -0.06773,-0.1524 -0.148166,-0.1524 h -0.118534 c -0.08467,0 -0.1524,0.06773 -0.1524,0.1524 v 1.926167 c 0,0.245533 -0.08043,0.3556 -0.232833,0.3556 -0.05503,0 -0.1143,-0.0042 -0.1524,-0.04233 -0.0508,-0.0508 -0.08467,-0.1397 -0.08467,-0.313267 v -0.05927 c 0,-0.08043 -0.07197,-0.148166 -0.1524,-0.148166 h -0.118533 c -0.08467,0 -0.1524,0.06773 -0.1524,0.148166 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#232323;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#232323;fill-opacity:1;stroke-width:0.264583"
          id="path6863" />
     </g>
     <g
        aria-label="K"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#232323;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#232323;fill-opacity:1;stroke:none;stroke-width:0.264583"
        id="text6803">
       <path
          d="m 84.291126,61.632448 v -0.9144 c 0,-0.08467 -0.06773,-0.1524 -0.1524,-0.1524 h -0.118533 c -0.08467,0 -0.1524,0.06773 -0.1524,0.1524 v 2.548467 c 0,0.08467 0.06773,0.1524 0.1524,0.1524 h 0.118533 c 0.08467,0 0.1524,-0.06773 0.1524,-0.1524 v -0.8382 l 0.0508,-0.0762 0.567267,0.9906 c 0.02117,0.0381 0.0889,0.0762 0.131233,0.0762 h 0.135467 c 0.127,0 0.194733,-0.118534 0.135466,-0.2286 l -0.7112,-1.253067 0.706967,-1.138766 c 0.06773,-0.110067 0,-0.232834 -0.131233,-0.232834 h -0.143934 c -0.04233,0 -0.105833,0.0381 -0.127,0.07197 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#232323;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#232323;fill-opacity:1;stroke-width:0.264583"
          id="path6860" />
     </g>
     <g
        aria-label="L"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#232323;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#232323;fill-opacity:1;stroke:none;stroke-width:0.264583"
        id="text6807">
       <path
          d="m 85.161075,75.914117 c 0,-0.08467 -0.06773,-0.1524 -0.1524,-0.1524 H 84.377908 V 73.47995 c 0,-0.08467 -0.06773,-0.1524 -0.148166,-0.1524 h -0.122767 c -0.08467,0 -0.1524,0.06773 -0.1524,0.1524 v 2.548467 c 0,0.08467 0.06773,0.1524 0.1524,0.1524 h 0.9017 c 0.08467,0 0.1524,-0.06773 0.1524,-0.1524 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#232323;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#232323;fill-opacity:1;stroke-width:0.264583"
          id="path6857" />
     </g>
     <g
        aria-label="M"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#232323;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#232323;fill-opacity:1;stroke:none;stroke-width:0.264583"
        id="text6811">
       <path
          d="m 84.551468,88.942734 c 0.0635,0 0.131233,-0.05503 0.148166,-0.122767 l 0.1397,-0.9398 v 0.910167 c 0,0.08467 0.06773,0.1524 0.1524,0.1524 h 0.118534 c 0.08467,0 0.1524,-0.06773 0.1524,-0.1524 v -2.548467 c 0,-0.08467 -0.06773,-0.1524 -0.1524,-0.1524 h -0.127 c -0.0635,0 -0.135467,0.05503 -0.148167,0.118534 l -0.3302,1.706033 -0.334433,-1.706033 c -0.0127,-0.0635 -0.08043,-0.118534 -0.143934,-0.118534 h -0.127 c -0.08467,0 -0.152399,0.06773 -0.152399,0.1524 v 2.548467 c 0,0.08467 0.06773,0.1524 0.152399,0.1524 h 0.118534 c 0.08043,0 0.1524,-0.06773 0.1524,-0.1524 V 87.8717 l 0.143933,0.9525 c 0.0127,0.0635 0.08043,0.118534 0.143933,0.118534 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#232323;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#232323;fill-opacity:1;stroke-width:0.264583"
          id="path6854" />
     </g>
     <g
        aria-label="P2"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#232323;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#232323;fill-opacity:1;stroke:none;stroke-width:0.264583"
        id="text6819">
       <path
          d="m 85.463805,116.4491 c 0.516466,0 0.745066,-0.27094 0.745066,-0.81704 0,-0.5461 -0.2286,-0.81703 -0.745066,-0.81703 h -0.4572 c -0.08467,0 -0.1524,0.0677 -0.1524,0.1524 v 2.54847 c 0,0.0847 0.06773,0.1524 0.1524,0.1524 h 0.118533 c 0.08043,0 0.148167,-0.0677 0.148167,-0.1524 v -1.0668 z m 0,-1.21497 c 0.2286,0 0.321733,0.1143 0.321733,0.39793 0,0.27517 -0.09313,0.39794 -0.321733,0.39794 h -0.1905 v -0.79587 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#232323;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#232323;fill-opacity:1;stroke-width:0.264583"
          id="path6849" />
       <path
          d="m 87.205819,117.2492 c 0.02963,-0.28787 0.131233,-0.4826 0.334433,-0.6604 0.321733,-0.28787 0.478367,-0.6223 0.478367,-1.01177 0,-0.43603 -0.224367,-0.762 -0.6223,-0.762 -0.4191,0 -0.626534,0.28363 -0.626534,0.7747 v 0.0254 c 0,0.0804 0.06773,0.14817 0.1524,0.14817 h 0.122767 c 0.08043,0 0.148167,-0.0677 0.148167,-0.14817 v -0.0254 c 0,-0.24553 0.06773,-0.3556 0.2032,-0.3556 0.127,0 0.198966,0.13547 0.198966,0.3429 0,0.24977 -0.122766,0.49107 -0.338666,0.69427 -0.1778,0.1651 -0.313267,0.3556 -0.389467,0.56303 l 0.0042,-0.004 c -0.06773,0.18203 -0.1016,0.38523 -0.1016,0.62653 v 0.0593 c 0,0.0847 0.06773,0.1524 0.1524,0.1524 h 0.944034 c 0.08467,0 0.1524,-0.0677 0.1524,-0.1524 v -0.1143 c 0,-0.0847 -0.06773,-0.1524 -0.1524,-0.1524 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#232323;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#232323;fill-opacity:1;stroke-width:0.264583"
          id="path6851" />
     </g>
     <g
        aria-label="P2"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Blackout Sunrise';-inkscape-font-specification:'Blackout Sunrise';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#c57ab7;fill-opacity:1;stroke:none;stroke-width:0.264583"
        id="text6823">
       <path
          d="m 71.265776,116.44694 c 0.516467,0 0.745067,-0.27094 0.745067,-0.81704 0,-0.5461 -0.2286,-0.81703 -0.745067,-0.81703 h -0.4572 c -0.08467,0 -0.1524,0.0677 -0.1524,0.1524 v 2.54847 c 0,0.0847 0.06773,0.1524 0.1524,0.1524 h 0.118534 c 0.08043,0 0.148166,-0.0677 0.148166,-0.1524 v -1.0668 z m 0,-1.21497 c 0.2286,0 0.321734,0.1143 0.321734,0.39793 0,0.27517 -0.09313,0.39794 -0.321734,0.39794 h -0.1905 v -0.79587 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6844" />
       <path
          d="m 73.00779,117.24704 c 0.02963,-0.28787 0.131233,-0.4826 0.334433,-0.6604 0.321734,-0.28787 0.478367,-0.6223 0.478367,-1.01177 0,-0.43603 -0.224367,-0.762 -0.6223,-0.762 -0.4191,0 -0.626533,0.28363 -0.626533,0.7747 v 0.0254 c 0,0.0804 0.06773,0.14817 0.1524,0.14817 h 0.122767 c 0.08043,0 0.148166,-0.0677 0.148166,-0.14817 v -0.0254 c 0,-0.24553 0.06773,-0.3556 0.2032,-0.3556 0.127,0 0.198967,0.13547 0.198967,0.3429 0,0.24977 -0.122767,0.49107 -0.338667,0.69427 -0.1778,0.1651 -0.313266,0.3556 -0.389466,0.56303 l 0.0042,-0.004 c -0.06773,0.18203 -0.1016,0.38523 -0.1016,0.62653 v 0.0593 c 0,0.0847 0.06773,0.1524 0.1524,0.1524 h 0.944033 c 0.08467,0 0.1524,-0.0677 0.1524,-0.1524 v -0.1143 c 0,-0.0847 -0.06773,-0.1524 -0.1524,-0.1524 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.26458332px;fill:#c57ab7;fill-opacity:1;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans Bold';letter-spacing:0.264583px;fill:#c57ab7;fill-opacity:1;stroke-width:0.264583"
          id="path6846" />
     </g>
   </g>

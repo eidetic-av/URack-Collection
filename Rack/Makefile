@@ -1,5 +1,5 @@
-RACK_DIR = /eidetic/Rack-SDK
-URACK_DIR = /eidetic/URack-VCV
+RACK_DIR = /home/matth/eidetic/Rack-SDK
+URACK_DIR = /home/matth/eidetic/URack-VCV
 
 # Include the URack components
 include $(URACK_DIR)/plugin.mk

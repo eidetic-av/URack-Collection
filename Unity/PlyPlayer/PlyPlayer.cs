@@ -84,6 +84,7 @@ namespace Eidetic.URack.Collection
 
         public void Update()
         {
+            RGBGain = FrameCount;
             if (FrameCount == 0) return;
 
             if (Position != LastPosition || Rotation != LastRotation || Scale != LastScale || RGBGain != LastRGBGain)

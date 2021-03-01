@@ -1,8 +1,11 @@
-#!/bin/sh
+#!/bin/fish
 
 export CC=x86_64-w64-mingw32-gcc
 export CXX=x86_64-w64-mingw32-g++
 export STRIP=x86_64-w64-mingw32-strip
 
 make clean
-make -j$(nproc) dist
+make -j(nproc) dist
+
+rm /remote/node/Users/Matt/Documents/Rack/plugins-v1/URack-Collection/ -rf
+cp dist/URack-Collection-1.0.0-win.zip -R /remote/node/Users/Matt/Documents/Rack/plugins-v1/
