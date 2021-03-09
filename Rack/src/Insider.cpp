@@ -45,6 +45,7 @@ struct Insider : URack::UModule {
   enum LightIds { ACTIVE_LIGHT, NUM_LIGHTS };
 
   std::string scriptTarget;
+  URack::UModuleWidget *widget;
 
   Insider() {
     config(NUM_PARAMS, NUM_INPUTS, NUM_OUTPUTS, NUM_LIGHTS);
@@ -62,19 +63,10 @@ struct Insider : URack::UModule {
     configListener("L", L_OUTPUT);
     configListener("M", M_OUTPUT);
     configActivate(ACTIVE_PARAM, ACTIVE_LIGHT, ACTIVE_INPUT);
-
-    if (scriptTarget != "")
-      setTarget(scriptTarget);
   }
 
   void configCustomBiUpdate(std::string *inputField, ParamIds paramId,
                             InputIds inputId, ParamIds attenParamId) {}
-
-  void setTarget(std::string targetName) {
-    scriptTarget = targetName;
-    URack::networkManager->dispatcher->action(
-        activeHosts, instanceAddress + "/SetTarget", scriptTarget);
-  }
 
   void update(const ProcessArgs &args) override {}
 
@@ -84,6 +76,7 @@ struct Insider : URack::UModule {
       scriptTarget = json_string_value(targetJ);
     else
       scriptTarget = "";
+    widget->updateFields();
   }
 
   json_t *onSave() override {
@@ -94,7 +87,43 @@ struct Insider : URack::UModule {
   }
 };
 
+struct TargetField : TextField {
+  Insider *module;
+  std::string *string;
+  std::string name;
+
+  TargetField(Insider *_module, std::string *_string, std::string _name,
+              std::string _placeholder) {
+    box.size.x = 100;
+    module = _module;
+    placeholder = _placeholder;
+    name = _name;
+    string = _string;
+    if (!string->empty())
+      update(*string);
+  }
+
+  void update(std::string newValue) {
+    setText(newValue);
+    string->assign(newValue);
+    URack::networkManager->dispatcher->action(
+        module->activeHosts, module->instanceAddress + "/" + name, newValue);
+  }
+
+  void onSelectKey(const event::SelectKey &e) override {
+    if (e.action == GLFW_RELEASE)
+      update(text);
+    else if (e.key == GLFW_KEY_BACKSPACE) {
+      setText(text.substr(0, text.size() - 1));
+      e.consume(this);
+    }
+  }
+};
+
 struct InsiderWidget : URack::UModuleWidget {
+  TargetField *targetField;
+  TargetField *aField;
+
   InsiderWidget(Insider *module) {
     setModule(module);
     setPanel(
@@ -108,10 +137,10 @@ struct InsiderWidget : URack::UModuleWidget {
     addChild(createWidget<ScrewBlack>(Vec(box.size.x - 2 * RACK_GRID_WIDTH,
                                           RACK_GRID_HEIGHT - RACK_GRID_WIDTH)));
 
-    addParam(createParamCentered<TrimpotGray>(mm2px(Vec(17.532, 32.764)),
+    addParam(createParamCentered<TrimpotGray>(mm2px(Vec(17.532, 18.764)),
                                               module, Insider::A_ATTEN_PARAM));
     addParam(createParamCentered<Davies1900hSmallWhiteKnob>(
-        mm2px(Vec(28.852, 32.764)), module, Insider::A_PARAM));
+        mm2px(Vec(28.852, 18.764)), module, Insider::A_PARAM));
     addParam(createParamCentered<Davies1900hSmallWhiteKnob>(
         mm2px(Vec(62.76, 32.764)), module, Insider::E_PARAM));
     addParam(createParamCentered<TrimpotGray>(mm2px(Vec(17.532, 52.934)),
@@ -137,7 +166,7 @@ struct InsiderWidget : URack::UModuleWidget {
     addChild(createLightCentered<LEDBezelLight<RedLight>>(
         mm2px(Vec(44.771, 108.759)), module, Insider::ACTIVE_LIGHT));
 
-    addInput(createInputCentered<PJ301MPort>(mm2px(Vec(8.291, 32.764)), module,
+    addInput(createInputCentered<PJ301MPort>(mm2px(Vec(8.291, 18.764)), module,
                                              Insider::A_INPUT));
     addInput(createInputCentered<PJ301MPort>(mm2px(Vec(49.607, 32.764)), module,
                                              Insider::E_INPUT));
@@ -174,45 +203,34 @@ struct InsiderWidget : URack::UModuleWidget {
                         Insider::POINT_CLOUD_1_OUTPUT, "PointCloud1Output");
     addPointCloudOutput(mm2px(Vec(86.396, 108.576)), module,
                         Insider::POINT_CLOUD_2_OUTPUT, "PointCloud2Output");
+
+    if (module) {
+      auto m = (Insider *)module;
+      m->widget = this;
+      targetField = new TargetField(m, &m->scriptTarget, "TargetObjectName",
+                                    "MonoBehaviour or VFX graph name");
+      addChild(targetField);
+      aField = new TargetField(m, &m->scriptTarget, "A", "Property");
+      aField->setPosition(mm2px(Vec(4, 26)));
+      addChild(aField);
+    }
   }
 
-  struct TargetField : TextField {
-    Insider *module;
-    Menu *menu;
-
-    TargetField(Insider *_module, Menu *_menu) {
-      box.size.x = 100;
-      placeholder = "MonoBehaviour or VFX graph name";
-      module = _module;
-      menu = _menu;
-      if (module->scriptTarget != "")
-        setText(module->scriptTarget);
-    }
-
-    void onSelectKey(const event::SelectKey &e) override {
-      if (e.action == GLFW_PRESS || e.action == GLFW_REPEAT) {
-        if (e.key == GLFW_KEY_BACKSPACE) {
-          setText(text.substr(0, text.size() - 1));
-          e.consume(this);
-        } else if (e.key == GLFW_KEY_ENTER) {
-          module->scriptTarget = text;
-          menu->hide();
-          e.consume(this);
-          module->setTarget(module->scriptTarget);
-        }
-      }
-    }
-  };
-
-  void appendContextMenu(Menu *menu) override {
-    menu->addChild(new MenuEntry);
-    menu->addChild(createMenuLabel("Specify target script/graph"));
-
-    auto targetField = new TargetField((Insider *)module, menu);
-    menu->addChild(targetField);
-
-    URack::UModuleWidget::appendContextMenu(menu);
+  void updateFields() override {
+    auto m = (Insider *)this->module;
+    targetField->update(m->scriptTarget);
+    aField->update(m->scriptTarget);
   }
+
+  // void appendContextMenu(Menu *menu) override {
+  //   menu->addChild(new MenuEntry);
+  //   menu->addChild(createMenuLabel("Specify target script/graph"));
+
+  //   auto targetField = new TargetField((Insider *)module);
+  //   menu->addChild(targetField);
+
+  //   URack::UModuleWidget::appendContextMenu(menu);
+  // }
 };
 
 Model *modelInsider = createModel<Insider, InsiderWidget>("Insider");
