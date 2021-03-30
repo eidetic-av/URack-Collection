@@ -12,9 +12,7 @@ struct Insider : URack::UModule {
     D_ATTEN_PARAM,
     D_PARAM,
     E_PARAM,
-    F_PARAM,
-    G_PARAM,
-    H_PARAM,
+    E_ATTEN_PARAM,
     ACTIVE_PARAM,
     NUM_PARAMS
   };
@@ -24,27 +22,20 @@ struct Insider : URack::UModule {
     C_INPUT,
     D_INPUT,
     E_INPUT,
-    F_INPUT,
-    G_INPUT,
-    H_INPUT,
-    POINT_CLOUD_1_INPUT,
-    POINT_CLOUD_2_INPUT,
     ACTIVE_INPUT,
     NUM_INPUTS
   };
-  enum OutputIds {
-    I_OUTPUT,
-    J_OUTPUT,
-    K_OUTPUT,
-    L_OUTPUT,
-    M_OUTPUT,
-    POINT_CLOUD_1_OUTPUT,
-    POINT_CLOUD_2_OUTPUT,
-    NUM_OUTPUTS
-  };
+  enum OutputIds { NUM_OUTPUTS };
   enum LightIds { ACTIVE_LIGHT, NUM_LIGHTS };
 
   std::string scriptTarget;
+  std::string aTarget;
+  std::string bTarget;
+  std::string cTarget;
+  std::string dTarget;
+  std::string eTarget;
+  bool sentInitialFieldUpdate;
+
   URack::UModuleWidget *widget;
 
   Insider() {
@@ -53,22 +44,20 @@ struct Insider : URack::UModule {
     configBiUpdate("B", B_PARAM, B_INPUT, B_ATTEN_PARAM, 0.f);
     configBiUpdate("C", C_PARAM, C_INPUT, C_ATTEN_PARAM, 0.f);
     configBiUpdate("D", D_PARAM, D_INPUT, D_ATTEN_PARAM, 0.f);
-    configBiUpdate("E", E_PARAM, E_INPUT);
-    configBiUpdate("F", F_PARAM, F_INPUT);
-    configBiUpdate("G", G_PARAM, G_INPUT);
-    configBiUpdate("H", H_PARAM, H_INPUT);
-    configListener("I", I_OUTPUT);
-    configListener("J", J_OUTPUT);
-    configListener("K", K_OUTPUT);
-    configListener("L", L_OUTPUT);
-    configListener("M", M_OUTPUT);
+    configBiUpdate("E", E_PARAM, E_INPUT, E_ATTEN_PARAM, 0.f);
     configActivate(ACTIVE_PARAM, ACTIVE_LIGHT, ACTIVE_INPUT);
   }
 
   void configCustomBiUpdate(std::string *inputField, ParamIds paramId,
                             InputIds inputId, ParamIds attenParamId) {}
 
-  void update(const ProcessArgs &args) override {}
+  void update(const ProcessArgs &args) override {
+
+    if (!sentInitialFieldUpdate) {
+      widget->updateFields();
+      sentInitialFieldUpdate = true;
+    }
+  }
 
   void onLoad(json_t *rootJ) override {
     json_t *targetJ = json_object_get(rootJ, "scriptTarget");
@@ -76,13 +65,42 @@ struct Insider : URack::UModule {
       scriptTarget = json_string_value(targetJ);
     else
       scriptTarget = "";
-    widget->updateFields();
+    targetJ = json_object_get(rootJ, "aTarget");
+    if (targetJ)
+      aTarget = json_string_value(targetJ);
+    else
+      aTarget = "";
+    targetJ = json_object_get(rootJ, "bTarget");
+    if (targetJ)
+      bTarget = json_string_value(targetJ);
+    else
+      bTarget = "";
+    targetJ = json_object_get(rootJ, "cTarget");
+    if (targetJ)
+      cTarget = json_string_value(targetJ);
+    else
+      cTarget = "";
+    targetJ = json_object_get(rootJ, "dTarget");
+    if (targetJ)
+      dTarget = json_string_value(targetJ);
+    else
+      dTarget = "";
+    targetJ = json_object_get(rootJ, "eTarget");
+    if (targetJ)
+      eTarget = json_string_value(targetJ);
+    else
+      eTarget = "";
   }
 
   json_t *onSave() override {
     json_t *rootJ = json_object();
     json_object_set_new(rootJ, "scriptTarget",
                         json_string(scriptTarget.c_str()));
+    json_object_set_new(rootJ, "aTarget", json_string(aTarget.c_str()));
+    json_object_set_new(rootJ, "bTarget", json_string(bTarget.c_str()));
+    json_object_set_new(rootJ, "cTarget", json_string(cTarget.c_str()));
+    json_object_set_new(rootJ, "dTarget", json_string(dTarget.c_str()));
+    json_object_set_new(rootJ, "eTarget", json_string(eTarget.c_str()));
     return rootJ;
   }
 };
@@ -107,130 +125,111 @@ struct TargetField : TextField {
     setText(newValue);
     string->assign(newValue);
     URack::networkManager->dispatcher->action(
-        module->activeHosts, module->instanceAddress + "/" + name, newValue);
+        module->activeHosts, module->instanceAddress + "/UpdateTarget",
+        name + "/" + newValue);
   }
 
   void onSelectKey(const event::SelectKey &e) override {
     if (e.action == GLFW_RELEASE)
       update(text);
-    else if (e.key == GLFW_KEY_BACKSPACE) {
+    else if (e.action == GLFW_PRESS && e.key == GLFW_KEY_BACKSPACE)
       setText(text.substr(0, text.size() - 1));
-      e.consume(this);
-    }
+    e.consume(this);
   }
 };
 
 struct InsiderWidget : URack::UModuleWidget {
   TargetField *targetField;
   TargetField *aField;
+  TargetField *bField;
+  TargetField *cField;
+  TargetField *dField;
+  TargetField *eField;
 
   InsiderWidget(Insider *module) {
     setModule(module);
     setPanel(
         APP->window->loadSvg(asset::plugin(pluginInstance, "res/Insider.svg")));
 
-    addChild(createWidget<ScrewBlack>(Vec(RACK_GRID_WIDTH, 0)));
-    addChild(
-        createWidget<ScrewBlack>(Vec(box.size.x - 2 * RACK_GRID_WIDTH, 0)));
-    addChild(createWidget<ScrewBlack>(
-        Vec(RACK_GRID_WIDTH, RACK_GRID_HEIGHT - RACK_GRID_WIDTH)));
-    addChild(createWidget<ScrewBlack>(Vec(box.size.x - 2 * RACK_GRID_WIDTH,
-                                          RACK_GRID_HEIGHT - RACK_GRID_WIDTH)));
-
-    addParam(createParamCentered<TrimpotGray>(mm2px(Vec(17.532, 18.764)),
-                                              module, Insider::A_ATTEN_PARAM));
-    addParam(createParamCentered<Davies1900hSmallWhiteKnob>(
-        mm2px(Vec(28.852, 18.764)), module, Insider::A_PARAM));
-    addParam(createParamCentered<Davies1900hSmallWhiteKnob>(
-        mm2px(Vec(62.76, 32.764)), module, Insider::E_PARAM));
-    addParam(createParamCentered<TrimpotGray>(mm2px(Vec(17.532, 52.934)),
-                                              module, Insider::B_ATTEN_PARAM));
-    addParam(createParamCentered<Davies1900hSmallWhiteKnob>(
-        mm2px(Vec(28.852, 52.935)), module, Insider::B_PARAM));
-    addParam(createParamCentered<Davies1900hSmallWhiteKnob>(
-        mm2px(Vec(62.76, 52.935)), module, Insider::F_PARAM));
-    addParam(createParamCentered<TrimpotGray>(mm2px(Vec(17.532, 72.046)),
-                                              module, Insider::C_ATTEN_PARAM));
-    addParam(createParamCentered<Davies1900hSmallWhiteKnob>(
-        mm2px(Vec(28.852, 72.046)), module, Insider::C_PARAM));
-    addParam(createParamCentered<Davies1900hSmallWhiteKnob>(
-        mm2px(Vec(62.76, 72.046)), module, Insider::G_PARAM));
-    addParam(createParamCentered<TrimpotGray>(mm2px(Vec(17.532, 91.158)),
-                                              module, Insider::D_ATTEN_PARAM));
-    addParam(createParamCentered<Davies1900hSmallWhiteKnob>(
-        mm2px(Vec(28.852, 91.158)), module, Insider::D_PARAM));
-    addParam(createParamCentered<Davies1900hSmallWhiteKnob>(
-        mm2px(Vec(62.76, 91.158)), module, Insider::H_PARAM));
-    addParam(createParamCentered<LEDBezel>(mm2px(Vec(44.771, 108.759)), module,
+    addParam(createParamCentered<LEDBezel>(mm2px(Vec(40, 13)), module,
                                            Insider::ACTIVE_PARAM));
     addChild(createLightCentered<LEDBezelLight<RedLight>>(
-        mm2px(Vec(44.771, 108.759)), module, Insider::ACTIVE_LIGHT));
+        mm2px(Vec(40, 13)), module, Insider::ACTIVE_LIGHT));
 
-    addInput(createInputCentered<PJ301MPort>(mm2px(Vec(8.291, 18.764)), module,
+    addInput(createInputCentered<PJ301MPort>(mm2px(Vec(8, 28)), module,
                                              Insider::A_INPUT));
-    addInput(createInputCentered<PJ301MPort>(mm2px(Vec(49.607, 32.764)), module,
-                                             Insider::E_INPUT));
-    addInput(createInputCentered<PJ301MPort>(mm2px(Vec(8.291, 52.935)), module,
-                                             Insider::B_INPUT));
-    addInput(createInputCentered<PJ301MPort>(mm2px(Vec(49.607, 52.935)), module,
-                                             Insider::F_INPUT));
-    addInput(createInputCentered<PJ301MPort>(mm2px(Vec(8.291, 72.046)), module,
-                                             Insider::C_INPUT));
-    addInput(createInputCentered<PJ301MPort>(mm2px(Vec(49.607, 72.046)), module,
-                                             Insider::G_INPUT));
-    addInput(createInputCentered<PJ301MPort>(mm2px(Vec(8.291, 91.158)), module,
-                                             Insider::D_INPUT));
-    addInput(createInputCentered<PJ301MPort>(mm2px(Vec(49.607, 91.158)), module,
-                                             Insider::H_INPUT));
-    addPointCloudInput(mm2px(Vec(15.615, 108.495)), module,
-                       Insider::POINT_CLOUD_1_INPUT, "PointCloud1Input");
-    addPointCloudInput(mm2px(Vec(72.198, 108.576)), module,
-                       Insider::POINT_CLOUD_2_INPUT, "PointCloud2Input");
-    addInput(createInputCentered<PJ301MPort>(mm2px(Vec(56.323, 108.759)),
-                                             module, Insider::ACTIVE_INPUT));
+    addParam(createParamCentered<TrimpotGray>(mm2px(Vec(18, 28)), module,
+                                              Insider::A_ATTEN_PARAM));
+    addParam(createParamCentered<Davies1900hSmallWhiteKnob>(
+        mm2px(Vec(28, 28)), module, Insider::A_PARAM));
 
-    addOutput(createOutputCentered<PJ301MPort>(mm2px(Vec(92.097, 36.468)),
-                                               module, Insider::I_OUTPUT));
-    addOutput(createOutputCentered<PJ301MPort>(mm2px(Vec(92.097, 49.23)),
-                                               module, Insider::J_OUTPUT));
-    addOutput(createOutputCentered<PJ301MPort>(mm2px(Vec(92.097, 61.992)),
-                                               module, Insider::K_OUTPUT));
-    addOutput(createOutputCentered<PJ301MPort>(mm2px(Vec(92.097, 74.754)),
-                                               module, Insider::L_OUTPUT));
-    addOutput(createOutputCentered<PJ301MPort>(mm2px(Vec(92.097, 87.516)),
-                                               module, Insider::M_OUTPUT));
-    addPointCloudOutput(mm2px(Vec(29.813, 108.495)), module,
-                        Insider::POINT_CLOUD_1_OUTPUT, "PointCloud1Output");
-    addPointCloudOutput(mm2px(Vec(86.396, 108.576)), module,
-                        Insider::POINT_CLOUD_2_OUTPUT, "PointCloud2Output");
+    addInput(createInputCentered<PJ301MPort>(mm2px(Vec(8, 48)), module,
+                                             Insider::B_INPUT));
+    addParam(createParamCentered<TrimpotGray>(mm2px(Vec(18, 48)), module,
+                                              Insider::B_ATTEN_PARAM));
+    addParam(createParamCentered<Davies1900hSmallWhiteKnob>(
+        mm2px(Vec(28, 48)), module, Insider::B_PARAM));
+
+    addInput(createInputCentered<PJ301MPort>(mm2px(Vec(8, 68)), module,
+                                             Insider::C_INPUT));
+    addParam(createParamCentered<TrimpotGray>(mm2px(Vec(18, 68)), module,
+                                              Insider::C_ATTEN_PARAM));
+    addParam(createParamCentered<Davies1900hSmallWhiteKnob>(
+        mm2px(Vec(28, 68)), module, Insider::C_PARAM));
+
+    addInput(createInputCentered<PJ301MPort>(mm2px(Vec(8, 88)), module,
+                                             Insider::D_INPUT));
+    addParam(createParamCentered<TrimpotGray>(mm2px(Vec(18, 88)), module,
+                                              Insider::D_ATTEN_PARAM));
+    addParam(createParamCentered<Davies1900hSmallWhiteKnob>(
+        mm2px(Vec(28, 88)), module, Insider::D_PARAM));
+
+    addInput(createInputCentered<PJ301MPort>(mm2px(Vec(8, 108)), module,
+                                             Insider::E_INPUT));
+    addParam(createParamCentered<TrimpotGray>(mm2px(Vec(18, 108)), module,
+                                              Insider::E_ATTEN_PARAM));
+    addParam(createParamCentered<Davies1900hSmallWhiteKnob>(
+        mm2px(Vec(28, 108)), module, Insider::E_PARAM));
 
     if (module) {
       auto m = (Insider *)module;
       m->widget = this;
-      targetField = new TargetField(m, &m->scriptTarget, "TargetObjectName",
-                                    "MonoBehaviour or VFX graph name");
+      targetField =
+          new TargetField(m, &m->scriptTarget, "TargetName", "Target");
+      targetField->setPosition(mm2px(Vec(2, 10)));
       addChild(targetField);
-      aField = new TargetField(m, &m->scriptTarget, "A", "Property");
-      aField->setPosition(mm2px(Vec(4, 26)));
+
+      aField = new TargetField(m, &m->aTarget, "A", "Property");
+      aField->setPosition(mm2px(Vec(4, 35)));
       addChild(aField);
+
+      bField = new TargetField(m, &m->bTarget, "B", "Property");
+      bField->setPosition(mm2px(Vec(4, 55)));
+      addChild(bField);
+
+      cField = new TargetField(m, &m->cTarget, "C", "Property");
+      cField->setPosition(mm2px(Vec(4, 75)));
+      addChild(cField);
+
+      dField = new TargetField(m, &m->dTarget, "D", "Property");
+      dField->setPosition(mm2px(Vec(4, 95)));
+      addChild(dField);
+
+      eField = new TargetField(m, &m->eTarget, "E", "Property");
+      eField->setPosition(mm2px(Vec(4, 115)));
+      addChild(eField);
     }
   }
 
   void updateFields() override {
     auto m = (Insider *)this->module;
     targetField->update(m->scriptTarget);
-    aField->update(m->scriptTarget);
+    aField->update(m->aTarget);
+    bField->update(m->bTarget);
+    cField->update(m->cTarget);
+    dField->update(m->dTarget);
+    eField->update(m->eTarget);
   }
-
-  // void appendContextMenu(Menu *menu) override {
-  //   menu->addChild(new MenuEntry);
-  //   menu->addChild(createMenuLabel("Specify target script/graph"));
-
-  //   auto targetField = new TargetField((Insider *)module);
-  //   menu->addChild(targetField);
-
-  //   URack::UModuleWidget::appendContextMenu(menu);
-  // }
 };
 
 Model *modelInsider = createModel<Insider, InsiderWidget>("Insider");
