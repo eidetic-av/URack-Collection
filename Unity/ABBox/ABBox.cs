@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Eidetic.PointClouds;
+using UnityEngine;
 using UnityEngine.Serialization;
 using System.Collections;
 using System.Collections.Generic;
@@ -14,13 +15,11 @@ namespace Eidetic.URack.Collection
         [Input] public float PositionY { set { Position.y = value; } }
         [Input] public float PositionZ { set { Position.z = value; } }
         Vector3 Position = Vector3.zero;
-        Vector3 lastPosition = Vector3.zero;
 
         [Input] public float ScaleX { set { Scale.x = value; } }
         [Input] public float ScaleY { set { Scale.y = value; } }
         [Input] public float ScaleZ { set { Scale.z = value; } }
         Vector3 Scale = Vector3.one;
-        Vector3 lastScale = Vector3.one;
 
         ComputeShader abBoxShader;
         ComputeShader ABBoxShader => abBoxShader ??
@@ -33,10 +32,10 @@ namespace Eidetic.URack.Collection
         {
             set
             {
-                if (pointCloud == value) return;
                 pointCloud = value;
-                if (pointCloud.PositionMap != null)
+                if (pointCloud?.PositionMap != null)
                 {
+                    Debug.Log("Running set textures");
                     ABBoxShader.SetTexture(ShaderHandle, "InputPositions", pointCloud.PositionMap);
                     ABBoxShader.SetTexture(ShaderHandle, "InputColors", pointCloud.ColorMap);
                 }
@@ -49,8 +48,6 @@ namespace Eidetic.URack.Collection
         {
             get
             {
-                if (Position == lastPosition && Scale == lastScale)
-                    return inside;
                 CalculateOutputMaps();
                 return inside;
             }
@@ -61,8 +58,6 @@ namespace Eidetic.URack.Collection
         {
             get
             {
-                if (Position == lastPosition && Scale == lastScale)
-                    return outside;
                 CalculateOutputMaps();
                 return outside;
             }
@@ -73,18 +68,28 @@ namespace Eidetic.URack.Collection
         RenderTexture OutsidePositionMap;
         RenderTexture OutsideColorMap;
 
+        int lastCalculationFrame;
+        
         void CalculateOutputMaps()
         {
-            if (inside == null) inside = ScriptableObject.CreateInstance<PointCloud>();
-            if (outside == null) outside = ScriptableObject.CreateInstance<PointCloud>();
+            if (lastCalculationFrame == Time.frameCount) return;
+            lastCalculationFrame = Time.frameCount;
+            Debug.Log("Running calculate maps");
+            
+            if (inside == null) inside = PointCloud.CreateInstance();
+            if (outside == null) outside = PointCloud.CreateInstance();
 
             if (PointCloud?.PositionMap == null) return;
+            Debug.Log("PointCloud?.PositionMap not null");
 
             var inputPositions = PointCloud.PositionMap;
             var inputColors = PointCloud.ColorMap;
 
             var width = inputPositions.width;
             var height = inputPositions.height;
+
+            // ABBoxShader.SetTexture(ShaderHandle, "InputPositions", inputPositions);
+            // ABBoxShader.SetTexture(ShaderHandle, "InputColors", inputColors);
 
             if (InsidePositionMap == null || InsidePositionMap.height != height)
             {
@@ -130,15 +135,14 @@ namespace Eidetic.URack.Collection
             var threadGroupsX = Mathf.CeilToInt(width / 8f);
             var threadGroupsY = Mathf.CeilToInt(height / 8f);
             ABBoxShader.Dispatch(ShaderHandle, threadGroupsX, threadGroupsY, 1);
+            Debug.Log("Dispatched shader");
 
             inside.SetPositionMap(InsidePositionMap);
             inside.SetColorMap(InsideColorMap);
 
             outside.SetPositionMap(OutsidePositionMap);
             outside.SetColorMap(OutsideColorMap);
-
-            lastPosition = Position;
-            lastScale = Scale;
+            Debug.Log("Set all maps");
         }
 
     }

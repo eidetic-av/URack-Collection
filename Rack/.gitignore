@@ -2,3 +2,6 @@ build
 dist
 *.dll
 *.so
+*.o
+*.d
+*~

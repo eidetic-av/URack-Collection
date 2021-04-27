@@ -9,6 +9,12 @@ namespace Eidetic.URack.Collection
 {
     public class Mirage2x : VFXModule
     {
+        public void Start()
+        {
+            lastSequence = ImageSequence;
+            images = Resources.LoadAll<Texture2D>("beeple").ToList();
+        }
+
         public void Update()
         {
             if (nextTextureDirectory)
@@ -28,7 +34,7 @@ namespace Eidetic.URack.Collection
         {
             set
             {
-                if (value = false) return;
+                if (value == false) return;
                 var assetDirectories = Application.ModuleAssetDirectories[ModuleType];
                 var directoryCount = assetDirectories.Count();
                 if (directoryCount <= 1) return;
@@ -45,7 +51,7 @@ namespace Eidetic.URack.Collection
         {
             set
             {
-                if (value = false) return;
+                if (value == false) return;
                 var assetDirectories = Application.ModuleAssetDirectories[ModuleType];
                 var directoryCount = assetDirectories.Count();
                 if (directoryCount <= 1) return;
