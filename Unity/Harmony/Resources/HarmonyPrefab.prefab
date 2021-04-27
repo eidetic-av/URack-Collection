@@ -204,6 +204,7 @@ MonoBehaviour:
   showAdditionalSettings: 0
   m_AreaLightEmissiveMeshShadowCastingMode: 0
   m_AreaLightEmissiveMeshMotionVectorGenerationMode: 0
+  m_AreaLightEmissiveMeshLayer: -1
 --- !u!114 &828523261967336382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,7 +227,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7952079598204554746}
-  - component: {fileID: 2209649879494860306}
+  - component: {fileID: 5679681618840955945}
   m_Layer: 0
   m_Name: HarmonyPrefab
   m_TagString: Untagged
@@ -250,7 +251,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2209649879494860306
+--- !u!114 &5679681618840955945
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

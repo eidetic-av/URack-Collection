@@ -34,7 +34,7 @@ namespace Eidetic.URack.Collection
         {
             set
             {
-                if (value = false) return;
+                if (value == false) return;
                 var assetDirectories = Application.ModuleAssetDirectories[ModuleType];
                 var directoryCount = assetDirectories.Count();
                 if (directoryCount <= 1) return;
@@ -51,7 +51,7 @@ namespace Eidetic.URack.Collection
         {
             set
             {
-                if (value = false) return;
+                if (value == false) return;
                 var assetDirectories = Application.ModuleAssetDirectories[ModuleType];
                 var directoryCount = assetDirectories.Count();
                 if (directoryCount <= 1) return;
