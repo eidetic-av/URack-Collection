@@ -54,7 +54,6 @@ struct Mirage2x : URack::UModule {
     TURBULENCE_AMOUNT_INPUT,
     WARP_DISTANCE_INPUT,
     TURBULENCE_X_SCALE_INPUT,
-    LENGTH_INPUT,
     PARTICLE_SIZE_INPUT,
     PARTICLE_SHAPE_INPUT,
     TURBULENCE_FREQUENCY_INPUT,
@@ -85,8 +84,8 @@ struct Mirage2x : URack::UModule {
     configActivate(ACTIVE_PARAM, ACTIVE_LIGHT, ACTIVE_INPUT);
     configUpdate("TurbulenceXScale", TURBULENCE_X_SCALE_PARAM,
                  TURBULENCE_X_SCALE_INPUT, TURBULENCE_X_SCALE_ATTEN_PARAM, 5.f);
-    configBiUpdate("WarpXEuler", WARP_X_EULER_PARAM, WARP_X_EULER_ATTEN_PARAM,
-                   WARP_X_EULER_INPUT, 0.f);
+    configBiUpdate("WarpXEuler", WARP_X_EULER_PARAM, WARP_X_EULER_INPUT,
+                   WARP_X_EULER_ATTEN_PARAM, 0.f);
     configUpdate("Glow", GLOW_PARAM, GLOW_INPUT, GLOW_ATTEN_PARAM, 0.f);
     configUpdate("SimulationSpeed", SIMULATION_SPEED_PARAM,
                  SIMULATION_SPEED_INPUT, SIMULATION_SPEED_ATTEN_PARAM, 5.f);
@@ -254,7 +253,7 @@ struct Mirage2xWidget : URack::UModuleWidget {
         createInputCentered<PJ301MPort>(mm2px(Vec(47.793, 50.956)), module,
                                         Mirage2x::TURBULENCE_X_SCALE_INPUT));
     addInput(createInputCentered<PJ301MPort>(mm2px(Vec(104.092, 50.956)),
-                                             module, Mirage2x::LENGTH_INPUT));
+                                             module, Mirage2x::WARP_X_EULER_INPUT));
     addInput(createInputCentered<PJ301MPort>(
         mm2px(Vec(140.866, 66.684)), module, Mirage2x::PARTICLE_SIZE_INPUT));
     addInput(createInputCentered<PJ301MPort>(
